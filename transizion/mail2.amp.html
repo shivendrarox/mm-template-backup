@@ -1,0 +1,2116 @@
+<!DOCTYPE html>
+<html amp4email>
+
+<head>
+    <meta charset="utf-8">
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+    <style amp4email-boilerplate>
+        body {
+            visibility: hidden
+        }
+    </style>
+    <style amp-custom>
+        @media only screen and (min-width:480px) {
+            .mj-column-per-100 {
+                width: 100%;
+                max-width: 100%
+            }
+        }
+
+        div p {
+            margin: 0 0
+        }
+
+        false h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            margin: 0
+        }
+
+        ol {
+            margin-top: 0;
+            margin-bottom: 0
+        }
+
+        figure.table {
+            margin: 0
+        }
+
+        figure.table table {
+            width: 100%
+        }
+
+        figure.table table td,
+        figure.table table th {
+            min-width: 2em;
+            padding: .4em;
+            border: 1px solid #bfbfbf
+        }
+
+        .hide-on-desktop {
+            display: none
+        }
+
+        @media screen and (max-width:480px) {
+            .hide-on-desktop {
+                display: revert
+            }
+
+            .hide-on-mobile {
+                display: none
+            }
+
+            .mj-sa-column-per-10 {
+                width: 15%
+            }
+
+            .mj-sa-column-per-70 {
+                width: 65%
+            }
+        }
+
+        .carousel-item {
+            width: 195px
+        }
+
+        amp-carousel {
+            width: 100%;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto
+        }
+
+        .mobile-only {
+            display: none
+        }
+
+        @media screen and (max-width:500px) {
+            .desktop-only {
+                display: none
+            }
+
+            .mobile-only {
+                display: block
+            }
+
+            .carousel-item {
+                width: 300px
+            }
+
+            amp-carousel {
+                width: 300px;
+                margin-left: auto;
+                margin-right: auto
+            }
+        }
+
+        .rating-wrapper label input {
+            opacity: 0;
+            position: absolute;
+            margin: 0
+        }
+
+        .rating-wrapper label span {
+            display: inline-block
+        }
+
+        .emoji-wrapper label input:checked~span {
+            font-size: 40px
+        }
+
+        .emoji-wrapper label span {
+            font-size: 30px;
+            margin: 0 5px
+        }
+
+        @media screen and (min-width:500px) {
+            #date-time>.input-style {
+                width: 40%
+            }
+
+            .ratingText {
+                font-size: 35px
+            }
+        }
+
+        @media screen and (max-width:500px) {
+            #date-time {
+                flex-direction: column
+            }
+
+            #date-time>.input-style {
+                margin-bottom: 10px;
+                box-sizing: border-box
+            }
+
+            .ratingText {
+                font-size: 30px
+            }
+
+            .amp-form-block .navigation-button-wrapper .button {
+                width: auto
+            }
+        }
+
+        .navigation-button-wrapper {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            margin: 0 auto
+        }
+
+        .navigation-button-wrapper>button {
+            cursor: pointer
+        }
+
+        .formekme52-wrapper .input-style {
+            color: #1e293b;
+            background-color: #fff;
+            font-family: Helvetica;
+            font-size: inherit;
+            width: 100%;
+            border-width: 1px;
+            border-style: solid;
+            border-color: #cbd5e1;
+            border-radius: 0;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left: 12px;
+            padding-right: 12px;
+            line-height: 1.5;
+            align-self: flex-start;
+            align: left
+        }
+
+        .formekme52-wrapper .input-outer {
+            padding-top: undefined;
+            padding-bottom: undefined;
+            padding-left: undefined;
+            padding-right: undefined
+        }
+
+        .formekme52-wrapper .phone-style {
+            align-self: auto
+        }
+
+        .formekme52-wrapper .textarea-style {
+            height: 100px;
+            align-self: flex-start;
+            align: left
+        }
+
+        .formekme52-wrapper .option-container {
+            text-align: left
+        }
+
+        .formekme52-wrapper .option-container>div:last-child .select-container {
+            margin-bottom: 0
+        }
+
+        .formekme52-wrapper .chip-option-container {
+            justify-content: flex-start;
+            display: flex;
+            flex-wrap: wrap
+        }
+
+        .formekme52-wrapper .select-container {
+            display: inline-flex;
+            align-items: center;
+            position: relative;
+            margin-bottom: 16px;
+            margin-top: 0;
+            margin-left: 0;
+            cursor: pointer;
+            font-size: inherit;
+            font-weight: 0;
+            font-style: none;
+            text-decoration: none
+        }
+
+        .formekme52-wrapper .chip-select-container {
+            display: flex;
+            flex-wrap: wrap;
+            position: relative;
+            margin-bottom: 16px;
+            margin-top: 0;
+            margin-left: 0;
+            cursor: pointer;
+            font-size: inherit
+        }
+
+        .formekme52-wrapper .select-container input {
+            display: none
+        }
+
+        .formekme52-wrapper .chip-select-container input {
+            display: none
+        }
+
+        .formekme52-wrapper .checkmark {
+            height: 25px;
+            width: 25px;
+            margin-right: 4px;
+            background-color: #e2e8f0;
+            transform: scale(.8);
+            flex-shrink: 0
+        }
+
+        .formekme52-wrapper .chip-checkmark {
+            margin-right: 4px;
+            background-color: #e2e8f0;
+            transform: scale('1');
+            padding: 8px 21px;
+            font-weight: 0;
+            border-radius: 24px;
+            line-height: normal
+        }
+
+        .formekme52-wrapper .select-container:hover input~.checkmark {
+            box-shadow: 0 0 0 2px #0162eb
+        }
+
+        .formekme52-wrapper .chip-select-container:hover input~.chip-checkmark {
+            box-shadow: 0 0 0 2px #0162eb
+        }
+
+        .formekme52-wrapper .select-container input:checked~.checkmark {
+            background-color: #0162eb
+        }
+
+        .formekme52-wrapper .chip-select-container input:checked~.chip-checkmark {
+            background-color: #0162eb;
+            color: #fff
+        }
+
+        .formekme52-wrapper .checkmark div {
+            content: "";
+            position: absolute;
+            display: none
+        }
+
+        .formekme52-wrapper .select-container input:checked~.checkmark div {
+            display: block
+        }
+
+        .formekme52-wrapper .select-container .checkmark-check div {
+            left: 9px;
+            top: 5px;
+            width: 5px;
+            height: 10px;
+            border: solid #fff;
+            border-width: 0 3px 3px 0;
+            transform: rotate(45deg)
+        }
+
+        .formekme52-wrapper .checkmark-radio {
+            border-radius: 50%
+        }
+
+        .formekme52-wrapper .select-container .checkmark-radio div {
+            top: 50%;
+            left: 50%;
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: #fff;
+            transform: translate(-50%, -50%)
+        }
+
+        .formekme52-wrapper .nps-wrapper,
+        .rating-wrapper {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap
+        }
+
+        .formekme52-wrapper .emoji-wrapper {
+            height: 50px;
+            display: flex;
+            align-items: center;
+            line-height: 1.5;
+            margin-bottom: 16px;
+            margin-top: 0;
+            margin-left: 0
+        }
+
+        .formekme52-wrapper .emoji-wrapper label {
+            margin-right: 4px
+        }
+
+        .formekme52-wrapper .nps-wrapper label {
+            color: #0f172a;
+            position: relative;
+            margin: 0;
+            width: 7%;
+            height: 0;
+            padding-bottom: 7%
+        }
+
+        .formekme52-wrapper .nps-wrapper label input {
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            position: absolute;
+            margin: 0
+        }
+
+        .formekme52-wrapper .nps-wrapper label span {
+            cursor: pointer;
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 18px;
+            font-weight: 300;
+            background-color: rgb(255, 255, 255, .1);
+            border: 2px solid #e2e8f0
+        }
+
+        .formekme52-wrapper .nps-wrapper label input:checked~span {
+            background-color: #0162eb;
+            color: #fff;
+            border: 2px solid #0162eb;
+            cursor: pointer
+        }
+
+        .formekme52-wrapper .nps-wrapper span:hover {
+            border: 2px solid #0162eb;
+            cursor: pointer
+        }
+
+        @media screen and (max-width:500px) {
+            .formekme52-wrapper .nps-wrapper label {
+                width: 8%;
+                padding-bottom: 8%
+            }
+
+            .formekme52-wrapper .nps-wrapper label span {
+                font-size: 14px
+            }
+
+            .formekme52-wrapper .nps-wrapper,
+            .rating-wrapper {
+                margin-left: 0;
+                margin-right: 0
+            }
+        }
+
+        .formekme52-wrapper .question {
+            padding-top: 0;
+            padding-bottom: 12px;
+            padding-left: 0;
+            padding-right: 0;
+            font-size: 14px;
+            line-height: 1.5;
+            letter-spacing: 0;
+            align-self: center;
+            align: center;
+            color: #000;
+            width: auto;
+            element-padding-top: 0;
+            element-padding-bottom: 24px;
+            font-weight: 700;
+            background-color: #f8fafc
+        }
+
+        .formekme52-wrapper .question {
+            text-align: center
+        }
+
+        .formekme52-wrapper div[submit-error] .overall.question p,
+        .formekme52-wrapper div[submit-success] .overall.question p,
+        .formekme52-wrapper div[submitting] p {
+            display: block
+        }
+
+        .formekme52-wrapper .overall>.element-wrapper {
+            padding-top: 0;
+            padding-bottom: 24px;
+            padding-left: undefined;
+            padding-right: undefined
+        }
+
+        .formekme52-wrapper .button {
+            margin-top: 8px;
+            margin-bottom: 8px;
+            margin-left: 0;
+            margin-right: 0;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left: 16px;
+            padding-right: 16px;
+            border-width: 0;
+            border-style: solid;
+            border-color: #1e293b;
+            border-radius: 2px;
+            align-self: center;
+            background-color: #0162eb;
+            color: #fff;
+            width: auto;
+            height: auto;
+            font-size: 16px;
+            align: center;
+            line-height: 1.5;
+            font-weight: 700
+        }
+
+        .formekme52-wrapper .navigation-button-wrapper {
+            justify-content: center
+        }
+
+        .formekme52-wrapper .previous-button {
+            background-color: white;
+            outline: 1px solid #0162eb;
+            color: #0162eb;
+            margin-left: 2px;
+            margin-right: 12px
+        }
+
+        .formekme52-wrapper .question p {
+            display: inline-block
+        }
+
+        .formekme52-wrapper .answer>.question>p {
+            display: block
+        }
+
+        .formekme52-wrapper .nps-styling {
+            pre-color: #eee;
+            hover-color: #ccc;
+            checked-color: #2196f3
+        }
+
+        .formekme52-wrapper .form-text {
+            color: #1e293b;
+            font-size: 14px;
+            line-height: 1.5
+        }
+
+        .formekme52-wrapper .overall {
+            background-color: #f8fafc;
+            width: 100%;
+            border-color: #f8fafc;
+            border-radius: 2px;
+            border-width: 3px;
+            border-style: solid;
+            font-family: Helvetica;
+            letter-spacing: 0;
+            align-self: center;
+            font-size: 14px;
+            padding-top: 32px;
+            padding-bottom: 32px;
+            padding-left: 32px;
+            padding-right: 32px;
+            over-all-color: #4b5193;
+            align: center;
+            color: #1e293b
+        }
+
+        .formekme52-wrapper {
+            word-break: break-word
+        }
+
+        .formekme52-wrapper .text-style {
+            color: #64748b;
+            font-size: 14px;
+            line-height: 1.5
+        }
+
+        body {
+            margin: 0;
+            padding: 0
+        }
+
+        table,
+        td {
+            border-collapse: collapse
+        }
+
+        img {
+            border: 0;
+            height: auto;
+            line-height: 100%;
+            outline: 0
+        }
+
+        p {
+            display: block;
+            margin: 13px 0
+        }
+    .rotate{
+        background-color: transparent;
+        transition: transform .2s ease-in-out;
+        margin-bottom: 0.3rem;
+      }
+      .rotate2{
+        margin-bottom: 0.3rem;
+        transition: transform .2s ease-in-out;
+        transform: rotate(180deg);
+      }
+    </style>
+    <script async custom-element="amp-form" src="https://cdn.ampproject.org/v0/amp-form-0.1.js"></script>
+    <script async custom-element="amp-bind" src="https://cdn.ampproject.org/v0/amp-bind-0.1.js"></script>
+    <script custom-template="amp-mustache" src="https://cdn.ampproject.org/v0/amp-mustache-0.2.js" async></script>
+    <script custom-element="amp-carousel" src="https://cdn.ampproject.org/v0/amp-carousel-0.1.js" async></script>
+    <script async custom-element="amp-accordion" src="https://cdn.ampproject.org/v0/amp-accordion-0.1.js"></script>
+</head>
+
+<body style="word-spacing:normal;background-color:#f8fafc">
+    <div style="background-color:#f8fafc">
+        <!--[if mso | IE]><table align="center" border="0" cellpadding="0" cellspacing="0" class="" style="width:600px;" width="600" ><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
+        <div style="background:#fff;background-color:#fff;margin:0 auto;max-width:600px">
+            <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation"
+                style="background:#fff;background-color:#fff;width:100%">
+                <tbody>
+                    <tr>
+                        <td
+                            style="direction:ltr;font-size:0;padding:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;text-align:center">
+                            <!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td class="" width="600px" ><table align="center" border="0" cellpadding="0" cellspacing="0" class="" style="width:600px;" width="600" ><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
+                            <div style="background:#fff;background-color:#fff;margin:0 auto;max-width:600px">
+                                <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation"
+                                    style="background:#fff;background-color:#fff;width:100%">
+                                    <tbody>
+                                        <tr>
+                                            <td
+                                                style="border:0 solid transparent;direction:ltr;font-size:0;padding:20px 0;padding-bottom:30px;padding-left:30px;padding-right:30px;padding-top:30px;text-align:center">
+                                                <!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td class="" style="vertical-align:top;width:540px;" ><![endif]-->
+                                                <div class="mj-column-per-100 mj-outlook-group-fix"
+                                                    style="font-size:0;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%">
+                                                    <table border="0" cellpadding="0" cellspacing="0"
+                                                        role="presentation"
+                                                        style="background-color:transparent;border:0 solid transparent;vertical-align:top"
+                                                        width="100%">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td align="center"
+                                                                    style="font-size:0;padding:10px 25px;padding-top:0;padding-right:0;padding-bottom:8px;padding-left:0;word-break:break-word">
+                                                                    <div
+                                                                        style="font-family:Helvetica;font-size:32px;font-weight:700;letter-spacing:0;line-height:1.5;text-align:center;color:#0162eb">
+                                                                        <p>Select Your Incredible Mentor! &#xA0;&#xA0;
+                                                                        </p>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td align="left"
+                                                                    style="font-size:0;padding:10px 25px;padding-top:0;padding-right:0;padding-bottom:24px;padding-left:0;word-break:break-word">
+                                                                    <div
+                                                                        style="font-family:Helvetica;font-size:16px;font-weight:400;letter-spacing:0;line-height:1.5;text-align:left;color:#475569">
+                                                                        <p style="text-align:justify">Use this gallery
+                                                                            or click on the link to take a look at some
+                                                                            of our amazing mentors.&#xA0;</p>
+                                                                        <p style="text-align:justify">&#xA0;</p>
+                                                                        <p style="text-align:justify">Give me a list of
+                                                                            five potential counselors you want to work
+                                                                            with! &#xA0;&#xA0;</p>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                                <!--[if mso | IE]></td></tr></table><![endif]-->
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <!--[if mso | IE]></td></tr></table></td></tr><![endif]-->
+                            <div class="desktop-only">
+                                <amp-carousel type="carousel" controls loop height="350" autoplay
+                                    data-next-button-aria-label="Go to next slide"
+                                    data-previous-button-aria-label="Go to previous slide" role="region"
+                                    aria-label="carousel">
+                                    <div>
+                                        <div class="carousel-item mj-outlook-group-fix"
+                                            style="font-size:0;text-align:left;direction:ltr;display:inline-block;vertical-align:top">
+                                            <table border="0" cellpadding="0" cellspacing="0" role="presentation"
+                                                width="100%">
+                                                <tbody>
+                                                    <tr>
+                                                        <td
+                                                            style="background-color:transparent;border:0 solid transparent;vertical-align:top;padding-top:10px;padding-right:10px;padding-bottom:10px;padding-left:10px">
+                                                            <table border="0" cellpadding="0" cellspacing="0"
+                                                                role="presentation" width="100%">
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td align="center"
+                                                                            style="font-size:0;padding:0;padding-top:0;padding-right:0;padding-bottom:24px;padding-left:0;word-break:break-word">
+                                                                            <table border="0" cellpadding="0"
+                                                                                cellspacing="0" role="presentation"
+                                                                                style="border-collapse:collapse;border-spacing:0">
+                                                                                <tbody>
+                                                                                    <tr>
+                                                                                        <td style="width:150px">
+                                                                                            <amp-img alt="Image"
+                                                                                                src="https://res.cloudinary.com/mailmodo/image/upload/v1645216214/editor/p/ef3762b9-362c-4a3b-9621-d680ae5acd8f/b14345a3e5d0ebedd885aebec4d06410_ydkqrk.jpg"
+                                                                                                style="border:0 solid transparent;border-radius:0;display:block;outline:0;text-decoration:none;width:100%;font-size:13px"
+                                                                                                width="500" height="500"
+                                                                                                layout="responsive">
+                                                                                            </amp-img>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                </tbody>
+                                                                            </table>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td align="center"
+                                                                            style="font-size:0;padding:10px 25px;padding-top:0;padding-right:0;padding-bottom:8px;padding-left:0;word-break:break-word">
+                                                                            <div
+                                                                                style="font-family:Helvetica;font-size:18px;font-weight:700;letter-spacing:0;line-height:1;text-align:center;color:#1e293b">
+                                                                                <p>The Well-Traveled<br>Reader</p>
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td align="center"
+                                                                            style="font-size:0;padding:10px 25px;padding-top:0;padding-right:0;padding-bottom:24px;padding-left:0;word-break:break-word">
+                                                                            <div
+                                                                                style="font-family:Helvetica;font-size:14px;font-weight:400;letter-spacing:0;line-height:1.5;text-align:center;color:#475569">
+                                                                                <p>Columbia grad<br><br>Passions: Yoga,
+                                                                                    hiking,<br>running, photography
+                                                                                    &#xA0;&#xA0;</p>
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="carousel-item mj-outlook-group-fix"
+                                            style="font-size:0;text-align:left;direction:ltr;display:inline-block;vertical-align:top">
+                                            <table border="0" cellpadding="0" cellspacing="0" role="presentation"
+                                                width="100%">
+                                                <tbody>
+                                                    <tr>
+                                                        <td
+                                                            style="background-color:transparent;border:0 solid transparent;vertical-align:top;padding-top:10px;padding-right:10px;padding-bottom:10px;padding-left:10px">
+                                                            <table border="0" cellpadding="0" cellspacing="0"
+                                                                role="presentation" width="100%">
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td align="center"
+                                                                            style="font-size:0;padding:0;padding-top:0;padding-right:0;padding-bottom:24px;padding-left:0;word-break:break-word">
+                                                                            <table border="0" cellpadding="0"
+                                                                                cellspacing="0" role="presentation"
+                                                                                style="border-collapse:collapse;border-spacing:0">
+                                                                                <tbody>
+                                                                                    <tr>
+                                                                                        <td style="width:150px">
+                                                                                            <amp-img alt="Image"
+                                                                                                src="https://res.cloudinary.com/mailmodo/image/upload/v1645216350/editor/p/ef3762b9-362c-4a3b-9621-d680ae5acd8f/225381b7e9a27dfadccd3149b81c1e6e_dbpo4j.jpg"
+                                                                                                style="border:0 solid transparent;border-radius:0;display:block;outline:0;text-decoration:none;width:100%;font-size:13px"
+                                                                                                width="500" height="500"
+                                                                                                layout="responsive">
+                                                                                            </amp-img>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                </tbody>
+                                                                            </table>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td align="center"
+                                                                            style="font-size:0;padding:10px 25px;padding-top:0;padding-right:0;padding-bottom:8px;padding-left:0;word-break:break-word">
+                                                                            <div
+                                                                                style="font-family:Helvetica;font-size:18px;font-weight:700;letter-spacing:0;line-height:1;text-align:center;color:#1e293b">
+                                                                                <p>The Attorney Teacher</p>
+                                                                                <p>&#xA0;</p>
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td align="center"
+                                                                            style="font-size:0;padding:10px 25px;padding-top:0;padding-right:0;padding-bottom:24px;padding-left:0;word-break:break-word">
+                                                                            <div
+                                                                                style="font-family:Helvetica;font-size:14px;font-weight:400;letter-spacing:0;line-height:1.5;text-align:center;color:#475569">
+                                                                                <p>Georgetown grad<br><br>Passions:
+                                                                                    Martial arts,
+                                                                                    history,<br>triathlons, politics</p>
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="carousel-item mj-outlook-group-fix"
+                                            style="font-size:0;text-align:left;direction:ltr;display:inline-block;vertical-align:top">
+                                            <table border="0" cellpadding="0" cellspacing="0" role="presentation"
+                                                width="100%">
+                                                <tbody>
+                                                    <tr>
+                                                        <td
+                                                            style="background-color:transparent;border:0 solid transparent;vertical-align:top;padding-top:10px;padding-right:10px;padding-bottom:10px;padding-left:10px">
+                                                            <table border="0" cellpadding="0" cellspacing="0"
+                                                                role="presentation" width="100%">
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td align="center"
+                                                                            style="font-size:0;padding:0;padding-top:0;padding-right:0;padding-bottom:24px;padding-left:0;word-break:break-word">
+                                                                            <table border="0" cellpadding="0"
+                                                                                cellspacing="0" role="presentation"
+                                                                                style="border-collapse:collapse;border-spacing:0">
+                                                                                <tbody>
+                                                                                    <tr>
+                                                                                        <td style="width:150px">
+                                                                                            <amp-img alt="Image"
+                                                                                                src="https://res.cloudinary.com/mailmodo/image/upload/v1645216501/editor/p/ef3762b9-362c-4a3b-9621-d680ae5acd8f/9f2f879bedb035919c4741337341f9e7_km0vdl.jpg"
+                                                                                                style="border:0 solid transparent;border-radius:0;display:block;outline:0;text-decoration:none;width:100%;font-size:13px"
+                                                                                                width="500" height="500"
+                                                                                                layout="responsive">
+                                                                                            </amp-img>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                </tbody>
+                                                                            </table>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td align="center"
+                                                                            style="font-size:0;padding:10px 25px;padding-top:0;padding-right:0;padding-bottom:8px;padding-left:0;word-break:break-word">
+                                                                            <div
+                                                                                style="font-family:Helvetica;font-size:18px;font-weight:700;letter-spacing:0;line-height:1;text-align:center;color:#1e293b">
+                                                                                <p>The Passionate<br>Medic</p>
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td align="center"
+                                                                            style="font-size:0;padding:10px 25px;padding-top:0;padding-right:0;padding-bottom:24px;padding-left:0;word-break:break-word">
+                                                                            <div
+                                                                                style="font-family:Helvetica;font-size:14px;font-weight:400;letter-spacing:0;line-height:1.5;text-align:center;color:#475569">
+                                                                                <p>Oxford Grad</p>
+                                                                                <p><br>&#xA0; Passions: Career
+                                                                                    help,<br>tennis, painting, kayaking
+                                                                                </p>
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="carousel-item mj-outlook-group-fix"
+                                            style="font-size:0;text-align:left;direction:ltr;display:inline-block;vertical-align:top">
+                                            <table border="0" cellpadding="0" cellspacing="0" role="presentation"
+                                                width="100%">
+                                                <tbody>
+                                                    <tr>
+                                                        <td
+                                                            style="background-color:transparent;border:0 solid transparent;vertical-align:top;padding-top:10px;padding-right:10px;padding-bottom:10px;padding-left:10px">
+                                                            <table border="0" cellpadding="0" cellspacing="0"
+                                                                role="presentation" width="100%">
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td align="center"
+                                                                            style="font-size:0;padding:0;padding-top:0;padding-right:0;padding-bottom:24px;padding-left:0;word-break:break-word">
+                                                                            <table border="0" cellpadding="0"
+                                                                                cellspacing="0" role="presentation"
+                                                                                style="border-collapse:collapse;border-spacing:0">
+                                                                                <tbody>
+                                                                                    <tr>
+                                                                                        <td style="width:151px">
+                                                                                            <amp-img alt="Image"
+                                                                                                src="https://res.cloudinary.com/mailmodo/image/upload/v1645216643/editor/p/ef3762b9-362c-4a3b-9621-d680ae5acd8f/cef81a60dc2e49391083cef4cb879d76_z83zcr.jpg"
+                                                                                                style="border:0 solid transparent;border-radius:0;display:block;outline:0;text-decoration:none;width:100%;font-size:13px"
+                                                                                                width="500" height="500"
+                                                                                                layout="responsive">
+                                                                                            </amp-img>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                </tbody>
+                                                                            </table>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td align="center"
+                                                                            style="font-size:0;padding:10px 25px;padding-top:0;padding-right:0;padding-bottom:8px;padding-left:0;word-break:break-word">
+                                                                            <div
+                                                                                style="font-family:Helvetica;font-size:18px;font-weight:700;letter-spacing:0;line-height:1;text-align:center;color:#1e293b">
+                                                                                <p>The Fulbright<br>Activist</p>
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td align="center"
+                                                                            style="font-size:0;padding:10px 25px;padding-top:0;padding-right:0;padding-bottom:24px;padding-left:0;word-break:break-word">
+                                                                            <div
+                                                                                style="font-family:Helvetica;font-size:14px;font-weight:400;letter-spacing:0;line-height:1.5;text-align:center;color:#475569">
+                                                                                <p>University of Virginia<br>grad</p>
+                                                                                <p>&#xA0;</p>
+                                                                                <p>Passions: foreign
+                                                                                    languages,<br>foreign policy
+                                                                                    &#xA0;&#xA0;</p>
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="carousel-item mj-outlook-group-fix"
+                                            style="font-size:0;text-align:left;direction:ltr;display:inline-block;vertical-align:top">
+                                            <table border="0" cellpadding="0" cellspacing="0" role="presentation"
+                                                width="100%">
+                                                <tbody>
+                                                    <tr>
+                                                        <td
+                                                            style="background-color:transparent;border:0 solid transparent;vertical-align:top;padding-top:10px;padding-right:10px;padding-bottom:10px;padding-left:10px">
+                                                            <table border="0" cellpadding="0" cellspacing="0"
+                                                                role="presentation" width="100%">
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td align="center"
+                                                                            style="font-size:0;padding:0;padding-top:0;padding-right:0;padding-bottom:24px;padding-left:0;word-break:break-word">
+                                                                            <table border="0" cellpadding="0"
+                                                                                cellspacing="0" role="presentation"
+                                                                                style="border-collapse:collapse;border-spacing:0">
+                                                                                <tbody>
+                                                                                    <tr>
+                                                                                        <td style="width:150px">
+                                                                                            <amp-img alt="Image"
+                                                                                                src="https://res.cloudinary.com/mailmodo/image/upload/v1645216919/editor/p/ef3762b9-362c-4a3b-9621-d680ae5acd8f/4f8ff23a0bb7f8c742ad2596bc49acc2_erh76l.png"
+                                                                                                style="border:0 solid transparent;border-radius:0;display:block;outline:0;text-decoration:none;width:100%;font-size:13px"
+                                                                                                width="500" height="500"
+                                                                                                layout="responsive">
+                                                                                            </amp-img>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                </tbody>
+                                                                            </table>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td align="center"
+                                                                            style="font-size:0;padding:10px 25px;padding-top:0;padding-right:0;padding-bottom:8px;padding-left:0;word-break:break-word">
+                                                                            <div
+                                                                                style="font-family:Helvetica;font-size:18px;font-weight:700;letter-spacing:0;line-height:1;text-align:center;color:#1e293b">
+                                                                                <p>The Developmental<br>Economist</p>
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td align="center"
+                                                                            style="font-size:0;padding:10px 25px;padding-top:0;padding-right:0;padding-bottom:24px;padding-left:0;word-break:break-word">
+                                                                            <div
+                                                                                style="font-family:Helvetica;font-size:14px;font-weight:400;letter-spacing:0;line-height:1.5;text-align:center;color:#475569">
+                                                                                <p>Stanford grad</p>
+                                                                                <p>&#xA0;</p>
+                                                                                <p>&#xA0;</p>
+                                                                                <p>Passions: writing, physics,<br>public
+                                                                                    service</p>
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="carousel-item mj-outlook-group-fix"
+                                            style="font-size:0;text-align:left;direction:ltr;display:inline-block;vertical-align:top">
+                                            <table border="0" cellpadding="0" cellspacing="0" role="presentation"
+                                                width="100%">
+                                                <tbody>
+                                                    <tr>
+                                                        <td
+                                                            style="background-color:transparent;border:0 solid transparent;vertical-align:top;padding-top:10px;padding-right:10px;padding-bottom:10px;padding-left:10px">
+                                                            <table border="0" cellpadding="0" cellspacing="0"
+                                                                role="presentation" width="100%">
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td align="center"
+                                                                            style="font-size:0;padding:0;padding-top:0;padding-right:0;padding-bottom:24px;padding-left:0;word-break:break-word">
+                                                                            <table border="0" cellpadding="0"
+                                                                                cellspacing="0" role="presentation"
+                                                                                style="border-collapse:collapse;border-spacing:0">
+                                                                                <tbody>
+                                                                                    <tr>
+                                                                                        <td style="width:150px">
+                                                                                            <amp-img alt="Image"
+                                                                                                src="https://res.cloudinary.com/mailmodo/image/upload/v1645217048/editor/p/ef3762b9-362c-4a3b-9621-d680ae5acd8f/af4d2987b4b023571337d76d5f04da5f_aq2r5d.jpg"
+                                                                                                style="border:0 solid transparent;border-radius:0;display:block;outline:0;text-decoration:none;width:100%;font-size:13px"
+                                                                                                width="500" height="500"
+                                                                                                layout="responsive">
+                                                                                            </amp-img>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                </tbody>
+                                                                            </table>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td align="center"
+                                                                            style="font-size:0;padding:10px 25px;padding-top:0;padding-right:0;padding-bottom:8px;padding-left:0;word-break:break-word">
+                                                                            <div
+                                                                                style="font-family:Helvetica;font-size:18px;font-weight:700;letter-spacing:0;line-height:1;text-align:center;color:#1e293b">
+                                                                                <p>The Almost<br>Doctor</p>
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td align="center"
+                                                                            style="font-size:0;padding:10px 25px;padding-top:0;padding-right:0;padding-bottom:24px;padding-left:0;word-break:break-word">
+                                                                            <div
+                                                                                style="font-family:Helvetica;font-size:14px;font-weight:400;letter-spacing:0;line-height:1.5;text-align:center;color:#475569">
+                                                                                <p>Washington U -<br>St. Louis
+                                                                                    grad&#xA0;</p>
+                                                                                <p>&#xA0;</p>
+                                                                                <p>Passions: Swimming,<br>hiking,
+                                                                                    ukulele</p>
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="carousel-item mj-outlook-group-fix"
+                                            style="font-size:0;text-align:left;direction:ltr;display:inline-block;vertical-align:top">
+                                            <table border="0" cellpadding="0" cellspacing="0" role="presentation"
+                                                width="100%">
+                                                <tbody>
+                                                    <tr>
+                                                        <td
+                                                            style="background-color:transparent;border:0 solid transparent;vertical-align:top;padding-top:10px;padding-right:10px;padding-bottom:10px;padding-left:10px">
+                                                            <table border="0" cellpadding="0" cellspacing="0"
+                                                                role="presentation" width="100%">
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td align="center"
+                                                                            style="font-size:0;padding:0;padding-top:0;padding-right:0;padding-bottom:24px;padding-left:0;word-break:break-word">
+                                                                            <table border="0" cellpadding="0"
+                                                                                cellspacing="0" role="presentation"
+                                                                                style="border-collapse:collapse;border-spacing:0">
+                                                                                <tbody>
+                                                                                    <tr>
+                                                                                        <td style="width:150px">
+                                                                                            <amp-img alt="Image"
+                                                                                                src="https://res.cloudinary.com/mailmodo/image/upload/v1645217199/editor/p/ef3762b9-362c-4a3b-9621-d680ae5acd8f/fe08bc410b60ac0943e0fd64c679bafc_opsftv.jpg"
+                                                                                                style="border:0 solid transparent;border-radius:0;display:block;outline:0;text-decoration:none;width:100%;font-size:13px"
+                                                                                                width="500" height="500"
+                                                                                                layout="responsive">
+                                                                                            </amp-img>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                </tbody>
+                                                                            </table>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td align="center"
+                                                                            style="font-size:0;padding:10px 25px;padding-top:0;padding-right:0;padding-bottom:8px;padding-left:0;word-break:break-word">
+                                                                            <div
+                                                                                style="font-family:Helvetica;font-size:18px;font-weight:700;letter-spacing:0;line-height:1;text-align:center;color:#1e293b">
+                                                                                <p>The Detail-Oriented<br>Yogi</p>
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td align="center"
+                                                                            style="font-size:0;padding:10px 25px;padding-top:0;padding-right:0;padding-bottom:24px;padding-left:0;word-break:break-word">
+                                                                            <div
+                                                                                style="font-family:Helvetica;font-size:14px;font-weight:400;letter-spacing:0;line-height:1.5;text-align:center;color:#475569">
+                                                                                <p>Vanderbilt grad</p>
+                                                                                <p>&#xA0;</p>
+                                                                                <p>&#xA0;</p>
+                                                                                <p>Passions: Cooking, yoga,<br>pilates,
+                                                                                    exploring NYC</p>
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="carousel-item mj-outlook-group-fix"
+                                            style="font-size:0;text-align:left;direction:ltr;display:inline-block;vertical-align:top">
+                                            <table border="0" cellpadding="0" cellspacing="0" role="presentation"
+                                                width="100%">
+                                                <tbody>
+                                                    <tr>
+                                                        <td
+                                                            style="background-color:transparent;border:0 solid transparent;vertical-align:top;padding-top:10px;padding-right:10px;padding-bottom:10px;padding-left:10px">
+                                                            <table border="0" cellpadding="0" cellspacing="0"
+                                                                role="presentation" width="100%">
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td align="center"
+                                                                            style="font-size:0;padding:0;padding-top:0;padding-right:0;padding-bottom:24px;padding-left:0;word-break:break-word">
+                                                                            <table border="0" cellpadding="0"
+                                                                                cellspacing="0" role="presentation"
+                                                                                style="border-collapse:collapse;border-spacing:0">
+                                                                                <tbody>
+                                                                                    <tr>
+                                                                                        <td style="width:150px">
+                                                                                            <amp-img alt="Image"
+                                                                                                src="https://res.cloudinary.com/mailmodo/image/upload/v1645217313/editor/p/ef3762b9-362c-4a3b-9621-d680ae5acd8f/f1f25cec8061240fb8ca361c98971c91_viatda.jpg"
+                                                                                                style="border:0 solid transparent;border-radius:0;display:block;outline:0;text-decoration:none;width:100%;font-size:13px"
+                                                                                                width="500" height="500"
+                                                                                                layout="responsive">
+                                                                                            </amp-img>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                </tbody>
+                                                                            </table>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td align="center"
+                                                                            style="font-size:0;padding:10px 25px;padding-top:0;padding-right:0;padding-bottom:8px;padding-left:0;word-break:break-word">
+                                                                            <div
+                                                                                style="font-family:Helvetica;font-size:18px;font-weight:700;letter-spacing:0;line-height:1;text-align:center;color:#1e293b">
+                                                                                <p>The Poker-Playing<br>Writer</p>
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td align="center"
+                                                                            style="font-size:0;padding:10px 25px;padding-top:0;padding-right:0;padding-bottom:24px;padding-left:0;word-break:break-word">
+                                                                            <div
+                                                                                style="font-family:Helvetica;font-size:14px;font-weight:400;letter-spacing:0;line-height:1.5;text-align:center;color:#475569">
+                                                                                <p>Harvard grad</p>
+                                                                                <p>&#xA0;</p>
+                                                                                <p>&#xA0;</p>
+                                                                                <p>Passions: Poker,<br>politics, foodie
+                                                                                </p>
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </amp-carousel>
+                            </div><!-- Mobile ony carousel -->
+                            <div class="mobile-only">
+                                <amp-carousel type="slides" controls loop height="350" autoplay
+                                    data-next-button-aria-label="Go to next slide"
+                                    data-previous-button-aria-label="Go to previous slide" role="region"
+                                    aria-label="carousel">
+                                    <div>
+                                        <div class="carousel-item mj-outlook-group-fix"
+                                            style="font-size:0;text-align:left;direction:ltr;display:inline-block;vertical-align:top">
+                                            <table border="0" cellpadding="0" cellspacing="0" role="presentation"
+                                                width="100%">
+                                                <tbody>
+                                                    <tr>
+                                                        <td
+                                                            style="background-color:transparent;border:0 solid transparent;vertical-align:top;padding-top:10px;padding-right:10px;padding-bottom:10px;padding-left:10px">
+                                                            <table border="0" cellpadding="0" cellspacing="0"
+                                                                role="presentation" width="100%">
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td align="center"
+                                                                            style="font-size:0;padding:0;padding-top:0;padding-right:0;padding-bottom:24px;padding-left:0;word-break:break-word">
+                                                                            <table border="0" cellpadding="0"
+                                                                                cellspacing="0" role="presentation"
+                                                                                style="border-collapse:collapse;border-spacing:0">
+                                                                                <tbody>
+                                                                                    <tr>
+                                                                                        <td style="width:150px">
+                                                                                            <amp-img alt="Image"
+                                                                                                src="https://res.cloudinary.com/mailmodo/image/upload/v1645216214/editor/p/ef3762b9-362c-4a3b-9621-d680ae5acd8f/b14345a3e5d0ebedd885aebec4d06410_ydkqrk.jpg"
+                                                                                                style="border:0 solid transparent;border-radius:0;display:block;outline:0;text-decoration:none;width:100%;font-size:13px"
+                                                                                                width="500" height="500"
+                                                                                                layout="responsive">
+                                                                                            </amp-img>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                </tbody>
+                                                                            </table>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td align="center"
+                                                                            style="font-size:0;padding:10px 25px;padding-top:0;padding-right:0;padding-bottom:8px;padding-left:0;word-break:break-word">
+                                                                            <div
+                                                                                style="font-family:Helvetica;font-size:18px;font-weight:700;letter-spacing:0;line-height:1;text-align:center;color:#1e293b">
+                                                                                <p>The Well-Traveled<br>Reader</p>
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td align="center"
+                                                                            style="font-size:0;padding:10px 25px;padding-top:0;padding-right:0;padding-bottom:24px;padding-left:0;word-break:break-word">
+                                                                            <div
+                                                                                style="font-family:Helvetica;font-size:14px;font-weight:400;letter-spacing:0;line-height:1.5;text-align:center;color:#475569">
+                                                                                <p>Columbia grad<br><br>Passions: Yoga,
+                                                                                    hiking,<br>running, photography
+                                                                                    &#xA0;&#xA0;</p>
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="carousel-item mj-outlook-group-fix"
+                                            style="font-size:0;text-align:left;direction:ltr;display:inline-block;vertical-align:top">
+                                            <table border="0" cellpadding="0" cellspacing="0" role="presentation"
+                                                width="100%">
+                                                <tbody>
+                                                    <tr>
+                                                        <td
+                                                            style="background-color:transparent;border:0 solid transparent;vertical-align:top;padding-top:10px;padding-right:10px;padding-bottom:10px;padding-left:10px">
+                                                            <table border="0" cellpadding="0" cellspacing="0"
+                                                                role="presentation" width="100%">
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td align="center"
+                                                                            style="font-size:0;padding:0;padding-top:0;padding-right:0;padding-bottom:24px;padding-left:0;word-break:break-word">
+                                                                            <table border="0" cellpadding="0"
+                                                                                cellspacing="0" role="presentation"
+                                                                                style="border-collapse:collapse;border-spacing:0">
+                                                                                <tbody>
+                                                                                    <tr>
+                                                                                        <td style="width:150px">
+                                                                                            <amp-img alt="Image"
+                                                                                                src="https://res.cloudinary.com/mailmodo/image/upload/v1645216350/editor/p/ef3762b9-362c-4a3b-9621-d680ae5acd8f/225381b7e9a27dfadccd3149b81c1e6e_dbpo4j.jpg"
+                                                                                                style="border:0 solid transparent;border-radius:0;display:block;outline:0;text-decoration:none;width:100%;font-size:13px"
+                                                                                                width="500" height="500"
+                                                                                                layout="responsive">
+                                                                                            </amp-img>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                </tbody>
+                                                                            </table>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td align="center"
+                                                                            style="font-size:0;padding:10px 25px;padding-top:0;padding-right:0;padding-bottom:8px;padding-left:0;word-break:break-word">
+                                                                            <div
+                                                                                style="font-family:Helvetica;font-size:18px;font-weight:700;letter-spacing:0;line-height:1;text-align:center;color:#1e293b">
+                                                                                <p>The Attorney Teacher</p>
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td align="center"
+                                                                            style="font-size:0;padding:10px 25px;padding-top:0;padding-right:0;padding-bottom:24px;padding-left:0;word-break:break-word">
+                                                                            <div
+                                                                                style="font-family:Helvetica;font-size:14px;font-weight:400;letter-spacing:0;line-height:1.5;text-align:center;color:#475569">
+                                                                                <p>Georgetown grad<br><br>Passions:
+                                                                                    Martial arts,
+                                                                                    history,<br>triathlons, politics</p>
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="carousel-item mj-outlook-group-fix"
+                                            style="font-size:0;text-align:left;direction:ltr;display:inline-block;vertical-align:top">
+                                            <table border="0" cellpadding="0" cellspacing="0" role="presentation"
+                                                width="100%">
+                                                <tbody>
+                                                    <tr>
+                                                        <td
+                                                            style="background-color:transparent;border:0 solid transparent;vertical-align:top;padding-top:10px;padding-right:10px;padding-bottom:10px;padding-left:10px">
+                                                            <table border="0" cellpadding="0" cellspacing="0"
+                                                                role="presentation" width="100%">
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td align="center"
+                                                                            style="font-size:0;padding:0;padding-top:0;padding-right:0;padding-bottom:24px;padding-left:0;word-break:break-word">
+                                                                            <table border="0" cellpadding="0"
+                                                                                cellspacing="0" role="presentation"
+                                                                                style="border-collapse:collapse;border-spacing:0">
+                                                                                <tbody>
+                                                                                    <tr>
+                                                                                        <td style="width:150px">
+                                                                                            <amp-img alt="Image"
+                                                                                                src="https://res.cloudinary.com/mailmodo/image/upload/v1645216501/editor/p/ef3762b9-362c-4a3b-9621-d680ae5acd8f/9f2f879bedb035919c4741337341f9e7_km0vdl.jpg"
+                                                                                                style="border:0 solid transparent;border-radius:0;display:block;outline:0;text-decoration:none;width:100%;font-size:13px"
+                                                                                                width="500" height="500"
+                                                                                                layout="responsive">
+                                                                                            </amp-img>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                </tbody>
+                                                                            </table>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td align="center"
+                                                                            style="font-size:0;padding:10px 25px;padding-top:0;padding-right:0;padding-bottom:8px;padding-left:0;word-break:break-word">
+                                                                            <div
+                                                                                style="font-family:Helvetica;font-size:18px;font-weight:700;letter-spacing:0;line-height:1;text-align:center;color:#1e293b">
+                                                                                <p>The Passionate<br>Medic</p>
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td align="center"
+                                                                            style="font-size:0;padding:10px 25px;padding-top:0;padding-right:0;padding-bottom:24px;padding-left:0;word-break:break-word">
+                                                                            <div
+                                                                                style="font-family:Helvetica;font-size:14px;font-weight:400;letter-spacing:0;line-height:1.5;text-align:center;color:#475569">
+                                                                                <p>Oxford Grad</p>
+                                                                                <p><br>&#xA0; Passions: Career
+                                                                                    help,<br>tennis, painting, kayaking
+                                                                                </p>
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="carousel-item mj-outlook-group-fix"
+                                            style="font-size:0;text-align:left;direction:ltr;display:inline-block;vertical-align:top">
+                                            <table border="0" cellpadding="0" cellspacing="0" role="presentation"
+                                                width="100%">
+                                                <tbody>
+                                                    <tr>
+                                                        <td
+                                                            style="background-color:transparent;border:0 solid transparent;vertical-align:top;padding-top:10px;padding-right:10px;padding-bottom:10px;padding-left:10px">
+                                                            <table border="0" cellpadding="0" cellspacing="0"
+                                                                role="presentation" width="100%">
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td align="center"
+                                                                            style="font-size:0;padding:0;padding-top:0;padding-right:0;padding-bottom:24px;padding-left:0;word-break:break-word">
+                                                                            <table border="0" cellpadding="0"
+                                                                                cellspacing="0" role="presentation"
+                                                                                style="border-collapse:collapse;border-spacing:0">
+                                                                                <tbody>
+                                                                                    <tr>
+                                                                                        <td style="width:151px">
+                                                                                            <amp-img alt="Image"
+                                                                                                src="https://res.cloudinary.com/mailmodo/image/upload/v1645216643/editor/p/ef3762b9-362c-4a3b-9621-d680ae5acd8f/cef81a60dc2e49391083cef4cb879d76_z83zcr.jpg"
+                                                                                                style="border:0 solid transparent;border-radius:0;display:block;outline:0;text-decoration:none;width:100%;font-size:13px"
+                                                                                                width="500" height="500"
+                                                                                                layout="responsive">
+                                                                                            </amp-img>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                </tbody>
+                                                                            </table>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td align="center"
+                                                                            style="font-size:0;padding:10px 25px;padding-top:0;padding-right:0;padding-bottom:8px;padding-left:0;word-break:break-word">
+                                                                            <div
+                                                                                style="font-family:Helvetica;font-size:18px;font-weight:700;letter-spacing:0;line-height:1;text-align:center;color:#1e293b">
+                                                                                <p>The Fulbright<br>Activist</p>
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td align="center"
+                                                                            style="font-size:0;padding:10px 25px;padding-top:0;padding-right:0;padding-bottom:24px;padding-left:0;word-break:break-word">
+                                                                            <div
+                                                                                style="font-family:Helvetica;font-size:14px;font-weight:400;letter-spacing:0;line-height:1.5;text-align:center;color:#475569">
+                                                                                <p>University of Virginia<br>grad</p>
+                                                                                <p>&#xA0;</p>
+                                                                                <p>Passions: foreign
+                                                                                    languages,<br>foreign policy
+                                                                                    &#xA0;&#xA0;</p>
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="carousel-item mj-outlook-group-fix"
+                                            style="font-size:0;text-align:left;direction:ltr;display:inline-block;vertical-align:top">
+                                            <table border="0" cellpadding="0" cellspacing="0" role="presentation"
+                                                width="100%">
+                                                <tbody>
+                                                    <tr>
+                                                        <td
+                                                            style="background-color:transparent;border:0 solid transparent;vertical-align:top;padding-top:10px;padding-right:10px;padding-bottom:10px;padding-left:10px">
+                                                            <table border="0" cellpadding="0" cellspacing="0"
+                                                                role="presentation" width="100%">
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td align="center"
+                                                                            style="font-size:0;padding:0;padding-top:0;padding-right:0;padding-bottom:24px;padding-left:0;word-break:break-word">
+                                                                            <table border="0" cellpadding="0"
+                                                                                cellspacing="0" role="presentation"
+                                                                                style="border-collapse:collapse;border-spacing:0">
+                                                                                <tbody>
+                                                                                    <tr>
+                                                                                        <td style="width:150px">
+                                                                                            <amp-img alt="Image"
+                                                                                                src="https://res.cloudinary.com/mailmodo/image/upload/v1645216919/editor/p/ef3762b9-362c-4a3b-9621-d680ae5acd8f/4f8ff23a0bb7f8c742ad2596bc49acc2_erh76l.png"
+                                                                                                style="border:0 solid transparent;border-radius:0;display:block;outline:0;text-decoration:none;width:100%;font-size:13px"
+                                                                                                width="500" height="500"
+                                                                                                layout="responsive">
+                                                                                            </amp-img>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                </tbody>
+                                                                            </table>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td align="center"
+                                                                            style="font-size:0;padding:10px 25px;padding-top:0;padding-right:0;padding-bottom:8px;padding-left:0;word-break:break-word">
+                                                                            <div
+                                                                                style="font-family:Helvetica;font-size:18px;font-weight:700;letter-spacing:0;line-height:1;text-align:center;color:#1e293b">
+                                                                                <p>The Developmental<br>Economist</p>
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td align="center"
+                                                                            style="font-size:0;padding:10px 25px;padding-top:0;padding-right:0;padding-bottom:24px;padding-left:0;word-break:break-word">
+                                                                            <div
+                                                                                style="font-family:Helvetica;font-size:14px;font-weight:400;letter-spacing:0;line-height:1.5;text-align:center;color:#475569">
+                                                                                <p>Stanford grad</p>
+                                                                                <p>&#xA0;</p>
+                                                                                <p>Passions: writing, physics,<br>public
+                                                                                    service</p>
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="carousel-item mj-outlook-group-fix"
+                                            style="font-size:0;text-align:left;direction:ltr;display:inline-block;vertical-align:top">
+                                            <table border="0" cellpadding="0" cellspacing="0" role="presentation"
+                                                width="100%">
+                                                <tbody>
+                                                    <tr>
+                                                        <td
+                                                            style="background-color:transparent;border:0 solid transparent;vertical-align:top;padding-top:10px;padding-right:10px;padding-bottom:10px;padding-left:10px">
+                                                            <table border="0" cellpadding="0" cellspacing="0"
+                                                                role="presentation" width="100%">
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td align="center"
+                                                                            style="font-size:0;padding:0;padding-top:0;padding-right:0;padding-bottom:24px;padding-left:0;word-break:break-word">
+                                                                            <table border="0" cellpadding="0"
+                                                                                cellspacing="0" role="presentation"
+                                                                                style="border-collapse:collapse;border-spacing:0">
+                                                                                <tbody>
+                                                                                    <tr>
+                                                                                        <td style="width:150px">
+                                                                                            <amp-img alt="Image"
+                                                                                                src="https://res.cloudinary.com/mailmodo/image/upload/v1645217048/editor/p/ef3762b9-362c-4a3b-9621-d680ae5acd8f/af4d2987b4b023571337d76d5f04da5f_aq2r5d.jpg"
+                                                                                                style="border:0 solid transparent;border-radius:0;display:block;outline:0;text-decoration:none;width:100%;font-size:13px"
+                                                                                                width="500" height="500"
+                                                                                                layout="responsive">
+                                                                                            </amp-img>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                </tbody>
+                                                                            </table>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td align="center"
+                                                                            style="font-size:0;padding:10px 25px;padding-top:0;padding-right:0;padding-bottom:8px;padding-left:0;word-break:break-word">
+                                                                            <div
+                                                                                style="font-family:Helvetica;font-size:18px;font-weight:700;letter-spacing:0;line-height:1;text-align:center;color:#1e293b">
+                                                                                <p>The Almost<br>Doctor</p>
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td align="center"
+                                                                            style="font-size:0;padding:10px 25px;padding-top:0;padding-right:0;padding-bottom:24px;padding-left:0;word-break:break-word">
+                                                                            <div
+                                                                                style="font-family:Helvetica;font-size:14px;font-weight:400;letter-spacing:0;line-height:1.5;text-align:center;color:#475569">
+                                                                                <p>Washington U -<br>St. Louis
+                                                                                    grad&#xA0;</p>
+                                                                                <p>&#xA0;</p>
+                                                                                <p>Passions: Swimming,<br>hiking,
+                                                                                    ukulele</p>
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="carousel-item mj-outlook-group-fix"
+                                            style="font-size:0;text-align:left;direction:ltr;display:inline-block;vertical-align:top">
+                                            <table border="0" cellpadding="0" cellspacing="0" role="presentation"
+                                                width="100%">
+                                                <tbody>
+                                                    <tr>
+                                                        <td
+                                                            style="background-color:transparent;border:0 solid transparent;vertical-align:top;padding-top:10px;padding-right:10px;padding-bottom:10px;padding-left:10px">
+                                                            <table border="0" cellpadding="0" cellspacing="0"
+                                                                role="presentation" width="100%">
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td align="center"
+                                                                            style="font-size:0;padding:0;padding-top:0;padding-right:0;padding-bottom:24px;padding-left:0;word-break:break-word">
+                                                                            <table border="0" cellpadding="0"
+                                                                                cellspacing="0" role="presentation"
+                                                                                style="border-collapse:collapse;border-spacing:0">
+                                                                                <tbody>
+                                                                                    <tr>
+                                                                                        <td style="width:150px">
+                                                                                            <amp-img alt="Image"
+                                                                                                src="https://res.cloudinary.com/mailmodo/image/upload/v1645217199/editor/p/ef3762b9-362c-4a3b-9621-d680ae5acd8f/fe08bc410b60ac0943e0fd64c679bafc_opsftv.jpg"
+                                                                                                style="border:0 solid transparent;border-radius:0;display:block;outline:0;text-decoration:none;width:100%;font-size:13px"
+                                                                                                width="500" height="500"
+                                                                                                layout="responsive">
+                                                                                            </amp-img>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                </tbody>
+                                                                            </table>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td align="center"
+                                                                            style="font-size:0;padding:10px 25px;padding-top:0;padding-right:0;padding-bottom:8px;padding-left:0;word-break:break-word">
+                                                                            <div
+                                                                                style="font-family:Helvetica;font-size:18px;font-weight:700;letter-spacing:0;line-height:1;text-align:center;color:#1e293b">
+                                                                                <p>The Detail-Oriented<br>Yogi</p>
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td align="center"
+                                                                            style="font-size:0;padding:10px 25px;padding-top:0;padding-right:0;padding-bottom:24px;padding-left:0;word-break:break-word">
+                                                                            <div
+                                                                                style="font-family:Helvetica;font-size:14px;font-weight:400;letter-spacing:0;line-height:1.5;text-align:center;color:#475569">
+                                                                                <p>Vanderbilt grad</p>
+                                                                                <p>&#xA0;</p>
+                                                                                <p>Passions: Cooking, yoga,<br>pilates,
+                                                                                    exploring NYC</p>
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="carousel-item mj-outlook-group-fix"
+                                            style="font-size:0;text-align:left;direction:ltr;display:inline-block;vertical-align:top">
+                                            <table border="0" cellpadding="0" cellspacing="0" role="presentation"
+                                                width="100%">
+                                                <tbody>
+                                                    <tr>
+                                                        <td
+                                                            style="background-color:transparent;border:0 solid transparent;vertical-align:top;padding-top:10px;padding-right:10px;padding-bottom:10px;padding-left:10px">
+                                                            <table border="0" cellpadding="0" cellspacing="0"
+                                                                role="presentation" width="100%">
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td align="center"
+                                                                            style="font-size:0;padding:0;padding-top:0;padding-right:0;padding-bottom:24px;padding-left:0;word-break:break-word">
+                                                                            <table border="0" cellpadding="0"
+                                                                                cellspacing="0" role="presentation"
+                                                                                style="border-collapse:collapse;border-spacing:0">
+                                                                                <tbody>
+                                                                                    <tr>
+                                                                                        <td style="width:150px">
+                                                                                            <amp-img alt="Image"
+                                                                                                src="https://res.cloudinary.com/mailmodo/image/upload/v1645217313/editor/p/ef3762b9-362c-4a3b-9621-d680ae5acd8f/f1f25cec8061240fb8ca361c98971c91_viatda.jpg"
+                                                                                                style="border:0 solid transparent;border-radius:0;display:block;outline:0;text-decoration:none;width:100%;font-size:13px"
+                                                                                                width="500" height="500"
+                                                                                                layout="responsive">
+                                                                                            </amp-img>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                </tbody>
+                                                                            </table>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td align="center"
+                                                                            style="font-size:0;padding:10px 25px;padding-top:0;padding-right:0;padding-bottom:8px;padding-left:0;word-break:break-word">
+                                                                            <div
+                                                                                style="font-family:Helvetica;font-size:18px;font-weight:700;letter-spacing:0;line-height:1;text-align:center;color:#1e293b">
+                                                                                <p>The Poker-Playing<br>Writer</p>
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td align="center"
+                                                                            style="font-size:0;padding:10px 25px;padding-top:0;padding-right:0;padding-bottom:24px;padding-left:0;word-break:break-word">
+                                                                            <div
+                                                                                style="font-family:Helvetica;font-size:14px;font-weight:400;letter-spacing:0;line-height:1.5;text-align:center;color:#475569">
+                                                                                <p>Harvard grad</p>
+                                                                                <p>&#xA0;</p>
+                                                                                <p>Passions: Poker,<br>politics, foodie
+                                                                                </p>
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </amp-carousel>
+                            </div>
+                            <!--[if mso | IE]><tr><td class="" width="600px" ><table align="center" border="0" cellpadding="0" cellspacing="0" class="" style="width:600px;" width="600" ><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
+                            <div style="background:#fff;background-color:#fff;margin:0 auto;max-width:600px">
+                                <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation"
+                                    style="background:#fff;background-color:#fff;width:100%">
+                                    <tbody>
+                                        <tr>
+                                            <td
+                                                style="border:0 solid #0162eb;direction:ltr;font-size:0;padding:20px 0;padding-bottom:16px;padding-left:16px;padding-right:16px;padding-top:16px;text-align:center">
+                                                <!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td class="" style="vertical-align:top;width:568px;" ><![endif]-->
+                                                <div class="mj-column-per-100 mj-outlook-group-fix"
+                                                    style="font-size:0;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%">
+                                                    <table border="0" cellpadding="0" cellspacing="0"
+                                                        role="presentation" width="100%">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td
+                                                                    style="background-color:transparent;border:0 solid transparent;vertical-align:top;padding-top:0;padding-right:0;padding-bottom:0;padding-left:0">
+                                                                    <table border="0" cellpadding="0" cellspacing="0"
+                                                                        role="presentation" width="100%">
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td align="center"
+                                                                                    style="font-size:0;padding:12px 0 12px 0;word-break:break-word">
+                                                                                    <table border="0" cellpadding="0"
+                                                                                        cellspacing="0"
+                                                                                        role="presentation"
+                                                                                        style="border-collapse:separate;width:auto;line-height:100%">
+                                                                                        <tbody>
+                                                                                            <tr>
+                                                                                                <td align="center"
+                                                                                                    bgcolor="#0162EB"
+                                                                                                    role="presentation"
+                                                                                                    style="border-radius:4px;border:0 solid none;cursor:auto;height:auto;background:#0162eb;padding:12px 24px 12px 24px">
+                                                                                                    <div
+                                                                                                        style="display:inline-block;background:#0162eb;color:#fff;font-family:Helvetica;font-size:16px;font-weight:400;line-height:1;letter-spacing:1px;margin:0;text-decoration:none;text-transform:none;padding:0;border-radius:4px">
+                                                                                                        <p>For more
+                                                                                                            profiles,
+                                                                                                            please click
+                                                                                                            here.
+                                                                                                            &#xA0;&#xA0;
+                                                                                                        </p>
+                                                                                                    </div>
+                                                                                                </td>
+                                                                                            </tr>
+                                                                                        </tbody>
+                                                                                    </table>
+                                                                                </td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                                <!--[if mso | IE]></td></tr></table><![endif]-->
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <!--[if mso | IE]></td></tr></table></td></tr><![endif]-->
+                            <div on="tap:AMP.setState({formekme52: {fuuid: formekme52.fuuid || floor(random() * 100000) }})"
+                                role="tab" tabindex="1" class="amp-form-block formekme52-wrapper"
+                                style="margin:auto;text-align:left">
+                                <div class="data">
+                                    <amp-state id="formekme52">
+                                        <script
+                                            type="application/json">{"currentStep":"step4i0ij1","responses":{},"formHistory":[]}</script>
+                                    </amp-state>
+                                </div>
+                                <amp-state id="myState">
+                                    <script type="application/json">
+                                      {
+                                        "myClass":"rotate2",
+                                        "myClass2":"rotate",
+                                        "myClass3":"rotate"
+                                      }
+                                    </script>
+                                  </amp-state>
+                                <form class="formekme52" style="display:flex;flex-direction:column" method="post"
+                                    custom-validation-reporting="show-all-on-submit" on="submit:AMP.setState({formekme52:{formHistory: formekme52.formHistory.splice(formekme52.formHistory.length,0,formekme52.currentStep) 
+        , currentStep: &apos;stepe2byy2&apos;}})"
+                                    action-xhr="https://tracker-uat.mailmodo.email//submissions/d/11ebf073-22b9-429c-a55d-85ffa56e8882/ca256f1b-a4d3-4385-a0ae-17606e41592f?sender=#~mailmodo-email-sender~#&amp;formId=formekme52">
+                                    <div class="overall screen current_screen" style="box-sizing:border-box"
+                                        [hidden]="formekme52.currentStep != &apos;step4i0ij1&apos;">
+                                        <div class="element-wrapper">
+                                            <amp-accordion animate>
+                                                <section on="expand:AMP.setState({myState:{ myClass: 'rotate2'} });collapse:AMP.setState({myState:{myClass:'rotate'}})">
+                                                  <h2 style="padding:12px 24px 12px 24px;border-radius: 4px;background-color: #0162eb;" ><span style="color:white;font-size:20px">Please select 5
+                                                    mentors*</span><span style="float: right;"><div ><amp-img class="rotate" [class]="myState.myClass" layout="fixed" width="8" height="6" src="https://res.cloudinary.com/mailmodo/image/upload/v1648636247/editor/p/ef3762b9-362c-4a3b-9621-d680ae5acd8f/91f344cfa5bb5adabc193c5c7ae91e3c_m2o7il.png"></amp-img></div></span></h2>
+                                                  <div style="padding-top: 20px;">
+                                                    <div class="answer">
+                                                        <div class="chip-option-container"><input hidden required
+                                                                id="element2alh613"
+                                                                [value]="requiredCheckbox.element2alh613 ? &apos;filled&apos; : &apos;&apos;">
+                                                            <div><label class="chip-select-container"><input type="checkbox"
+                                                                        name="element2alh613[]"
+                                                                        on="change:AMP.setState({requiredCheckbox : {element2alh613 : event.checked == true ? (requiredCheckbox.element2alh613 || 0) + 1 : (requiredCheckbox.element2alh613 || 0) - 1 }})"
+                                                                        value="The%20Marketing%20Specialist">
+                                                                    <div class="chip-checkmark chip-checkmark-check">The
+                                                                        Marketing Specialist</div>
+                                                                </label></div>
+                                                            <div><label class="chip-select-container"><input type="checkbox"
+                                                                        name="element2alh613[]"
+                                                                        on="change:AMP.setState({requiredCheckbox : {element2alh613 : event.checked == true ? (requiredCheckbox.element2alh613 || 0) + 1 : (requiredCheckbox.element2alh613 || 0) - 1 }})"
+                                                                        value="The%20Well-Traveled%20Reader">
+                                                                    <div class="chip-checkmark chip-checkmark-check">The
+                                                                        Well-Traveled Reader</div>
+                                                                </label></div>
+                                                            <div><label class="chip-select-container"><input type="checkbox"
+                                                                        name="element2alh613[]"
+                                                                        on="change:AMP.setState({requiredCheckbox : {element2alh613 : event.checked == true ? (requiredCheckbox.element2alh613 || 0) + 1 : (requiredCheckbox.element2alh613 || 0) - 1 }})"
+                                                                        value="The%20Political%20Analyst">
+                                                                    <div class="chip-checkmark chip-checkmark-check">The
+                                                                        Political Analyst</div>
+                                                                </label></div>
+                                                            <div><label class="chip-select-container"><input type="checkbox"
+                                                                        name="element2alh613[]"
+                                                                        on="change:AMP.setState({requiredCheckbox : {element2alh613 : event.checked == true ? (requiredCheckbox.element2alh613 || 0) + 1 : (requiredCheckbox.element2alh613 || 0) - 1 }})"
+                                                                        value="The%20Education%20Professor">
+                                                                    <div class="chip-checkmark chip-checkmark-check">The
+                                                                        Education Professor</div>
+                                                                </label></div>
+                                                            <div><label class="chip-select-container"><input type="checkbox"
+                                                                        name="element2alh613[]"
+                                                                        on="change:AMP.setState({requiredCheckbox : {element2alh613 : event.checked == true ? (requiredCheckbox.element2alh613 || 0) + 1 : (requiredCheckbox.element2alh613 || 0) - 1 }})"
+                                                                        value="The%20Creative%20Scientist">
+                                                                    <div class="chip-checkmark chip-checkmark-check">The
+                                                                        Creative Scientist</div>
+                                                                </label></div>
+                                                            <div><label class="chip-select-container"><input type="checkbox"
+                                                                        name="element2alh613[]"
+                                                                        on="change:AMP.setState({requiredCheckbox : {element2alh613 : event.checked == true ? (requiredCheckbox.element2alh613 || 0) + 1 : (requiredCheckbox.element2alh613 || 0) - 1 }})"
+                                                                        value="The%20Vegan%20Environmentalist">
+                                                                    <div class="chip-checkmark chip-checkmark-check">The Vegan
+                                                                        Environmentalist</div>
+                                                                </label></div>
+                                                            <div><label class="chip-select-container"><input type="checkbox"
+                                                                        name="element2alh613[]"
+                                                                        on="change:AMP.setState({requiredCheckbox : {element2alh613 : event.checked == true ? (requiredCheckbox.element2alh613 || 0) + 1 : (requiredCheckbox.element2alh613 || 0) - 1 }})"
+                                                                        value="The%20Lifelong%20Educator">
+                                                                    <div class="chip-checkmark chip-checkmark-check">The
+                                                                        Lifelong Educator</div>
+                                                                </label></div>
+                                                            <div><label class="chip-select-container"><input type="checkbox"
+                                                                        name="element2alh613[]"
+                                                                        on="change:AMP.setState({requiredCheckbox : {element2alh613 : event.checked == true ? (requiredCheckbox.element2alh613 || 0) + 1 : (requiredCheckbox.element2alh613 || 0) - 1 }})"
+                                                                        value="The%20Poker-Playing%20Writer">
+                                                                    <div class="chip-checkmark chip-checkmark-check">The
+                                                                        Poker-Playing Writer</div>
+                                                                </label></div>
+                                                            <div><label class="chip-select-container"><input type="checkbox"
+                                                                        name="element2alh613[]"
+                                                                        on="change:AMP.setState({requiredCheckbox : {element2alh613 : event.checked == true ? (requiredCheckbox.element2alh613 || 0) + 1 : (requiredCheckbox.element2alh613 || 0) - 1 }})"
+                                                                        value="The%20Intellectual%20Linguist">
+                                                                    <div class="chip-checkmark chip-checkmark-check">The
+                                                                        Intellectual Linguist</div>
+                                                                </label></div>
+                                                            <div><label class="chip-select-container"><input type="checkbox"
+                                                                        name="element2alh613[]"
+                                                                        on="change:AMP.setState({requiredCheckbox : {element2alh613 : event.checked == true ? (requiredCheckbox.element2alh613 || 0) + 1 : (requiredCheckbox.element2alh613 || 0) - 1 }})"
+                                                                        value="The%20Relaxing%20Admissions%20Counselor">
+                                                                    <div class="chip-checkmark chip-checkmark-check">The
+                                                                        Relaxing Admissions Counselor</div>
+                                                                </label></div>
+                                                            <div><label class="chip-select-container"><input type="checkbox"
+                                                                        name="element2alh613[]"
+                                                                        on="change:AMP.setState({requiredCheckbox : {element2alh613 : event.checked == true ? (requiredCheckbox.element2alh613 || 0) + 1 : (requiredCheckbox.element2alh613 || 0) - 1 }})"
+                                                                        value="The%20Fulbright%20Activist">
+                                                                    <div class="chip-checkmark chip-checkmark-check">The
+                                                                        Fulbright Activist</div>
+                                                                </label></div>
+                                                            <div><label class="chip-select-container"><input type="checkbox"
+                                                                        name="element2alh613[]"
+                                                                        on="change:AMP.setState({requiredCheckbox : {element2alh613 : event.checked == true ? (requiredCheckbox.element2alh613 || 0) + 1 : (requiredCheckbox.element2alh613 || 0) - 1 }})"
+                                                                        value="The%20Developmental%20Economist">
+                                                                    <div class="chip-checkmark chip-checkmark-check">The
+                                                                        Developmental Economist</div>
+                                                                </label></div>
+                                                            <div><label class="chip-select-container"><input type="checkbox"
+                                                                        name="element2alh613[]"
+                                                                        on="change:AMP.setState({requiredCheckbox : {element2alh613 : event.checked == true ? (requiredCheckbox.element2alh613 || 0) + 1 : (requiredCheckbox.element2alh613 || 0) - 1 }})"
+                                                                        value="The%20Underserved%20Teacher">
+                                                                    <div class="chip-checkmark chip-checkmark-check">The
+                                                                        Underserved Teacher</div>
+                                                                </label></div>
+                                                            <div><label class="chip-select-container"><input type="checkbox"
+                                                                        name="element2alh613[]"
+                                                                        on="change:AMP.setState({requiredCheckbox : {element2alh613 : event.checked == true ? (requiredCheckbox.element2alh613 || 0) + 1 : (requiredCheckbox.element2alh613 || 0) - 1 }})"
+                                                                        value="The%20Reflective%20Story-Teller">
+                                                                    <div class="chip-checkmark chip-checkmark-check">The
+                                                                        Reflective Story-Teller</div>
+                                                                </label></div>
+                                                            <div><label class="chip-select-container"><input type="checkbox"
+                                                                        name="element2alh613[]"
+                                                                        on="change:AMP.setState({requiredCheckbox : {element2alh613 : event.checked == true ? (requiredCheckbox.element2alh613 || 0) + 1 : (requiredCheckbox.element2alh613 || 0) - 1 }})"
+                                                                        value="The%20Passionate%20Medic">
+                                                                    <div class="chip-checkmark chip-checkmark-check">The
+                                                                        Passionate Medic</div>
+                                                                </label></div>
+                                                            <div><label class="chip-select-container"><input type="checkbox"
+                                                                        name="element2alh613[]"
+                                                                        on="change:AMP.setState({requiredCheckbox : {element2alh613 : event.checked == true ? (requiredCheckbox.element2alh613 || 0) + 1 : (requiredCheckbox.element2alh613 || 0) - 1 }})"
+                                                                        value="The%20Poetic%20Entrepreneur">
+                                                                    <div class="chip-checkmark chip-checkmark-check">The Poetic
+                                                                        Entrepreneur</div>
+                                                                </label></div>
+                                                            <div><label class="chip-select-container"><input type="checkbox"
+                                                                        name="element2alh613[]"
+                                                                        on="change:AMP.setState({requiredCheckbox : {element2alh613 : event.checked == true ? (requiredCheckbox.element2alh613 || 0) + 1 : (requiredCheckbox.element2alh613 || 0) - 1 }})"
+                                                                        value="The%20Television%20Writer">
+                                                                    <div class="chip-checkmark chip-checkmark-check">The
+                                                                        Television Writer</div>
+                                                                </label></div>
+                                                            <div><label class="chip-select-container"><input type="checkbox"
+                                                                        name="element2alh613[]"
+                                                                        on="change:AMP.setState({requiredCheckbox : {element2alh613 : event.checked == true ? (requiredCheckbox.element2alh613 || 0) + 1 : (requiredCheckbox.element2alh613 || 0) - 1 }})"
+                                                                        value="The%20Financial%20Guru">
+                                                                    <div class="chip-checkmark chip-checkmark-check">The
+                                                                        Financial Guru</div>
+                                                                </label></div>
+                                                            <div><label class="chip-select-container"><input type="checkbox"
+                                                                        name="element2alh613[]"
+                                                                        on="change:AMP.setState({requiredCheckbox : {element2alh613 : event.checked == true ? (requiredCheckbox.element2alh613 || 0) + 1 : (requiredCheckbox.element2alh613 || 0) - 1 }})"
+                                                                        value="The%20Almost%20Doctor">
+                                                                    <div class="chip-checkmark chip-checkmark-check">The Almost
+                                                                        Doctor</div>
+                                                                </label></div>
+                                                            <div><label class="chip-select-container"><input type="checkbox"
+                                                                        name="element2alh613[]"
+                                                                        on="change:AMP.setState({requiredCheckbox : {element2alh613 : event.checked == true ? (requiredCheckbox.element2alh613 || 0) + 1 : (requiredCheckbox.element2alh613 || 0) - 1 }})"
+                                                                        value="The%20Traveling%20Teacher">
+                                                                    <div class="chip-checkmark chip-checkmark-check">The
+                                                                        Traveling Teacher</div>
+                                                                </label></div>
+                                                            <div><label class="chip-select-container"><input type="checkbox"
+                                                                        name="element2alh613[]"
+                                                                        on="change:AMP.setState({requiredCheckbox : {element2alh613 : event.checked == true ? (requiredCheckbox.element2alh613 || 0) + 1 : (requiredCheckbox.element2alh613 || 0) - 1 }})"
+                                                                        value="The%20Storytelling%20Musician">
+                                                                    <div class="chip-checkmark chip-checkmark-check">The
+                                                                        Storytelling Musician</div>
+                                                                </label></div>
+                                                            <div><label class="chip-select-container"><input type="checkbox"
+                                                                        name="element2alh613[]"
+                                                                        on="change:AMP.setState({requiredCheckbox : {element2alh613 : event.checked == true ? (requiredCheckbox.element2alh613 || 0) + 1 : (requiredCheckbox.element2alh613 || 0) - 1 }})"
+                                                                        value="The%20Teaching%20Economist">
+                                                                    <div class="chip-checkmark chip-checkmark-check">The
+                                                                        Teaching Economist</div>
+                                                                </label></div>
+                                                            <div><label class="chip-select-container"><input type="checkbox"
+                                                                        name="element2alh613[]"
+                                                                        on="change:AMP.setState({requiredCheckbox : {element2alh613 : event.checked == true ? (requiredCheckbox.element2alh613 || 0) + 1 : (requiredCheckbox.element2alh613 || 0) - 1 }})"
+                                                                        value="The%20Teaching%20Attorney">
+                                                                    <div class="chip-checkmark chip-checkmark-check">The
+                                                                        Teaching Attorney</div>
+                                                                </label></div>
+                                                            <div><label class="chip-select-container"><input type="checkbox"
+                                                                        name="element2alh613[]"
+                                                                        on="change:AMP.setState({requiredCheckbox : {element2alh613 : event.checked == true ? (requiredCheckbox.element2alh613 || 0) + 1 : (requiredCheckbox.element2alh613 || 0) - 1 }})"
+                                                                        value="The%20Detail-Oriented%20Yogi">
+                                                                    <div class="chip-checkmark chip-checkmark-check">The
+                                                                        Detail-Oriented Yogi</div>
+                                                                </label></div>
+                                                            <div><label class="chip-select-container"><input type="checkbox"
+                                                                        name="element2alh613[]"
+                                                                        on="change:AMP.setState({requiredCheckbox : {element2alh613 : event.checked == true ? (requiredCheckbox.element2alh613 || 0) + 1 : (requiredCheckbox.element2alh613 || 0) - 1 }})"
+                                                                        value="The%20Sports-Loving%20Pharmacist">
+                                                                    <div class="chip-checkmark chip-checkmark-check">The
+                                                                        Sports-Loving Pharmacist</div>
+                                                                </label></div>
+                                                            <div><label class="chip-select-container"><input type="checkbox"
+                                                                        name="element2alh613[]"
+                                                                        on="change:AMP.setState({requiredCheckbox : {element2alh613 : event.checked == true ? (requiredCheckbox.element2alh613 || 0) + 1 : (requiredCheckbox.element2alh613 || 0) - 1 }})"
+                                                                        value="The%20Scientific-Minded%20Chef">
+                                                                    <div class="chip-checkmark chip-checkmark-check">The
+                                                                        Scientific-Minded Chef</div>
+                                                                </label></div>
+                                                            <div><label class="chip-select-container"><input type="checkbox"
+                                                                        name="element2alh613[]"
+                                                                        on="change:AMP.setState({requiredCheckbox : {element2alh613 : event.checked == true ? (requiredCheckbox.element2alh613 || 0) + 1 : (requiredCheckbox.element2alh613 || 0) - 1 }})"
+                                                                        value="The%20Standardized-Testing%20Sage">
+                                                                    <div class="chip-checkmark chip-checkmark-check">The
+                                                                        Standardized-Testing Sage</div>
+                                                                </label></div>
+                                                            <div><label class="chip-select-container"><input type="checkbox"
+                                                                        name="element2alh613[]"
+                                                                        on="change:AMP.setState({requiredCheckbox : {element2alh613 : event.checked == true ? (requiredCheckbox.element2alh613 || 0) + 1 : (requiredCheckbox.element2alh613 || 0) - 1 }})"
+                                                                        value="The%20Water%20Dancer">
+                                                                    <div class="chip-checkmark chip-checkmark-check">The Water
+                                                                        Dancer</div>
+                                                                </label></div>
+                                                            <div><label class="chip-select-container"><input type="checkbox"
+                                                                        name="element2alh613[]"
+                                                                        on="change:AMP.setState({requiredCheckbox : {element2alh613 : event.checked == true ? (requiredCheckbox.element2alh613 || 0) + 1 : (requiredCheckbox.element2alh613 || 0) - 1 }})"
+                                                                        value="The%20International%20Educator">
+                                                                    <div class="chip-checkmark chip-checkmark-check">The
+                                                                        International Educator</div>
+                                                                </label></div>
+                                                            <div><label class="chip-select-container"><input type="checkbox"
+                                                                        name="element2alh613[]"
+                                                                        on="change:AMP.setState({requiredCheckbox : {element2alh613 : event.checked == true ? (requiredCheckbox.element2alh613 || 0) + 1 : (requiredCheckbox.element2alh613 || 0) - 1 }})"
+                                                                        value="The%20Animal-Loving%20Writer">
+                                                                    <div class="chip-checkmark chip-checkmark-check">The
+                                                                        Animal-Loving Writer</div>
+                                                                </label></div>
+                                                            <div><label class="chip-select-container"><input type="checkbox"
+                                                                        name="element2alh613[]"
+                                                                        on="change:AMP.setState({requiredCheckbox : {element2alh613 : event.checked == true ? (requiredCheckbox.element2alh613 || 0) + 1 : (requiredCheckbox.element2alh613 || 0) - 1 }})"
+                                                                        value="The%20Socially%20Conscious%20Psychologist">
+                                                                    <div class="chip-checkmark chip-checkmark-check">The
+                                                                        Socially Conscious Psychologist</div>
+                                                                </label></div>
+                                                            <div><label class="chip-select-container"><input type="checkbox"
+                                                                        name="element2alh613[]"
+                                                                        on="change:AMP.setState({requiredCheckbox : {element2alh613 : event.checked == true ? (requiredCheckbox.element2alh613 || 0) + 1 : (requiredCheckbox.element2alh613 || 0) - 1 }})"
+                                                                        value="The%20Reliable%20Explorer">
+                                                                    <div class="chip-checkmark chip-checkmark-check">The
+                                                                        Reliable Explorer</div>
+                                                                </label></div>
+                                                            <div><label class="chip-select-container"><input type="checkbox"
+                                                                        name="element2alh613[]"
+                                                                        on="change:AMP.setState({requiredCheckbox : {element2alh613 : event.checked == true ? (requiredCheckbox.element2alh613 || 0) + 1 : (requiredCheckbox.element2alh613 || 0) - 1 }})"
+                                                                        value="The%20Athletic%20Public%20Servant">
+                                                                    <div class="chip-checkmark chip-checkmark-check">The
+                                                                        Athletic Public Servant</div>
+                                                                </label></div>
+                                                            <div><label class="chip-select-container"><input type="checkbox"
+                                                                        name="element2alh613[]"
+                                                                        on="change:AMP.setState({requiredCheckbox : {element2alh613 : event.checked == true ? (requiredCheckbox.element2alh613 || 0) + 1 : (requiredCheckbox.element2alh613 || 0) - 1 }})"
+                                                                        value="The%20Egalitarian%20Medical%20Student">
+                                                                    <div class="chip-checkmark chip-checkmark-check">The
+                                                                        Egalitarian Medical Student</div>
+                                                                </label></div>
+                                                            <div><label class="chip-select-container"><input type="checkbox"
+                                                                        name="element2alh613[]"
+                                                                        on="change:AMP.setState({requiredCheckbox : {element2alh613 : event.checked == true ? (requiredCheckbox.element2alh613 || 0) + 1 : (requiredCheckbox.element2alh613 || 0) - 1 }})"
+                                                                        value="The%20Gentleman%20Scholar">
+                                                                    <div class="chip-checkmark chip-checkmark-check">The
+                                                                        Gentleman Scholar</div>
+                                                                </label></div><input hidden name="element2alh613[]">
+                                                        </div>
+                                                        <div visible-when-invalid="valueMissing"
+                                                            style="font-size:13px;padding-top:4px"
+                                                            validation-for="element2alh613">This field is required</div>
+                                                    </div>
+                                                    <input hidden id="fuuid" name="fuuid" [value]="formekme52.fuuid"> <input
+                                                    hidden id="next-step-id" name="next-step-id"
+                                                    [value]="&apos;stepe2byy2&apos;"> <input hidden id="total-steps"
+                                                    name="total-steps" value="3">
+                                                <div class="navigation-button-wrapper"><button class="button previous-button"
+                                                        type="button" hidden [hidden]="formekme52.formHistory.length&lt;=0" on="tap:AMP.setState({formekme52:{currentStep:formekme52.formHistory[formekme52.formHistory.length-1], 
+                                      formHistory: formekme52.formHistory.splice(formekme52.formHistory.length-1,1)
+                                  }})">Previous</button> <button class="button" type="submit">
+                                                        <p>Next</p>
+                                                    </button></div>
+                                                  </div>
+                                                </section>
+                                              </amp-accordion>
+                                            <!-- <div class="question">
+                                                <p><span style="color:#060606;font-size:20px">Please select 5
+                                                        mentors</span>*</p>
+                                            </div> -->
+                                          
+                                        </div>
+                                    
+                                    </div>
+                                </form>
+                                <form class="formekme52" style="display:flex;flex-direction:column" method="post"
+                                    custom-validation-reporting="show-all-on-submit"
+                                    on="submit-success:AMP.setState({formekme52:{currentStep: &apos;success&apos;}})"
+                                    action-xhr="https://tracker-uat.mailmodo.email//submissions/d/11ebf073-22b9-429c-a55d-85ffa56e8882/ca256f1b-a4d3-4385-a0ae-17606e41592f?sender=#~mailmodo-email-sender~#&amp;formId=formekme52">
+                                    <div class="overall screen current_screen" style="box-sizing:border-box" hidden
+                                        [hidden]="formekme52.currentStep != &apos;stepe2byy2&apos;">
+                                        <div>
+                                            <div class="answer">
+                                                <div class="question form-text"
+                                                    style="padding-left:0;padding-right:0;padding-top:0;padding-bottom:4px;box-sizing:border-box">
+                                                    <p><span style="color:#1b2631;font-size:24px"><strong>Simple
+                                                                Form</strong></span></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="answer">
+                                                <div class="question form-text"
+                                                    style="padding-left:0;padding-right:0;padding-top:0;padding-bottom:32px;box-sizing:border-box">
+                                                    <p><span style="color:#84919e">Format the text by simply selecting a
+                                                            part of it or the whole text.</span></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="element-wrapper">
+                                            <div class="question">
+                                                <p>Select your preferred category</p>
+                                            </div>
+                                            <div class="answer">
+                                                <div class="option-container">
+                                                    <div><label class="select-container"><input type="checkbox"
+                                                                name="elementtl4d87[]"
+                                                                on="change:AMP.setState({requiredCheckbox : {elementtl4d87 : event.checked == true ? (requiredCheckbox.elementtl4d87 || 0) + 1 : (requiredCheckbox.elementtl4d87 || 0) - 1 }})"
+                                                                value="Category%201">
+                                                            <div class="checkmark checkmark-check">
+                                                                <div></div>
+                                                            </div>Category 1
+                                                        </label></div>
+                                                    <div><label class="select-container"><input type="checkbox"
+                                                                name="elementtl4d87[]"
+                                                                on="change:AMP.setState({requiredCheckbox : {elementtl4d87 : event.checked == true ? (requiredCheckbox.elementtl4d87 || 0) + 1 : (requiredCheckbox.elementtl4d87 || 0) - 1 }})"
+                                                                value="Category%202">
+                                                            <div class="checkmark checkmark-check">
+                                                                <div></div>
+                                                            </div>Category 2
+                                                        </label></div>
+                                                    <div><label class="select-container"><input type="checkbox"
+                                                                name="elementtl4d87[]"
+                                                                on="change:AMP.setState({requiredCheckbox : {elementtl4d87 : event.checked == true ? (requiredCheckbox.elementtl4d87 || 0) + 1 : (requiredCheckbox.elementtl4d87 || 0) - 1 }})"
+                                                                value="Category%203">
+                                                            <div class="checkmark checkmark-check">
+                                                                <div></div>
+                                                            </div>Category 3
+                                                        </label></div>
+                                                    <div><label class="select-container"><input type="checkbox"
+                                                                name="elementtl4d87[]"
+                                                                on="change:AMP.setState({requiredCheckbox : {elementtl4d87 : event.checked == true ? (requiredCheckbox.elementtl4d87 || 0) + 1 : (requiredCheckbox.elementtl4d87 || 0) - 1 }})"
+                                                                value="Category%204">
+                                                            <div class="checkmark checkmark-check">
+                                                                <div></div>
+                                                            </div>Category 4
+                                                        </label></div><input hidden name="elementtl4d87[]">
+                                                </div>
+                                            </div>
+                                        </div><input hidden id="fuuid" name="fuuid" [value]="formekme52.fuuid"> <input
+                                            hidden id="next-step-id" name="next-step-id" [value]="&apos;success&apos;">
+                                        <input hidden id="total-steps" name="total-steps" value="3">
+                                        <div class="navigation-button-wrapper"><button class="button previous-button"
+                                                type="button" hidden [hidden]="formekme52.formHistory.length&lt;=0" on="tap:AMP.setState({formekme52:{currentStep:formekme52.formHistory[formekme52.formHistory.length-1], 
+                              formHistory: formekme52.formHistory.splice(formekme52.formHistory.length-1,1)
+                          }})">Previous</button> <button class="button" type="submit">Submit</button></div>
+                                    </div>
+                                    <div style="text-align:center;font-size:16px"
+                                        [hidden]="((&apos;success&apos;) != &apos;success&apos; || (formekme52.currentStep == &apos;stepe2byy2&apos; &amp;&amp; &apos;success&apos; != &apos;success&apos;))">
+                                        <div submitting class="overall question"
+                                            style="width:auto;font-size:16px;border:0">
+                                            <p style="text-align:center">Form submitting... Thank you for waiting.</p>
+                                        </div>
+                                        <div submit-success>
+                                            <div class="overall question" style="width:auto;font-size:16px">
+                                                <p style="text-align:center">Thank you for submitting the form</p>
+                                                <div style="display:flex;justify-content:center"><button class="button"
+                                                        type="button" style="cursor:pointer">Know more</button></div>
+                                            </div>
+                                        </div>
+                                        <div submit-error><template type="amp-mustache">
+                                                <div class="overall question"
+                                                    style="width:auto;text-align:center;font-size:16px;border:0">Your
+                                                    form submission has failed. Please try again.</div>
+                                            </template></div>
+                                    </div>
+                                </form>
+                            </div>
+                            <!--[if mso | IE]></table><![endif]-->
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <!--[if mso | IE]></td></tr></table><![endif]-->
+    </div>
+    <table width="100%" align="center">
+        <tbody>
+            <tr>
+                <td width="100%" align="center">
+                    <a style="margin-left: auto; margin-right: auto; color: grey; font-size: 10px; text-decoration: underline;"
+                        href="https://api-uat.mailmodo.com/editor/redirect?url=https%3A%2F%2Ftracker-uat.mailmodo.email%2F%2Funsubscribes%2Famp%2Ftest%2F1">Click
+                        here to unsubscribe</a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>

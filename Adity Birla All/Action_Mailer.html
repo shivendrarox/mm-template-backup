@@ -1,0 +1,3078 @@
+<!DOCTYPE html>
+<html amp4email>
+
+<head>
+    <meta charset="utf-8">
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+    <style amp4email-boilerplate>
+        body {
+            visibility: hidden
+        }
+    </style>
+    <style amp-custom>
+        @media only screen and (min-width:480px) {
+            .mj-column-per-100 {
+                width: 100%;
+                max-width: 100%
+            }
+        }
+
+        @media only screen and (max-width:480px) {
+            table.mj-full-width-mobile {
+                width: 100%
+            }
+
+            td.mj-full-width-mobile {
+                width: auto
+            }
+        }
+
+        div p {
+            margin: 0 0
+        }
+
+        false h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            margin: 0
+        }
+
+        ol {
+            margin-top: 0;
+            margin-bottom: 0
+        }
+
+        figure.table {
+            margin: 0
+        }
+
+        figure.table table {
+            width: 100%
+        }
+
+        figure.table table td,
+        figure.table table th {
+            min-width: 2em;
+            padding: .4em;
+            border: 1px solid #bfbfbf
+        }
+
+        .hide-on-desktop {
+            display: none
+        }
+
+        @media screen and (max-width:480px) {
+            .hide-on-desktop {
+                display: revert
+            }
+
+            .hide-on-mobile {
+                display: none
+            }
+
+            .mj-sa-column-per-10 {
+                width: 15%
+            }
+
+            .mj-sa-column-per-70 {
+                width: 65%
+            }
+        }
+
+        .rating-wrapper label input {
+            opacity: 0;
+            position: absolute;
+            margin: 0
+        }
+
+        .rating-wrapper label span {
+            display: inline-block
+        }
+
+        .emoji-wrapper label input:checked~span {
+            font-size: 40px
+        }
+
+        .emoji-wrapper label span {
+            font-size: 30px;
+            margin: 0 5px
+        }
+
+        @media screen and (min-width:500px) {
+            #date-time>.input-style {
+                width: 40%
+            }
+
+            .ratingText {
+                font-size: 35px
+            }
+        }
+
+        @media screen and (max-width:500px) {
+            #date-time {
+                flex-direction: column
+            }
+
+            #date-time>.input-style {
+                margin-bottom: 10px;
+                box-sizing: border-box
+            }
+
+            .ratingText {
+                font-size: 30px
+            }
+
+            .amp-form-block .navigation-button-wrapper .button {
+                width: auto
+            }
+        }
+
+        .navigation-button-wrapper {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            margin: 0 auto
+        }
+
+        .navigation-button-wrapper>button {
+            cursor: pointer
+        }
+
+        .formljpiu57-wrapper .input-style {
+            color: #1e293b;
+            background-color: transparent;
+            font-family: Helvetica;
+            font-size: inherit;
+            width: 100%;
+            border-width: 1px;
+            border-style: solid;
+            border-color: #cbd5e1;
+            border-radius: 0;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left: 12px;
+            padding-right: 12px;
+            line-height: 1.5;
+            align-self: flex-start;
+            align: left
+        }
+
+        .formljpiu57-wrapper .input-outer {
+            padding-top: undefined;
+            padding-bottom: undefined;
+            padding-left: undefined;
+            padding-right: undefined
+        }
+
+        .formljpiu57-wrapper .phone-style {
+            align-self: auto
+        }
+
+        .formljpiu57-wrapper .textarea-style {
+            height: 100px;
+            align-self: flex-start;
+            align: left
+        }
+
+        .formljpiu57-wrapper .option-container {
+            text-align: center
+        }
+
+        .formljpiu57-wrapper .option-container>div:last-child .select-container {
+            margin-bottom: 0
+        }
+
+        .formljpiu57-wrapper .chip-option-container {
+            justify-content: center;
+            display: flex;
+            flex-wrap: wrap
+        }
+
+        .formljpiu57-wrapper .select-container {
+            display: inline-flex;
+            align-items: center;
+            position: relative;
+            margin-bottom: 16px;
+            margin-top: 0;
+            margin-left: 0;
+            cursor: pointer;
+            font-size: inherit;
+            font-weight: 0;
+            font-style: none;
+            text-decoration: none
+        }
+
+        .formljpiu57-wrapper .chip-select-container {
+            display: flex;
+            flex-wrap: wrap;
+            position: relative;
+            margin-bottom: 16px;
+            margin-top: 0;
+            margin-left: 0;
+            cursor: pointer;
+            font-size: inherit
+        }
+
+        .formljpiu57-wrapper .select-container input {
+            display: none
+        }
+
+        .formljpiu57-wrapper .chip-select-container input {
+            display: none
+        }
+
+        .formljpiu57-wrapper .checkmark {
+            height: 25px;
+            width: 25px;
+            margin-right: 4px;
+            background-color: #f1f5f9;
+            transform: scale(.8);
+            flex-shrink: 0
+        }
+
+        .formljpiu57-wrapper .chip-checkmark {
+            margin-right: 4px;
+            background-color: #f1f5f9;
+            transform: scale('1');
+            padding: 8px 21px;
+            font-weight: 0;
+            border-radius: 24px;
+            line-height: normal
+        }
+
+        .formljpiu57-wrapper .select-container:hover input~.checkmark {
+            box-shadow: 0 0 0 2px #5c55e7
+        }
+
+        .formljpiu57-wrapper .chip-select-container:hover input~.chip-checkmark {
+            box-shadow: 0 0 0 2px #5c55e7
+        }
+
+        .formljpiu57-wrapper .select-container input:checked~.checkmark {
+            background-color: #5c55e7
+        }
+
+        .formljpiu57-wrapper .chip-select-container input:checked~.chip-checkmark {
+            background-color: #5c55e7;
+            color: #fff
+        }
+
+        .formljpiu57-wrapper .checkmark div {
+            content: "";
+            position: absolute;
+            display: none
+        }
+
+        .formljpiu57-wrapper .select-container input:checked~.checkmark div {
+            display: block
+        }
+
+        .formljpiu57-wrapper .select-container .checkmark-check div {
+            left: 9px;
+            top: 5px;
+            width: 5px;
+            height: 10px;
+            border: solid #fff;
+            border-width: 0 3px 3px 0;
+            transform: rotate(45deg)
+        }
+
+        .formljpiu57-wrapper .checkmark-radio {
+            border-radius: 50%
+        }
+
+        .formljpiu57-wrapper .select-container .checkmark-radio div {
+            top: 50%;
+            left: 50%;
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: #fff;
+            transform: translate(-50%, -50%)
+        }
+
+        .formljpiu57-wrapper .nps-wrapper,
+        .rating-wrapper {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap
+        }
+
+        .formljpiu57-wrapper .emoji-wrapper {
+            height: 50px;
+            display: flex;
+            align-items: center;
+            line-height: 1.5;
+            margin-bottom: 16px;
+            margin-top: 0;
+            margin-left: 0
+        }
+
+        .formljpiu57-wrapper .emoji-wrapper label {
+            margin-right: 4px
+        }
+
+        .formljpiu57-wrapper .nps-wrapper label {
+            color: #1e293b;
+            position: relative;
+            margin: 0;
+            width: 7%;
+            height: 0;
+            padding-bottom: 7%
+        }
+
+        .formljpiu57-wrapper .nps-wrapper label input {
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            position: absolute;
+            margin: 0
+        }
+
+        .formljpiu57-wrapper .nps-wrapper label span {
+            cursor: pointer;
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 18px;
+            font-weight: 300;
+            background-color: rgb(255, 255, 255, .1);
+            border: 2px solid #f1f5f9
+        }
+
+        .formljpiu57-wrapper .nps-wrapper label input:checked~span {
+            background-color: #5c55e7;
+            color: #fff;
+            border: 2px solid #5c55e7;
+            cursor: pointer
+        }
+
+        .formljpiu57-wrapper .nps-wrapper span:hover {
+            border: 2px solid #5c55e7;
+            cursor: pointer
+        }
+
+        @media screen and (max-width:500px) {
+            .formljpiu57-wrapper .nps-wrapper label {
+                width: 8%;
+                padding-bottom: 8%
+            }
+
+            .formljpiu57-wrapper .nps-wrapper label span {
+                font-size: 14px
+            }
+
+            .formljpiu57-wrapper .nps-wrapper,
+            .rating-wrapper {
+                margin-left: 0;
+                margin-right: 0
+            }
+        }
+
+        .formljpiu57-wrapper .question {
+            padding-top: 0;
+            padding-bottom: 10px;
+            padding-left: 0;
+            padding-right: 0;
+            font-size: 14px;
+            line-height: 1.5;
+            letter-spacing: 0;
+            align-self: center;
+            align: center;
+            color: #1e293b;
+            width: auto;
+            element-padding-top: 0;
+            element-padding-bottom: 10px;
+            font-weight: 700;
+            background-color: #fff
+        }
+
+        .formljpiu57-wrapper .question {
+            text-align: center
+        }
+
+        .formljpiu57-wrapper div[submit-error] .overall.question p,
+        .formljpiu57-wrapper div[submit-success] .overall.question p,
+        .formljpiu57-wrapper div[submitting] p {
+            display: block
+        }
+
+        .formljpiu57-wrapper .overall>.element-wrapper {
+            padding-top: 0;
+            padding-bottom: 10px;
+            padding-left: undefined;
+            padding-right: undefined
+        }
+
+        .formljpiu57-wrapper .button {
+            margin-top: 8px;
+            margin-bottom: 8px;
+            margin-left: 0;
+            margin-right: 0;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left: 16px;
+            padding-right: 16px;
+            border-width: 0;
+            border-style: solid;
+            border-color: #4b5193;
+            border-radius: 2px;
+            align-self: center;
+            background-color: #cb1e34;
+            color: #fff;
+            width: auto;
+            height: auto;
+            font-size: 16px;
+            align: center;
+            line-height: 1.5
+        }
+
+        .formljpiu57-wrapper .navigation-button-wrapper {
+            justify-content: center
+        }
+
+        .formljpiu57-wrapper .previous-button {
+            background-color: white;
+            outline: 1px solid #cb1e34;
+            color: #cb1e34;
+            margin-left: 2px;
+            margin-right: 12px
+        }
+
+        .formljpiu57-wrapper .question p {
+            display: inline-block
+        }
+
+        .formljpiu57-wrapper .answer>.question>p {
+            display: block
+        }
+
+        .formljpiu57-wrapper .nps-styling {
+            pre-color: #eee;
+            hover-color: #ccc;
+            checked-color: #2196f3
+        }
+
+        .formljpiu57-wrapper .form-text {
+            color: #1e293b;
+            font-size: 14px;
+            line-height: 1.5
+        }
+
+        .formljpiu57-wrapper .overall {
+            background-color: #fff;
+            width: 100%;
+            border-color: #f2f2fd;
+            border-radius: 2px;
+            border-width: 0;
+            border-style: solid;
+            font-family: Helvetica;
+            letter-spacing: 0;
+            align-self: center;
+            font-size: 14px;
+            padding-top: 0;
+            padding-bottom: 10px;
+            padding-left: 0;
+            padding-right: 0;
+            over-all-color: #4b5193;
+            color: #1e293b;
+            align: center
+        }
+
+        .formljpiu57-wrapper {
+            word-break: break-word
+        }
+
+        .formljpiu57-wrapper .text-style {
+            color: #64748b;
+            font-size: 14px;
+            line-height: 1.5
+        }
+
+        .rating-wrapper label input {
+            opacity: 0;
+            position: absolute;
+            margin: 0
+        }
+
+        .rating-wrapper label span {
+            display: inline-block
+        }
+
+        .emoji-wrapper label input:checked~span {
+            font-size: 40px
+        }
+
+        .emoji-wrapper label span {
+            font-size: 30px;
+            margin: 0 5px
+        }
+
+        @media screen and (min-width:500px) {
+            #date-time>.input-style {
+                width: 40%
+            }
+
+            .ratingText {
+                font-size: 35px
+            }
+        }
+
+        @media screen and (max-width:500px) {
+            #date-time {
+                flex-direction: column
+            }
+
+            #date-time>.input-style {
+                margin-bottom: 10px;
+                box-sizing: border-box
+            }
+
+            .ratingText {
+                font-size: 30px
+            }
+
+            .amp-form-block .navigation-button-wrapper .button {
+                width: auto
+            }
+        }
+
+        .navigation-button-wrapper {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            margin: 0 auto
+        }
+
+        .navigation-button-wrapper>button {
+            cursor: pointer
+        }
+
+        .formm5p1n16-wrapper .input-style {
+            color: #1e293b;
+            background-color: transparent;
+            font-family: Helvetica;
+            font-size: inherit;
+            width: 100%;
+            border-width: 1px;
+            border-style: solid;
+            border-color: #cbd5e1;
+            border-radius: 0;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left: 12px;
+            padding-right: 12px;
+            line-height: 1.5;
+            align-self: flex-start;
+            align: left
+        }
+
+        .formm5p1n16-wrapper .input-outer {
+            padding-top: undefined;
+            padding-bottom: undefined;
+            padding-left: undefined;
+            padding-right: undefined
+        }
+
+        .formm5p1n16-wrapper .phone-style {
+            align-self: auto
+        }
+
+        .formm5p1n16-wrapper .textarea-style {
+            height: 100px;
+            align-self: flex-start;
+            align: left
+        }
+
+        .formm5p1n16-wrapper .option-container {
+            text-align: center
+        }
+
+        .formm5p1n16-wrapper .option-container>div:last-child .select-container {
+            margin-bottom: 0
+        }
+
+        .formm5p1n16-wrapper .chip-option-container {
+            justify-content: center;
+            display: flex;
+            flex-wrap: wrap
+        }
+
+        .formm5p1n16-wrapper .select-container {
+            display: inline-flex;
+            align-items: center;
+            position: relative;
+            margin-bottom: 16px;
+            margin-top: 0;
+            margin-left: 0;
+            cursor: pointer;
+            font-size: inherit;
+            font-weight: 0;
+            font-style: none;
+            text-decoration: none
+        }
+
+        .formm5p1n16-wrapper .chip-select-container {
+            display: flex;
+            flex-wrap: wrap;
+            position: relative;
+            margin-bottom: 16px;
+            margin-top: 0;
+            margin-left: 0;
+            cursor: pointer;
+            font-size: inherit
+        }
+
+        .formm5p1n16-wrapper .select-container input {
+            display: none
+        }
+
+        .formm5p1n16-wrapper .chip-select-container input {
+            display: none
+        }
+
+        .formm5p1n16-wrapper .checkmark {
+            height: 25px;
+            width: 25px;
+            margin-right: 4px;
+            background-color: #f1f5f9;
+            transform: scale(.8);
+            flex-shrink: 0
+        }
+
+        .formm5p1n16-wrapper .chip-checkmark {
+            margin-right: 4px;
+            background-color: #f1f5f9;
+            transform: scale('1');
+            padding: 8px 21px;
+            font-weight: 0;
+            border-radius: 24px;
+            line-height: normal
+        }
+
+        .formm5p1n16-wrapper .select-container:hover input~.checkmark {
+            box-shadow: 0 0 0 2px #5c55e7
+        }
+
+        .formm5p1n16-wrapper .chip-select-container:hover input~.chip-checkmark {
+            box-shadow: 0 0 0 2px #5c55e7
+        }
+
+        .formm5p1n16-wrapper .select-container input:checked~.checkmark {
+            background-color: #5c55e7
+        }
+
+        .formm5p1n16-wrapper .chip-select-container input:checked~.chip-checkmark {
+            background-color: #5c55e7;
+            color: #fff
+        }
+
+        .formm5p1n16-wrapper .checkmark div {
+            content: "";
+            position: absolute;
+            display: none
+        }
+
+        .formm5p1n16-wrapper .select-container input:checked~.checkmark div {
+            display: block
+        }
+
+        .formm5p1n16-wrapper .select-container .checkmark-check div {
+            left: 9px;
+            top: 5px;
+            width: 5px;
+            height: 10px;
+            border: solid #fff;
+            border-width: 0 3px 3px 0;
+            transform: rotate(45deg)
+        }
+
+        .formm5p1n16-wrapper .checkmark-radio {
+            border-radius: 50%
+        }
+
+        .formm5p1n16-wrapper .select-container .checkmark-radio div {
+            top: 50%;
+            left: 50%;
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: #fff;
+            transform: translate(-50%, -50%)
+        }
+
+        .formm5p1n16-wrapper .nps-wrapper,
+        .rating-wrapper {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap
+        }
+
+        .formm5p1n16-wrapper .emoji-wrapper {
+            height: 50px;
+            display: flex;
+            align-items: center;
+            line-height: 1.5;
+            margin-bottom: 16px;
+            margin-top: 0;
+            margin-left: 0
+        }
+
+        .formm5p1n16-wrapper .emoji-wrapper label {
+            margin-right: 4px
+        }
+
+        .formm5p1n16-wrapper .nps-wrapper label {
+            color: #1e293b;
+            position: relative;
+            margin: 0;
+            width: 7%;
+            height: 0;
+            padding-bottom: 7%
+        }
+
+        .formm5p1n16-wrapper .nps-wrapper label input {
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            position: absolute;
+            margin: 0
+        }
+
+        .formm5p1n16-wrapper .nps-wrapper label span {
+            cursor: pointer;
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 18px;
+            font-weight: 300;
+            background-color: rgb(255, 255, 255, .1);
+            border: 2px solid #f1f5f9
+        }
+
+        .formm5p1n16-wrapper .nps-wrapper label input:checked~span {
+            background-color: #5c55e7;
+            color: #fff;
+            border: 2px solid #5c55e7;
+            cursor: pointer
+        }
+
+        .formm5p1n16-wrapper .nps-wrapper span:hover {
+            border: 2px solid #5c55e7;
+            cursor: pointer
+        }
+
+        @media screen and (max-width:500px) {
+            .formm5p1n16-wrapper .nps-wrapper label {
+                width: 8%;
+                padding-bottom: 8%
+            }
+
+            .formm5p1n16-wrapper .nps-wrapper label span {
+                font-size: 14px
+            }
+
+            .formm5p1n16-wrapper .nps-wrapper,
+            .rating-wrapper {
+                margin-left: 0;
+                margin-right: 0
+            }
+        }
+
+        .formm5p1n16-wrapper .question {
+            padding-top: 0;
+            padding-bottom: 10px;
+            padding-left: 0;
+            padding-right: 0;
+            font-size: 14px;
+            line-height: 1.5;
+            letter-spacing: 0;
+            align-self: center;
+            align: center;
+            color: #1e293b;
+            width: auto;
+            element-padding-top: 0;
+            element-padding-bottom: 10px;
+            font-weight: 700;
+            background-color: #fff
+        }
+
+        .formm5p1n16-wrapper .question {
+            text-align: center
+        }
+
+        .formm5p1n16-wrapper div[submit-error] .overall.question p,
+        .formm5p1n16-wrapper div[submit-success] .overall.question p,
+        .formm5p1n16-wrapper div[submitting] p {
+            display: block
+        }
+
+        .formm5p1n16-wrapper .overall>.element-wrapper {
+            padding-top: 0;
+            padding-bottom: 10px;
+            padding-left: undefined;
+            padding-right: undefined
+        }
+
+        .formm5p1n16-wrapper .button {
+            margin-top: 8px;
+            margin-bottom: 8px;
+            margin-left: 0;
+            margin-right: 0;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left: 16px;
+            padding-right: 16px;
+            border-width: 0;
+            border-style: solid;
+            border-color: #4b5193;
+            border-radius: 2px;
+            align-self: center;
+            background-color: #cb1e34;
+            color: #fff;
+            width: auto;
+            height: auto;
+            font-size: 16px;
+            align: center;
+            line-height: 1.5
+        }
+
+        .formm5p1n16-wrapper .navigation-button-wrapper {
+            justify-content: center
+        }
+
+        .formm5p1n16-wrapper .previous-button {
+            background-color: white;
+            outline: 1px solid #cb1e34;
+            color: #cb1e34;
+            margin-left: 2px;
+            margin-right: 12px
+        }
+
+        .formm5p1n16-wrapper .question p {
+            display: inline-block
+        }
+
+        .formm5p1n16-wrapper .answer>.question>p {
+            display: block
+        }
+
+        .formm5p1n16-wrapper .nps-styling {
+            pre-color: #eee;
+            hover-color: #ccc;
+            checked-color: #2196f3
+        }
+
+        .formm5p1n16-wrapper .form-text {
+            color: #1e293b;
+            font-size: 14px;
+            line-height: 1.5
+        }
+
+        .formm5p1n16-wrapper .overall {
+            background-color: #fff;
+            width: 100%;
+            border-color: #f2f2fd;
+            border-radius: 2px;
+            border-width: 0;
+            border-style: solid;
+            font-family: Helvetica;
+            letter-spacing: 0;
+            align-self: center;
+            font-size: 14px;
+            padding-top: 0;
+            padding-bottom: 10px;
+            padding-left: 0;
+            padding-right: 0;
+            over-all-color: #4b5193;
+            color: #1e293b;
+            align: center
+        }
+
+        .formm5p1n16-wrapper {
+            word-break: break-word
+        }
+
+        .formm5p1n16-wrapper .text-style {
+            color: #64748b;
+            font-size: 14px;
+            line-height: 1.5
+        }
+
+        .rating-wrapper label input {
+            opacity: 0;
+            position: absolute;
+            margin: 0
+        }
+
+        .rating-wrapper label span {
+            display: inline-block
+        }
+
+        .emoji-wrapper label input:checked~span {
+            font-size: 40px
+        }
+
+        .emoji-wrapper label span {
+            font-size: 30px;
+            margin: 0 5px
+        }
+
+        @media screen and (min-width:500px) {
+            #date-time>.input-style {
+                width: 40%
+            }
+
+            .ratingText {
+                font-size: 35px
+            }
+        }
+
+        @media screen and (max-width:500px) {
+            #date-time {
+                flex-direction: column
+            }
+
+            #date-time>.input-style {
+                margin-bottom: 10px;
+                box-sizing: border-box
+            }
+
+            .ratingText {
+                font-size: 30px
+            }
+
+            .amp-form-block .navigation-button-wrapper .button {
+                width: auto
+            }
+        }
+
+        .navigation-button-wrapper {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            margin: 0 auto
+        }
+
+        .navigation-button-wrapper>button {
+            cursor: pointer
+        }
+
+        .formzd0qb59-wrapper .input-style {
+            color: #1e293b;
+            background-color: transparent;
+            font-family: Helvetica;
+            font-size: inherit;
+            width: 100%;
+            border-width: 1px;
+            border-style: solid;
+            border-color: #cbd5e1;
+            border-radius: 0;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left: 12px;
+            padding-right: 12px;
+            line-height: 1.5;
+            align-self: flex-start;
+            align: left
+        }
+
+        .formzd0qb59-wrapper .input-outer {
+            padding-top: undefined;
+            padding-bottom: undefined;
+            padding-left: undefined;
+            padding-right: undefined
+        }
+
+        .formzd0qb59-wrapper .phone-style {
+            align-self: auto
+        }
+
+        .formzd0qb59-wrapper .textarea-style {
+            height: 100px;
+            align-self: flex-start;
+            align: left
+        }
+
+        .formzd0qb59-wrapper .option-container {
+            text-align: center
+        }
+
+        .formzd0qb59-wrapper .option-container>div:last-child .select-container {
+            margin-bottom: 0
+        }
+
+        .formzd0qb59-wrapper .chip-option-container {
+            justify-content: center;
+            display: flex;
+            flex-wrap: wrap
+        }
+
+        .formzd0qb59-wrapper .select-container {
+            display: inline-flex;
+            align-items: center;
+            position: relative;
+            margin-bottom: 16px;
+            margin-top: 0;
+            margin-left: 0;
+            cursor: pointer;
+            font-size: inherit;
+            font-weight: 0;
+            font-style: none;
+            text-decoration: none
+        }
+
+        .formzd0qb59-wrapper .chip-select-container {
+            display: flex;
+            flex-wrap: wrap;
+            position: relative;
+            margin-bottom: 16px;
+            margin-top: 0;
+            margin-left: 0;
+            cursor: pointer;
+            font-size: inherit
+        }
+
+        .formzd0qb59-wrapper .select-container input {
+            display: none
+        }
+
+        .formzd0qb59-wrapper .chip-select-container input {
+            display: none
+        }
+
+        .formzd0qb59-wrapper .checkmark {
+            height: 25px;
+            width: 25px;
+            margin-right: 4px;
+            background-color: #f1f5f9;
+            transform: scale(.8);
+            flex-shrink: 0
+        }
+
+        .formzd0qb59-wrapper .chip-checkmark {
+            margin-right: 4px;
+            background-color: #f1f5f9;
+            transform: scale('1');
+            padding: 8px 21px;
+            font-weight: 0;
+            border-radius: 24px;
+            line-height: normal
+        }
+
+        .formzd0qb59-wrapper .select-container:hover input~.checkmark {
+            box-shadow: 0 0 0 2px #5c55e7
+        }
+
+        .formzd0qb59-wrapper .chip-select-container:hover input~.chip-checkmark {
+            box-shadow: 0 0 0 2px #5c55e7
+        }
+
+        .formzd0qb59-wrapper .select-container input:checked~.checkmark {
+            background-color: #5c55e7
+        }
+
+        .formzd0qb59-wrapper .chip-select-container input:checked~.chip-checkmark {
+            background-color: #5c55e7;
+            color: #fff
+        }
+
+        .formzd0qb59-wrapper .checkmark div {
+            content: "";
+            position: absolute;
+            display: none
+        }
+
+        .formzd0qb59-wrapper .select-container input:checked~.checkmark div {
+            display: block
+        }
+
+        .formzd0qb59-wrapper .select-container .checkmark-check div {
+            left: 9px;
+            top: 5px;
+            width: 5px;
+            height: 10px;
+            border: solid #fff;
+            border-width: 0 3px 3px 0;
+            transform: rotate(45deg)
+        }
+
+        .formzd0qb59-wrapper .checkmark-radio {
+            border-radius: 50%
+        }
+
+        .formzd0qb59-wrapper .select-container .checkmark-radio div {
+            top: 50%;
+            left: 50%;
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: #fff;
+            transform: translate(-50%, -50%)
+        }
+
+        .formzd0qb59-wrapper .nps-wrapper,
+        .rating-wrapper {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap
+        }
+
+        .formzd0qb59-wrapper .emoji-wrapper {
+            height: 50px;
+            display: flex;
+            align-items: center;
+            line-height: 1.5;
+            margin-bottom: 16px;
+            margin-top: 0;
+            margin-left: 0
+        }
+
+        .formzd0qb59-wrapper .emoji-wrapper label {
+            margin-right: 4px
+        }
+
+        .formzd0qb59-wrapper .nps-wrapper label {
+            color: #1e293b;
+            position: relative;
+            margin: 0;
+            width: 7%;
+            height: 0;
+            padding-bottom: 7%
+        }
+
+        .formzd0qb59-wrapper .nps-wrapper label input {
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            position: absolute;
+            margin: 0
+        }
+
+        .formzd0qb59-wrapper .nps-wrapper label span {
+            cursor: pointer;
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 18px;
+            font-weight: 300;
+            background-color: rgb(255, 255, 255, .1);
+            border: 2px solid #f1f5f9
+        }
+
+        .formzd0qb59-wrapper .nps-wrapper label input:checked~span {
+            background-color: #5c55e7;
+            color: #fff;
+            border: 2px solid #5c55e7;
+            cursor: pointer
+        }
+
+        .formzd0qb59-wrapper .nps-wrapper span:hover {
+            border: 2px solid #5c55e7;
+            cursor: pointer
+        }
+
+        @media screen and (max-width:500px) {
+            .formzd0qb59-wrapper .nps-wrapper label {
+                width: 8%;
+                padding-bottom: 8%
+            }
+
+            .formzd0qb59-wrapper .nps-wrapper label span {
+                font-size: 14px
+            }
+
+            .formzd0qb59-wrapper .nps-wrapper,
+            .rating-wrapper {
+                margin-left: 0;
+                margin-right: 0
+            }
+        }
+
+        .formzd0qb59-wrapper .question {
+            padding-top: 0;
+            padding-bottom: 10px;
+            padding-left: 0;
+            padding-right: 0;
+            font-size: 14px;
+            line-height: 1.5;
+            letter-spacing: 0;
+            align-self: center;
+            align: center;
+            color: #1e293b;
+            width: auto;
+            element-padding-top: 0;
+            element-padding-bottom: 10px;
+            font-weight: 700;
+            background-color: #fff
+        }
+
+        .formzd0qb59-wrapper .question {
+            text-align: center
+        }
+
+        .formzd0qb59-wrapper div[submit-error] .overall.question p,
+        .formzd0qb59-wrapper div[submit-success] .overall.question p,
+        .formzd0qb59-wrapper div[submitting] p {
+            display: block
+        }
+
+        .formzd0qb59-wrapper .overall>.element-wrapper {
+            padding-top: 0;
+            padding-bottom: 10px;
+            padding-left: undefined;
+            padding-right: undefined
+        }
+
+        .formzd0qb59-wrapper .button {
+            margin-top: 8px;
+            margin-bottom: 8px;
+            margin-left: 0;
+            margin-right: 0;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left: 16px;
+            padding-right: 16px;
+            border-width: 0;
+            border-style: solid;
+            border-color: #4b5193;
+            border-radius: 2px;
+            align-self: center;
+            background-color: #cb1e34;
+            color: #fff;
+            width: auto;
+            height: auto;
+            font-size: 16px;
+            align: center;
+            line-height: 1.5
+        }
+
+        .formzd0qb59-wrapper .navigation-button-wrapper {
+            justify-content: center
+        }
+
+        .formzd0qb59-wrapper .previous-button {
+            background-color: white;
+            outline: 1px solid #cb1e34;
+            color: #cb1e34;
+            margin-left: 2px;
+            margin-right: 12px
+        }
+
+        .formzd0qb59-wrapper .question p {
+            display: inline-block
+        }
+
+        .formzd0qb59-wrapper .answer>.question>p {
+            display: block
+        }
+
+        .formzd0qb59-wrapper .nps-styling {
+            pre-color: #eee;
+            hover-color: #ccc;
+            checked-color: #2196f3
+        }
+
+        .formzd0qb59-wrapper .form-text {
+            color: #1e293b;
+            font-size: 14px;
+            line-height: 1.5
+        }
+
+        .formzd0qb59-wrapper .overall {
+            background-color: #fff;
+            width: 100%;
+            border-color: #f2f2fd;
+            border-radius: 2px;
+            border-width: 0;
+            border-style: solid;
+            font-family: Helvetica;
+            letter-spacing: 0;
+            align-self: center;
+            font-size: 14px;
+            padding-top: 0;
+            padding-bottom: 10px;
+            padding-left: 0;
+            padding-right: 0;
+            over-all-color: #4b5193;
+            color: #1e293b;
+            align: center
+        }
+
+        .formzd0qb59-wrapper {
+            word-break: break-word
+        }
+
+        .formzd0qb59-wrapper .text-style {
+            color: #64748b;
+            font-size: 14px;
+            line-height: 1.5
+        }
+
+        .rating-wrapper label input {
+            opacity: 0;
+            position: absolute;
+            margin: 0
+        }
+
+        .rating-wrapper label span {
+            display: inline-block
+        }
+
+        .emoji-wrapper label input:checked~span {
+            font-size: 40px
+        }
+
+        .emoji-wrapper label span {
+            font-size: 30px;
+            margin: 0 5px
+        }
+
+        @media screen and (min-width:500px) {
+            #date-time>.input-style {
+                width: 40%
+            }
+
+            .ratingText {
+                font-size: 35px
+            }
+        }
+
+        @media screen and (max-width:500px) {
+            #date-time {
+                flex-direction: column
+            }
+
+            #date-time>.input-style {
+                margin-bottom: 10px;
+                box-sizing: border-box
+            }
+
+            .ratingText {
+                font-size: 30px
+            }
+
+            .amp-form-block .navigation-button-wrapper .button {
+                width: auto
+            }
+        }
+
+        .navigation-button-wrapper {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            margin: 0 auto
+        }
+
+        .navigation-button-wrapper>button {
+            cursor: pointer
+        }
+
+        .formmh4c663-wrapper .input-style {
+            color: #1e293b;
+            background-color: transparent;
+            font-family: Helvetica;
+            font-size: inherit;
+            width: 100%;
+            border-width: 1px;
+            border-style: solid;
+            border-color: #cbd5e1;
+            border-radius: 0;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left: 12px;
+            padding-right: 12px;
+            line-height: 1.5;
+            align-self: flex-start;
+            align: left
+        }
+
+        .formmh4c663-wrapper .input-outer {
+            padding-top: undefined;
+            padding-bottom: undefined;
+            padding-left: undefined;
+            padding-right: undefined
+        }
+
+        .formmh4c663-wrapper .phone-style {
+            align-self: auto
+        }
+
+        .formmh4c663-wrapper .textarea-style {
+            height: 100px;
+            align-self: flex-start;
+            align: left
+        }
+
+        .formmh4c663-wrapper .option-container {
+            text-align: left
+        }
+
+        .formmh4c663-wrapper .option-container>div:last-child .select-container {
+            margin-bottom: 0
+        }
+
+        .formmh4c663-wrapper .chip-option-container {
+            justify-content: flex-start;
+            display: flex;
+            flex-wrap: wrap
+        }
+
+        .formmh4c663-wrapper .select-container {
+            display: inline-flex;
+            align-items: center;
+            position: relative;
+            margin-bottom: 16px;
+            margin-top: 0;
+            margin-left: 0;
+            cursor: pointer;
+            font-size: inherit;
+            font-weight: 0;
+            font-style: none;
+            text-decoration: none
+        }
+
+        .formmh4c663-wrapper .chip-select-container {
+            display: flex;
+            flex-wrap: wrap;
+            position: relative;
+            margin-bottom: 16px;
+            margin-top: 0;
+            margin-left: 0;
+            cursor: pointer;
+            font-size: inherit
+        }
+
+        .formmh4c663-wrapper .select-container input {
+            display: none
+        }
+
+        .formmh4c663-wrapper .chip-select-container input {
+            display: none
+        }
+
+        .formmh4c663-wrapper .checkmark {
+            height: 25px;
+            width: 25px;
+            margin-right: 4px;
+            background-color: #f1f5f9;
+            transform: scale(.8);
+            flex-shrink: 0
+        }
+
+        .formmh4c663-wrapper .chip-checkmark {
+            margin-right: 4px;
+            background-color: #f1f5f9;
+            transform: scale('1');
+            padding: 8px 21px;
+            font-weight: 0;
+            border-radius: 24px;
+            line-height: normal
+        }
+
+        .formmh4c663-wrapper .select-container:hover input~.checkmark {
+            box-shadow: 0 0 0 2px #5c55e7
+        }
+
+        .formmh4c663-wrapper .chip-select-container:hover input~.chip-checkmark {
+            box-shadow: 0 0 0 2px #5c55e7
+        }
+
+        .formmh4c663-wrapper .select-container input:checked~.checkmark {
+            background-color: #5c55e7
+        }
+
+        .formmh4c663-wrapper .chip-select-container input:checked~.chip-checkmark {
+            background-color: #5c55e7;
+            color: #fff
+        }
+
+        .formmh4c663-wrapper .checkmark div {
+            content: "";
+            position: absolute;
+            display: none
+        }
+
+        .formmh4c663-wrapper .select-container input:checked~.checkmark div {
+            display: block
+        }
+
+        .formmh4c663-wrapper .select-container .checkmark-check div {
+            left: 9px;
+            top: 5px;
+            width: 5px;
+            height: 10px;
+            border: solid #fff;
+            border-width: 0 3px 3px 0;
+            transform: rotate(45deg)
+        }
+
+        .formmh4c663-wrapper .checkmark-radio {
+            border-radius: 50%
+        }
+
+        .formmh4c663-wrapper .select-container .checkmark-radio div {
+            top: 50%;
+            left: 50%;
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: #fff;
+            transform: translate(-50%, -50%)
+        }
+
+        .formmh4c663-wrapper .nps-wrapper,
+        .rating-wrapper {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap
+        }
+
+        .formmh4c663-wrapper .emoji-wrapper {
+            height: 50px;
+            display: flex;
+            align-items: center;
+            line-height: 1.5;
+            margin-bottom: 16px;
+            margin-top: 0;
+            margin-left: 0
+        }
+
+        .formmh4c663-wrapper .emoji-wrapper label {
+            margin-right: 4px
+        }
+
+        .formmh4c663-wrapper .nps-wrapper label {
+            color: #1e293b;
+            position: relative;
+            margin: 0;
+            width: 7%;
+            height: 0;
+            padding-bottom: 7%
+        }
+
+        .formmh4c663-wrapper .nps-wrapper label input {
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            position: absolute;
+            margin: 0
+        }
+
+        .formmh4c663-wrapper .nps-wrapper label span {
+            cursor: pointer;
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 18px;
+            font-weight: 300;
+            background-color: rgb(255, 255, 255, .1);
+            border: 2px solid #f1f5f9
+        }
+
+        .formmh4c663-wrapper .nps-wrapper label input:checked~span {
+            background-color: #5c55e7;
+            color: #fff;
+            border: 2px solid #5c55e7;
+            cursor: pointer
+        }
+
+        .formmh4c663-wrapper .nps-wrapper span:hover {
+            border: 2px solid #5c55e7;
+            cursor: pointer
+        }
+
+        @media screen and (max-width:500px) {
+            .formmh4c663-wrapper .nps-wrapper label {
+                width: 8%;
+                padding-bottom: 8%
+            }
+
+            .formmh4c663-wrapper .nps-wrapper label span {
+                font-size: 14px
+            }
+
+            .formmh4c663-wrapper .nps-wrapper,
+            .rating-wrapper {
+                margin-left: 0;
+                margin-right: 0
+            }
+        }
+
+        .formmh4c663-wrapper .question {
+            padding-top: 0;
+            padding-bottom: 10px;
+            padding-left: 0;
+            padding-right: 0;
+            font-size: 14px;
+            line-height: 1.5;
+            letter-spacing: 0;
+            align-self: flex-start;
+            align: left;
+            color: #1e293b;
+            width: auto;
+            element-padding-top: 0;
+            element-padding-bottom: 10px;
+            font-weight: 700;
+            background-color: #fff
+        }
+
+        .formmh4c663-wrapper .question {
+            text-align: left
+        }
+
+        .formmh4c663-wrapper div[submit-error] .overall.question p,
+        .formmh4c663-wrapper div[submit-success] .overall.question p,
+        .formmh4c663-wrapper div[submitting] p {
+            display: block
+        }
+
+        .formmh4c663-wrapper .overall>.element-wrapper {
+            padding-top: 0;
+            padding-bottom: 10px;
+            padding-left: undefined;
+            padding-right: undefined
+        }
+
+        .formmh4c663-wrapper .button {
+            margin-top: 8px;
+            margin-bottom: 8px;
+            margin-left: 0;
+            margin-right: 0;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left: 16px;
+            padding-right: 16px;
+            border-width: 0;
+            border-style: solid;
+            border-color: #4b5193;
+            border-radius: 2px;
+            align-self: center;
+            background-color: #cb1e34;
+            color: #fff;
+            width: auto;
+            height: auto;
+            font-size: 16px;
+            align: center;
+            line-height: 1.5
+        }
+
+        .formmh4c663-wrapper .navigation-button-wrapper {
+            justify-content: center
+        }
+
+        .formmh4c663-wrapper .previous-button {
+            background-color: white;
+            outline: 1px solid #cb1e34;
+            color: #cb1e34;
+            margin-left: 2px;
+            margin-right: 12px
+        }
+
+        .formmh4c663-wrapper .question p {
+            display: inline-block
+        }
+
+        .formmh4c663-wrapper .answer>.question>p {
+            display: block
+        }
+
+        .formmh4c663-wrapper .nps-styling {
+            pre-color: #eee;
+            hover-color: #ccc;
+            checked-color: #2196f3
+        }
+
+        .formmh4c663-wrapper .form-text {
+            color: #1e293b;
+            font-size: 14px;
+            line-height: 1.5
+        }
+
+        .formmh4c663-wrapper .overall {
+            background-color: #fff;
+            width: 100%;
+            border-color: #f2f2fd;
+            border-radius: 2px;
+            border-width: 0;
+            border-style: solid;
+            font-family: Helvetica;
+            letter-spacing: 0;
+            align-self: center;
+            font-size: 14px;
+            padding-top: 20px;
+            padding-bottom: 10px;
+            padding-right: 46px;
+            padding-left: 46px;
+            over-all-color: #4b5193;
+            color: #1e293b;
+            align: center
+        }
+
+        .formmh4c663-wrapper {
+            word-break: break-word
+        }
+
+        .formmh4c663-wrapper .text-style {
+            color: #64748b;
+            font-size: 14px;
+            line-height: 1.5
+        }
+
+        body {
+            margin: 0;
+            padding: 0
+        }
+
+        table,
+        td {
+            border-collapse: collapse
+        }
+
+        img {
+            border: 0;
+            height: auto;
+            line-height: 100%;
+            outline: 0
+        }
+
+        p {
+            display: block;
+            margin: 13px 0
+        }
+    /* anim class */
+     .rotate{
+        background-color: transparent;
+        transition: transform .2s ease-in-out;
+        margin-bottom: 0.3rem;
+      }
+      .rotate2{
+        margin-bottom: 0.3rem;
+        transition: transform .2s ease-in-out;
+        transform: rotate(180deg);
+      }
+    /* anim class end */
+    </style>
+    <script async custom-element="amp-accordion" src="https://cdn.ampproject.org/v0/amp-accordion-0.1.js"></script>
+    <script async custom-element="amp-form" src="https://cdn.ampproject.org/v0/amp-form-0.1.js"></script>
+    <script async custom-element="amp-bind" src="https://cdn.ampproject.org/v0/amp-bind-0.1.js"></script>
+    <script custom-template="amp-mustache" src="https://cdn.ampproject.org/v0/amp-mustache-0.2.js" async></script>
+</head>
+
+<body style="word-spacing:normal;background-color:#f1f3f6">
+    <div style="background-color:#f1f3f6">
+        <!--[if mso | IE]><table align="center" border="0" cellpadding="0" cellspacing="0" class="" style="width:600px;" width="600" ><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
+        <div style="background:#f1f3f6;background-color:#f1f3f6;margin:0 auto;max-width:600px">
+            <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation"
+                style="background:#f1f3f6;background-color:#f1f3f6;width:100%">
+                <tbody>
+                    <tr>
+                        <td
+                            style="direction:ltr;font-size:0;padding:0;padding-bottom:12px;padding-left:12px;padding-right:20px;padding-top:12px;text-align:center">
+                            <!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td class="" width="600px" ><table align="center" border="0" cellpadding="0" cellspacing="0" class="" style="width:568px;" width="568" ><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
+                            <div style="background:#fff;background-color:#fff;margin:0 auto;max-width:568px">
+                                <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation"
+                                    style="background:#fff;background-color:#fff;width:100%">
+                                    <tbody>
+                                        <tr>
+                                            <td
+                                                style="border:0 solid transparent;direction:ltr;font-size:0;padding:20px 0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;text-align:center">
+                                                <!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td class="" style="vertical-align:top;width:568px;" ><![endif]-->
+                                                <div class="mj-column-per-100 mj-outlook-group-fix"
+                                                    style="font-size:0;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%">
+                                                    <table border="0" cellpadding="0" cellspacing="0"
+                                                        role="presentation" width="100%">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td
+                                                                    style="background-color:transparent;border:0 solid transparent;vertical-align:top;padding-top:0;padding-right:0;padding-bottom:0;padding-left:0">
+                                                                    <table border="0" cellpadding="0" cellspacing="0"
+                                                                        role="presentation" width="100%">
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td align="center"
+                                                                                    style="font-size:0;padding:0;padding-top:0;padding-right:0;padding-bottom:0;padding-left:0;word-break:break-word">
+                                                                                    <table border="0" cellpadding="0"
+                                                                                        cellspacing="0"
+                                                                                        role="presentation"
+                                                                                        style="border-collapse:collapse;border-spacing:0">
+                                                                                        <tbody>
+                                                                                            <tr>
+                                                                                                <td style="width:568px">
+                                                                                                    <amp-img
+                                                                                                        alt="Alternate image text"
+                                                                                                        src="https://designmodo-postcards-prod.s3.amazonaws.com/Artboard-1-8-aN5.png"
+                                                                                                        style="border:0 solid transparent;border-radius:0;display:block;outline:0;text-decoration:none;width:100%;font-size:13px"
+                                                                                                        width="1200"
+                                                                                                        height="236"
+                                                                                                        layout="responsive">
+                                                                                                    </amp-img>
+                                                                                                </td>
+                                                                                            </tr>
+                                                                                        </tbody>
+                                                                                    </table>
+                                                                                </td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                                <!--[if mso | IE]></td></tr></table><![endif]-->
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <!--[if mso | IE]></td></tr></table></td></tr><tr><td class="" width="600px" ><table align="center" border="0" cellpadding="0" cellspacing="0" class="" style="width:568px;" width="568" ><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
+                            <div style="background:#f1f3f6;background-color:#f1f3f6;margin:0 auto;max-width:568px">
+                                <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation"
+                                    style="background:#f1f3f6;background-color:#f1f3f6;width:100%">
+                                    <tbody>
+                                        <tr>
+                                            <td
+                                                style="border:0 solid transparent;direction:ltr;font-size:0;padding:20px 0;padding-bottom:4px;padding-left:8px;padding-right:8px;padding-top:4px;text-align:center">
+                                                <!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td align="left" class="" style="vertical-align:top;width:552px;" ><![endif]-->
+                                                <div class="mj-column-per-100 mj-outlook-group-fix"
+                                                    style="font-size:0;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%">
+                                                    <table border="0" cellpadding="0" cellspacing="0"
+                                                        role="presentation"
+                                                        style="background-color:transparent;border:0 solid transparent;vertical-align:top"
+                                                        width="100%">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td
+                                                                    style="background:0 0;font-size:0;word-break:break-word">
+                                                                    <!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td height="4" style="height:4px;"><![endif]-->
+                                                                    <div style="height:4px">&#xA0;</div>
+                                                                    <!--[if mso | IE]></td></tr></table><![endif]-->
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                                <!--[if mso | IE]></td></tr></table><![endif]-->
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <!--[if mso | IE]></td></tr></table></td></tr><tr><td class="" width="600px" ><table align="center" border="0" cellpadding="0" cellspacing="0" class="" style="width:568px;" width="568" ><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
+                            <div style="background:#fff;background-color:#fff;margin:0 auto;max-width:568px">
+                                <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation"
+                                    style="background:#fff;background-color:#fff;width:100%">
+                                    <tbody>
+                                        <tr>
+                                            <td
+                                                style="border:0 solid transparent;direction:ltr;font-size:0;padding:20px 0;padding-bottom:8px;padding-left:16px;padding-right:16px;padding-top:8px;text-align:center">
+                                                <!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td align="left" class="" style="vertical-align:top;width:536px;" ><![endif]-->
+                                                <div class="mj-column-per-100 mj-outlook-group-fix"
+                                                    style="font-size:0;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%">
+                                                    <table border="0" cellpadding="0" cellspacing="0"
+                                                        role="presentation"
+                                                        style="background-color:transparent;border:0 solid transparent;vertical-align:top"
+                                                        width="100%">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td align="left"
+                                                                    style="font-size:0;padding:10px 25px;padding-top:10px;padding-right:30px;padding-bottom:0;padding-left:30px;word-break:break-word">
+                                                                    <div
+                                                                        style="font-family:Helvetica;font-size:14px;font-weight:400;letter-spacing:0;line-height:1.5;text-align:left;color:#000">
+                                                                        <p>Dear ${Customer},<br><br>Waiting for right
+                                                                            time to buy life insurance ?&#xA0;<br>Well,
+                                                                            the right time is TODAY.<br><br>Here are
+                                                                            some articles that would you help in taking
+                                                                            faster decision :<br></p>
+                                                                            
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td align="center"
+                                                                    style="font-size:0;padding:8px 0 12px 0;word-break:break-word">
+  
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                                <!--[if mso | IE]></td></tr></table><![endif]-->
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <!--[if mso | IE]></td></tr></table></td></tr><![endif]-->
+                           
+                            <!--[if mso | IE]><tr><td class="" width="600px" ><table align="center" border="0" cellpadding="0" cellspacing="0" class="" style="width:568px;" width="568" ><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
+                                <div style="background:#f1f3f6;background-color:#f1f3f6;margin:0 auto;max-width:568px">
+                                    <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation"
+                                        style="background:#f1f3f6;background-color:#f1f3f6;width:100%">
+                                        <tbody>
+                                            <tr>
+                                                <td
+                                                    style="border:0 solid transparent;direction:ltr;font-size:0;padding:20px 0;padding-bottom:4px;padding-left:8px;padding-right:8px;padding-top:4px;text-align:center">
+                                                    <!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td align="left" class="" style="vertical-align:top;width:552px;" ><![endif]-->
+                                                    <div class="mj-column-per-100 mj-outlook-group-fix"
+                                                        style="font-size:0;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%">
+                                                        <table border="0" cellpadding="0" cellspacing="0"
+                                                            role="presentation"
+                                                            style="background-color:transparent;border:0 solid transparent;vertical-align:top"
+                                                            width="100%">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td
+                                                                        style="background:0 0;font-size:0;word-break:break-word">
+                                                                        <!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td height="4" style="height:4px;"><![endif]-->
+                                                                        <div style="height:4px">&#xA0;</div>
+                                                                        <!--[if mso | IE]></td></tr></table><![endif]-->
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                    <!--[if mso | IE]></td></tr></table><![endif]-->
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div tabindex="0" role="button" on="tap:AMP.setState({sectionThree: !sectionThree})" style="cursor: pointer;background:#fff;background-color:#fff;margin:0 auto;max-width:568px">
+                                    <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation"
+                                        style="background:#fff;background-color:#fff;width:100%">
+                                        <tbody>
+                                            <tr>
+                                                <td
+                                                    style="border:0 solid transparent;direction:ltr;font-size:0;padding:20px 0;padding-bottom:8px;padding-left:16px;padding-right:16px;padding-top:8px;text-align:center">
+                                                    <!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td align="left" class="" style="vertical-align:top;width:536px;" ><![endif]-->
+                                                    <div class="mj-column-per-100 mj-outlook-group-fix"
+                                                        style="font-size:0;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%">
+                                                        <table border="0" cellpadding="0" cellspacing="0"
+                                                            role="presentation"
+                                                            style="background-color:transparent;border:0 solid transparent;vertical-align:top"
+                                                            width="100%">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td align="left"
+                                                                        style="font-size:0;padding:10px 25px;padding-top:10px;padding-right:30px;padding-bottom:0;padding-left:30px;word-break:break-word">
+                                                                        <div
+                                                                            style="font-family:Helvetica;font-size:14px;font-weight:400;letter-spacing:0;line-height:1.5;text-align:left;color:#000">
+                                                                            <div
+                                                                            style="font-family:Helvetica;font-size:14px;font-weight:400;letter-spacing:0;line-height:1.5;text-align:left;color:#000">
+                                                                            <amp-accordion animate>
+                                                                              <section
+                                                                              [data-expand]="sectionThree"
+                                                                              on="expand:AMP.setState({sectionThree: true});collapse:AMP.setState({sectionThree: false})"
+                                                                              >
+                                                                              <header  style="background-color: transparent;border: none;"  ><strong>Importance
+                                                                                of Life Insurance in your Healthy
+                                                                                Financial Portfolio</strong><span style="margin-right: -20px;float: right;"><div ><amp-img class="rotate" [class]="sectionThree?'rotate2':'rotate'" layout="fixed" width="8" height="6" src="https://mmstorageprod1.blob.core.windows.net/userdata/244934b4-6aa5-4eb2-8297-e7779d6705b6%2Ftemplates%2F1628695878239_down-arrow.png"></amp-img></div></span></header>
+                                                                              <div>
+                                                                                <p>
+                                                                                    <br>Life insurance is
+                                                                                    becoming more and more popular with every
+                                                                                    passing day. There is good reason for this
+                                                                                    as well. Life insurance is an all-in-one
+                                                                                    product &#x2013; it offers a life cover, it
+                                                                                    takes care of the financial requirements
+                                                                                    when needed, serves as an effective
+                                                                                    investment option and it also helps you save
+                                                                                    tax. As a result, life insurance must be a
+                                                                                    part of your financial
+                                                                                    portfolio.<br><br>There are many reasons
+                                                                                    that make a life insurance policy an
+                                                                                    indispensable part of your financial
+                                                                                    portfolio. Some of them are:</p>
+                                                                                <p>&#xA0;</p>
+                                                                                <table border="0" cellpadding="0" cellspacing="0"
+                                                                                role="presentation"
+                                                                                style="padding-bottom: 20px;margin: auto;border-collapse:separate;width:auto;line-height:100%">
+                                                                                <tbody>
+                                                                                    <tr>
+                                                                                        <td align="center" bgcolor="#CB1E34"
+                                                                                            role="presentation"
+                                                                                            style="border-radius:4px;border:0 solid none;cursor:auto;height:auto;background:#cb1e34;padding:0;">
+                                                                                            <a href="https://api-uat.mailmodo.com/editor/redirect?url=https%3A%2F%2Flifeinsurance.adityabirlacapital.com%2Farticles%2Flife-insurance%2Flife-insurance-importance-in-healthy-financial-portfolio"
+                                                                                                style="display:inline-block;background:#cb1e34;color:#fff;font-family:Helvetica;font-size:16px;font-weight:400;line-height:1;letter-spacing:1px;margin:0;text-decoration:none;text-transform:none;padding:14px 24px 14px 24px;border-radius:4px"
+                                                                                                target="_blank">
+                                                                                                <p>Read More</p>
+                                                                                            </a></td>
+                                                                                    </tr>
+                                                                                </tbody>
+                                                                            </table>
+                                                                            <div on="tap:AMP.setState({formljpiu57: {fuuid: formljpiu57.fuuid || floor(random() * 100000) }})"
+                                                                            role="tab" tabindex="1" class="amp-form-block formljpiu57-wrapper"
+                                                                            style="margin:auto;text-align:left">
+                                                                            <div class="data">
+                                                                                <amp-state id="formljpiu57">
+                                                                                    <script
+                                                                                        type="application/json">{"currentStep":"stepwmoku53","responses":{},"formHistory":[]}</script>
+                                                                                </amp-state>
+                                                                            </div>
+                                                                            <form class="formljpiu57" style="display:flex;flex-direction:column" method="post"
+                                                                                custom-validation-reporting="show-all-on-submit"
+                                                                                on="submit-success:AMP.setState({formljpiu57:{currentStep: &apos;success&apos;}})"
+                                                                                action-xhr="https://mm-tracker-uat.azurewebsites.net//submissions/d/38cd7486-fa43-4be5-816a-a11bed3430e0/86374808-12e3-4fe4-969c-d0f7101b7032?sender=#~mailmodo-email-sender~#&amp;formId=formljpiu57">
+                                                                                <div class="overall screen current_screen" style="box-sizing:border-box"
+                                                                                    [hidden]="formljpiu57.currentStep != &apos;stepwmoku53&apos;">
+                                                                                    <div class="element-wrapper">
+                                                                                        <div class="question">
+                                                                                            <p><span style="background-color:transparent;color:#000;font-size:11pt">Was
+                                                                                                    this answer helpful?</span></p>
+                                                                                        </div>
+                                                                                        <div class="answer">
+                                                                                            <div class="rating-wrapper" style="flex-direction:column">
+                                                                                                <div style="min-width:30%;align-self:center"><label
+                                                                                                        class="option upvote"
+                                                                                                        style="border:none;background-color:transparent;overflow:visible;margin-right:20px"><input
+                                                                                                            name="elementecnq6661" type="radio" role="input"
+                                                                                                            tabindex="2" id="elementecnq6661"
+                                                                                                            style="position:absolute;opacity:0" on="tap:AMP.setState({elementecnq6661: {upvote00 : 1 , downvote00 : 0  }, formljpiu57:{
+                                                                                  responses: {stepwmoku53:{elementecnq6661: &apos;upvote&apos;}}}})"
+                                                                                                            value="upvote"> <span>
+                                                                                                            <amp-img
+                                                                                                                style="width:60px;height:60px;display:inline-block;cursor:pointer"
+                                                                                                                layout="responsive" class="heart"
+                                                                                                                src="https://res.cloudinary.com/mailmodo/image/upload/v1638541709/editor/constants/FormElements/Thumbs-up-default.png"
+                                                                                                                data-amp-bind-hidden="elementecnq6661.upvote00 == 1 "
+                                                                                                                width="50" height="50"></amp-img>
+                                                                                                        </span><span>
+                                                                                                            <amp-img
+                                                                                                                style="width:60px;height:60px;display:inline-block;cursor:pointer"
+                                                                                                                layout="responsive" class="heart_clicked"
+                                                                                                                src="https://res.cloudinary.com/mailmodo/image/upload/v1638541709/editor/constants/FormElements/Thumbs-up-selected.png"
+                                                                                                                data-amp-bind-hidden="elementecnq6661.upvote00 != 1 "
+                                                                                                                width="50px" hidden height="50px"></amp-img>
+                                                                                                        </span></label> <label class="option downvote"
+                                                                                                        style="border:none;background-color:transparent;overflow:visible;margin-right:10px"><input
+                                                                                                            name="elementecnq6661" type="radio" role="input"
+                                                                                                            tabindex="1" id="elementecnq6661"
+                                                                                                            style="position:absolute;opacity:0" on="tap:AMP.setState({elementecnq6661: {upvote00 : 0 , downvote00 : 1  }, formljpiu57:{
+                                                                              responses: {stepwmoku53:{elementecnq6661: &apos;downvote&apos;}}}})"
+                                                                                                            value="downvote"> <span>
+                                                                                                            <amp-img
+                                                                                                                style="width:60px;height:60px;display:inline-block;cursor:pointer"
+                                                                                                                layout="responsive" class="heart"
+                                                                                                                src="https://res.cloudinary.com/mailmodo/image/upload/v1638541709/editor/constants/FormElements/Thumbs-down-default.png"
+                                                                                                                data-amp-bind-hidden="elementecnq6661.downvote00 == 1 "
+                                                                                                                width="50" height="50"></amp-img>
+                                                                                                        </span><span>
+                                                                                                            <amp-img
+                                                                                                                style="width:60px;height:60px;display:inline-block;cursor:pointer"
+                                                                                                                layout="responsive" class="heart_clicked"
+                                                                                                                src="https://res.cloudinary.com/mailmodo/image/upload/v1638541709/editor/constants/FormElements/Thumbs-down-selected.png"
+                                                                                                                data-amp-bind-hidden="elementecnq6661.downvote00 != 1 "
+                                                                                                                width="50px" hidden height="50px"></amp-img>
+                                                                                                        </span></label></div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div><input hidden id="fuuid" name="fuuid" [value]="formljpiu57.fuuid"> <input
+                                                                                        hidden id="next-step-id" name="next-step-id" [value]="&apos;success&apos;">
+                                                                                    <input hidden id="total-steps" name="total-steps" value="2">
+                                                                                    <div class="navigation-button-wrapper"><button class="button previous-button"
+                                                                                            type="button" hidden [hidden]="formljpiu57.formHistory.length&lt;=0" on="tap:AMP.setState({formljpiu57:{currentStep:formljpiu57.formHistory[formljpiu57.formHistory.length-1], 
+                                                                          formHistory: formljpiu57.formHistory.splice(formljpiu57.formHistory.length-1,1)
+                                                                      }})">Previous</button> <button class="button" type="submit">
+                                                                                            <p>Submit</p>
+                                                                                        </button></div>
+                                                                                </div>
+                                                                                <div style="text-align:center;font-size:16px"
+                                                                                    [hidden]="((&apos;success&apos;) != &apos;success&apos; || (formljpiu57.currentStep == &apos;stepwmoku53&apos; &amp;&amp; &apos;success&apos; != &apos;success&apos;))">
+                                                                                    <div submitting class="overall question"
+                                                                                        style="width:auto;font-size:16px;border:0">
+                                                                                        <p style="text-align:center">Form submitting... Thank you for waiting.</p>
+                                                                                    </div>
+                                                                                    <div submit-success>
+                                                                                        <div class="overall question" style="width:auto;font-size:16px">
+                                                                                            <p style="text-align:center">Thank you for submitting the form</p>
+                                                                                            <div style="display:flex;justify-content:center"><button class="button"
+                                                                                                    type="button" style="cursor:pointer">Know more</button></div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <div submit-error><template type="amp-mustache">
+                                                                                            <div class="overall question"
+                                                                                                style="width:auto;text-align:center;font-size:16px;border:0">Your
+                                                                                                form submission has failed. Please try again.</div>
+                                                                                        </template></div>
+                                                                                </div>
+                                                                            </form>
+                                                                        </div>
+                                                                              </div>
+                                                                              </section>
+                                                                              </amp-accordion>
+                                                                              </div>
+                                                                            
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td align="center"
+                                                                        style="font-size:0;padding:8px 0 0px 0;word-break:break-word">
+                                                        
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                    <!--[if mso | IE]></td></tr></table><![endif]-->
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div style="background:#f1f3f6;background-color:#f1f3f6;margin:0 auto;max-width:568px">
+                                <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation"
+                                    style="background:#f1f3f6;background-color:#f1f3f6;width:100%">
+                                    <tbody>
+                                        <tr>
+                                            <td
+                                                style="border:0 solid transparent;direction:ltr;font-size:0;padding:20px 0;padding-bottom:4px;padding-left:8px;padding-right:8px;padding-top:4px;text-align:center">
+                                                <!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td align="left" class="" style="vertical-align:top;width:552px;" ><![endif]-->
+                                                <div class="mj-column-per-100 mj-outlook-group-fix"
+                                                    style="font-size:0;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%">
+                                                    <table border="0" cellpadding="0" cellspacing="0"
+                                                        role="presentation"
+                                                        style="background-color:transparent;border:0 solid transparent;vertical-align:top"
+                                                        width="100%">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td
+                                                                    style="background:0 0;font-size:0;word-break:break-word">
+                                                                    <!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td height="4" style="height:4px;"><![endif]-->
+                                                                    <div style="height:4px">&#xA0;</div>
+                                                                    <!--[if mso | IE]></td></tr></table><![endif]-->
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                                <!--[if mso | IE]></td></tr></table><![endif]-->
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <!--[if mso | IE]></td></tr></table></td></tr><tr><td class="" width="600px" ><table align="center" border="0" cellpadding="0" cellspacing="0" class="" style="width:568px;" width="568" ><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
+                            <div tabindex="0" role="button" on="tap:AMP.setState({sectionOne: !sectionOne})"  style="cursor: pointer;background:#fff;background-color:#fff;margin:0 auto;max-width:568px">
+                                <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation"
+                                    style="background:#fff;background-color:#fff;width:100%">
+                                    <tbody>
+                                        <tr>
+                                            <td
+                                                style="border:0 solid transparent;direction:ltr;font-size:0;padding:20px 0;padding-bottom:8px;padding-left:16px;padding-right:16px;padding-top:8px;text-align:center">
+                                                <!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td align="left" class="" style="vertical-align:top;width:536px;" ><![endif]-->
+                                                <div class="mj-column-per-100 mj-outlook-group-fix"
+                                                    style="font-size:0;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%">
+                                                    <table border="0" cellpadding="0" cellspacing="0"
+                                                        role="presentation"
+                                                        style="background-color:transparent;border:0 solid transparent;vertical-align:top"
+                                                        width="100%">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td align="left"
+                                                                    style="font-size:0;padding:10px 25px;padding-top:10px;padding-right:30px;padding-bottom:0;padding-left:30px;word-break:break-word">
+                                                                    <div
+                                                                        style="font-family:Helvetica;font-size:14px;font-weight:400;letter-spacing:0;line-height:1.5;text-align:left;color:#000">
+                                                                        <div
+                                                                        style="font-family:Helvetica;font-size:14px;font-weight:400;letter-spacing:0;line-height:1.5;text-align:left;color:#000">
+                                                                        <amp-accordion animate>
+                                                                          <section
+                                                                          [data-expand]="sectionOne"
+                                                                          on="expand:AMP.setState({sectionOne: true});collapse:AMP.setState({sectionOne: false})"
+                                                                          >
+                                                                          <header  style="background-color: transparent;border: none;"  ><strong>How to Grow Money with the Help of
+                                                                            Life Insurance?</strong><span style="margin-right: -20px;float: right;"><div ><amp-img class="rotate" [class]="sectionOne?'rotate2':'rotate'" layout="fixed" width="8" height="6" src="https://mmstorageprod1.blob.core.windows.net/userdata/244934b4-6aa5-4eb2-8297-e7779d6705b6%2Ftemplates%2F1628695878239_down-arrow.png"></amp-img></div></span></header>
+                                                                          <div>
+                                                                            <p><br>When you
+                                                                                think of a life insurance plan, you probably
+                                                                                imagine a safety net for your family and
+                                                                                loved ones, isn&#x2019;t it? And
+                                                                                that&#x2019;s quite an accurate picture,
+                                                                                because at its very core, a life insurance
+                                                                                plan is a life cover that helps keep your
+                                                                                loved ones financially secure, even if
+                                                                                something happens to you.</p>
+                                                                            <p>&#xA0;</p>
+                                                                            <p>But today, a life insurance plan can be much
+                                                                                more than just a life cover. With many types
+                                                                                of life insurance plans available in the
+                                                                                market these days, there are several other
+                                                                                benefits that you can enjoy, thanks to life
+                                                                                insurance.</p>
+                                                                            <p>&#xA0;</p>
+                                                                            <p>You can reduce your tax burden.</p>
+                                                                            <p>&#xA0;</p>
+                                                                            <p>You can save up for the major milestones in
+                                                                                your life.</p>
+                                                                            <p>&#xA0;</p>
+                                                                            <p>You can set up an alternate source of income
+                                                                                for your post-retirement life.</p>
+                                                                            <p>&#xA0;</p>
+                                                                            <p>And - wait for it - you can even grow your
+                                                                                money and create wealth with life insurance.
+                                                                                Yes, you read that right. Life insurance is
+                                                                                an often-overlooked wealth creation
+                                                                                tool.<br>&#xA0;</p>
+                                                                            <p>More specifically, there&apos;s one type of
+                                                                                life insurance that can help grow your money
+                                                                                over the years. And that is a Unit Linked
+                                                                                Insurance Plan (ULIP).</p>
+                                                                            <p><br>&#xA0;</p>
+                                                                            <table border="0" cellpadding="0" cellspacing="0"
+                                                                            role="presentation"
+                                                                            style="margin: auto;border-collapse:separate;width:auto;line-height:100%;padding-bottom: 20px;">
+                                                                            <tbody>
+                                                                                <tr>
+                                                                                    <td align="center" bgcolor="#CB1E34"
+                                                                                        role="presentation"
+                                                                                        style="border-radius:4px;border:0 solid none;cursor:auto;height:auto;background:#cb1e34;padding:0;">
+                                                                                        <a href="https://api-uat.mailmodo.com/editor/redirect?url=https%3A%2F%2Flifeinsurance.adityabirlacapital.com%2Farticles%2Fwealth-insurance"
+                                                                                            style="display:inline-block;background:#cb1e34;color:#fff;font-family:Helvetica;font-size:16px;font-weight:400;line-height:1;letter-spacing:1px;margin:0;text-decoration:none;text-transform:none;padding:14px 24px 14px 24px;border-radius:4px"
+                                                                                            target="_blank">
+                                                                                            <p>Read More</p>
+                                                                                        </a></td>
+                                                                                </tr>
+                                                                            </tbody>
+                                                                        </table>
+                                                                        <div on="tap:AMP.setState({formm5p1n16: {fuuid: formm5p1n16.fuuid || floor(random() * 100000) }})"
+                                                                        role="tab" tabindex="1" class="amp-form-block formm5p1n16-wrapper"
+                                                                        style="margin:auto;text-align:left">
+                                                                        <div class="data">
+                                                                            <amp-state id="formm5p1n16">
+                                                                                <script
+                                                                                    type="application/json">{"currentStep":"steptbszz12","responses":{},"formHistory":[]}</script>
+                                                                            </amp-state>
+                                                                        </div>
+                                                                        <form class="formm5p1n16" style="display:flex;flex-direction:column" method="post"
+                                                                            custom-validation-reporting="show-all-on-submit"
+                                                                            on="submit-success:AMP.setState({formm5p1n16:{currentStep: &apos;success&apos;}})"
+                                                                            action-xhr="https://mm-tracker-uat.azurewebsites.net//submissions/d/38cd7486-fa43-4be5-816a-a11bed3430e0/86374808-12e3-4fe4-969c-d0f7101b7032?sender=#~mailmodo-email-sender~#&amp;formId=formm5p1n16">
+                                                                            <div class="overall screen current_screen" style="box-sizing:border-box"
+                                                                                [hidden]="formm5p1n16.currentStep != &apos;steptbszz12&apos;">
+                                                                                <div class="element-wrapper">
+                                                                                    <div class="question">
+                                                                                        <p><span style="background-color:transparent;color:#000;font-size:11pt">Was
+                                                                                                this answer helpful?</span></p>
+                                                                                    </div>
+                                                                                    <div class="answer">
+                                                                                        <div class="rating-wrapper" style="flex-direction:column">
+                                                                                            <div style="min-width:30%;align-self:center"><label
+                                                                                                    class="option upvote"
+                                                                                                    style="border:none;background-color:transparent;overflow:visible;margin-right:20px"><input
+                                                                                                        name="element0juzx658" type="radio" role="input"
+                                                                                                        tabindex="2" id="element0juzx658"
+                                                                                                        style="position:absolute;opacity:0" on="tap:AMP.setState({element0juzx658: {upvote00 : 1 , downvote00 : 0  }, formm5p1n16:{
+                                                                              responses: {steptbszz12:{element0juzx658: &apos;upvote&apos;}}}})"
+                                                                                                        value="upvote"> <span>
+                                                                                                        <amp-img
+                                                                                                            style="width:60px;height:60px;display:inline-block;cursor:pointer"
+                                                                                                            layout="responsive" class="heart"
+                                                                                                            src="https://res.cloudinary.com/mailmodo/image/upload/v1638541709/editor/constants/FormElements/Thumbs-up-default.png"
+                                                                                                            data-amp-bind-hidden="element0juzx658.upvote00 == 1 "
+                                                                                                            width="50" height="50"></amp-img>
+                                                                                                    </span><span>
+                                                                                                        <amp-img
+                                                                                                            style="width:60px;height:60px;display:inline-block;cursor:pointer"
+                                                                                                            layout="responsive" class="heart_clicked"
+                                                                                                            src="https://res.cloudinary.com/mailmodo/image/upload/v1638541709/editor/constants/FormElements/Thumbs-up-selected.png"
+                                                                                                            data-amp-bind-hidden="element0juzx658.upvote00 != 1 "
+                                                                                                            width="50px" hidden height="50px"></amp-img>
+                                                                                                    </span></label> <label class="option downvote"
+                                                                                                    style="border:none;background-color:transparent;overflow:visible;margin-right:10px"><input
+                                                                                                        name="element0juzx658" type="radio" role="input"
+                                                                                                        tabindex="1" id="element0juzx658"
+                                                                                                        style="position:absolute;opacity:0" on="tap:AMP.setState({element0juzx658: {upvote00 : 0 , downvote00 : 1  }, formm5p1n16:{
+                                                                          responses: {steptbszz12:{element0juzx658: &apos;downvote&apos;}}}})"
+                                                                                                        value="downvote"> <span>
+                                                                                                        <amp-img
+                                                                                                            style="width:60px;height:60px;display:inline-block;cursor:pointer"
+                                                                                                            layout="responsive" class="heart"
+                                                                                                            src="https://res.cloudinary.com/mailmodo/image/upload/v1638541709/editor/constants/FormElements/Thumbs-down-default.png"
+                                                                                                            data-amp-bind-hidden="element0juzx658.downvote00 == 1 "
+                                                                                                            width="50" height="50"></amp-img>
+                                                                                                    </span><span>
+                                                                                                        <amp-img
+                                                                                                            style="width:60px;height:60px;display:inline-block;cursor:pointer"
+                                                                                                            layout="responsive" class="heart_clicked"
+                                                                                                            src="https://res.cloudinary.com/mailmodo/image/upload/v1638541709/editor/constants/FormElements/Thumbs-down-selected.png"
+                                                                                                            data-amp-bind-hidden="element0juzx658.downvote00 != 1 "
+                                                                                                            width="50px" hidden height="50px"></amp-img>
+                                                                                                    </span></label></div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div><input hidden id="fuuid" name="fuuid" [value]="formm5p1n16.fuuid"> <input
+                                                                                    hidden id="next-step-id" name="next-step-id" [value]="&apos;success&apos;">
+                                                                                <input hidden id="total-steps" name="total-steps" value="2">
+                                                                                <div class="navigation-button-wrapper"><button class="button previous-button"
+                                                                                        type="button" hidden [hidden]="formm5p1n16.formHistory.length&lt;=0" on="tap:AMP.setState({formm5p1n16:{currentStep:formm5p1n16.formHistory[formm5p1n16.formHistory.length-1], 
+                                                                      formHistory: formm5p1n16.formHistory.splice(formm5p1n16.formHistory.length-1,1)
+                                                                  }})">Previous</button> <button class="button" type="submit">
+                                                                                        <p>Submit</p>
+                                                                                    </button></div>
+                                                                            </div>
+                                                                            <div style="text-align:center;font-size:16px"
+                                                                                [hidden]="((&apos;success&apos;) != &apos;success&apos; || (formm5p1n16.currentStep == &apos;steptbszz12&apos; &amp;&amp; &apos;success&apos; != &apos;success&apos;))">
+                                                                                <div submitting class="overall question"
+                                                                                    style="width:auto;font-size:16px;border:0">
+                                                                                    <p style="text-align:center">Form submitting... Thank you for waiting.</p>
+                                                                                </div>
+                                                                                <div submit-success>
+                                                                                    <div class="overall question" style="width:auto;font-size:16px">
+                                                                                        <p style="text-align:center">Thank you for submitting the form</p>
+                                                                                        <div style="display:flex;justify-content:center"><button class="button"
+                                                                                                type="button" style="cursor:pointer">Know more</button></div>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div submit-error><template type="amp-mustache">
+                                                                                        <div class="overall question"
+                                                                                            style="width:auto;text-align:center;font-size:16px;border:0">Your
+                                                                                            form submission has failed. Please try again.</div>
+                                                                                    </template></div>
+                                                                            </div>
+                                                                        </form>
+                                                                    </div>
+                                                                          </div>
+                                                                          </section>
+                                                                          </amp-accordion>
+                                                                          </div>
+                                                                        
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td align="center"
+                                                                    style="font-size:0;padding:8px 0 0px 0;word-break:break-word">
+                                                    
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                                <!--[if mso | IE]></td></tr></table><![endif]-->
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <!--[if mso | IE]></td></tr></table></td></tr><![endif]-->
+                         
+                            <!--[if mso | IE]><tr><td class="" width="600px" ><table align="center" border="0" cellpadding="0" cellspacing="0" class="" style="width:568px;" width="568" ><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
+                            <div style="background:#f1f3f6;background-color:#f1f3f6;margin:0 auto;max-width:568px">
+                                <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation"
+                                    style="background:#f1f3f6;background-color:#f1f3f6;width:100%">
+                                    <tbody>
+                                        <tr>
+                                            <td
+                                                style="border:0 solid transparent;direction:ltr;font-size:0;padding:20px 0;padding-bottom:4px;padding-left:8px;padding-right:8px;padding-top:4px;text-align:center">
+                                                <!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td align="left" class="" style="vertical-align:top;width:552px;" ><![endif]-->
+                                                <div class="mj-column-per-100 mj-outlook-group-fix"
+                                                    style="font-size:0;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%">
+                                                    <table border="0" cellpadding="0" cellspacing="0"
+                                                        role="presentation"
+                                                        style="background-color:transparent;border:0 solid transparent;vertical-align:top"
+                                                        width="100%">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td
+                                                                    style="background:0 0;font-size:0;word-break:break-word">
+                                                                    <!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td height="4" style="height:4px;"><![endif]-->
+                                                                    <div style="height:4px">&#xA0;</div>
+                                                                    <!--[if mso | IE]></td></tr></table><![endif]-->
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                                <!--[if mso | IE]></td></tr></table><![endif]-->
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <!--[if mso | IE]></td></tr></table></td></tr><tr><td class="" width="600px" ><table align="center" border="0" cellpadding="0" cellspacing="0" class="" style="width:568px;" width="568" ><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
+                            <div  tabindex="0" role="button" on="tap:AMP.setState({sectionTwo: !sectionTwo})"  style="cursor: pointer;background:#fff;background-color:#fff;margin:0 auto;max-width:568px">
+                                <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation"
+                                    style="background:#fff;background-color:#fff;width:100%">
+                                    <tbody>
+                                        <tr>
+                                            <td
+                                                style="border:0 solid transparent;direction:ltr;font-size:0;padding:20px 0;padding-bottom:8px;padding-left:16px;padding-right:16px;padding-top:8px;text-align:center">
+                                                <!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td align="left" class="" style="vertical-align:top;width:536px;" ><![endif]-->
+                                                <div class="mj-column-per-100 mj-outlook-group-fix"
+                                                    style="font-size:0;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%">
+                                                    <table border="0" cellpadding="0" cellspacing="0"
+                                                        role="presentation"
+                                                        style="background-color:transparent;border:0 solid transparent;vertical-align:top"
+                                                        width="100%">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td align="left"
+                                                                    style="font-size:0;padding:10px 25px;padding-top:10px;padding-right:30px;padding-bottom:0;padding-left:30px;word-break:break-word">
+                                                                    <div
+                                                                        style="font-family:Helvetica;font-size:14px;font-weight:400;letter-spacing:0;line-height:1.5;text-align:left;color:#000">
+                                                                        <div
+                                                                        style="font-family:Helvetica;font-size:14px;font-weight:400;letter-spacing:0;line-height:1.5;text-align:left;color:#000">
+                                                                        <amp-accordion animate>
+                                                                          <section
+                                                                          [data-expand]="sectionTwo"
+                                                                          on="expand:AMP.setState({sectionTwo: true});collapse:AMP.setState({sectionTwo: false})"
+                                                                          >
+                                                                          <header  style="background-color: transparent;border: none;"  ><strong>What features of life insurance
+                                                                            affect the
+                                                                            premium?</strong><span style="margin-right: -20px;float: right;"><div ><amp-img class="rotate" [class]="sectionTwo?'rotate2':'rotate'" layout="fixed" width="8" height="6" src="https://mmstorageprod1.blob.core.windows.net/userdata/244934b4-6aa5-4eb2-8297-e7779d6705b6%2Ftemplates%2F1628695878239_down-arrow.png"></amp-img></div></span></header>
+                                                                            <div>
+                                                                                <p><br>What&apos;s one
+                                                                                    of the first things that you look for when
+                                                                                    you&apos;re shopping for life insurance?
+                                                                                    Well, if you&apos;re like most people,
+                                                                                    you&apos;ll want to know the amount of
+                                                                                    premium that the insurer will charge. After
+                                                                                    all, only if the premium actually falls
+                                                                                    within your budget can you go ahead and buy
+                                                                                    the life insurance plan you&apos;re
+                                                                                    interested in, right?</p>
+                                                                                <p>&#xA0;</p>
+                                                                                <p>But have you ever wondered what affects the
+                                                                                    premium for your life cover? Sure, there are
+                                                                                    the commonly discussed factors like your
+                                                                                    age, gender, lifestyle habits and family
+                                                                                    medical history.</p>
+                                                                                <p>&#xA0;</p>
+                                                                                <p>However, did you know that the life insurance
+                                                                                    plan itself can affect the premiums charged
+                                                                                    for the cover? Yes, that&apos;s right. The
+                                                                                    features of your life insurance plan play a
+                                                                                    major role in increasing or decreasing the
+                                                                                    premium rates charged for your policy.</p>
+                                                                                <p>&#xA0;</p>
+                                                                                <p>Curious to know which features influence the
+                                                                                    cost of your life cover? Let&apos;s get
+                                                                                    right into the details.</p>
+                                                                                <p><br>&#xA0;</p>
+                                                                                <table border="0" cellpadding="0" cellspacing="0"
+                                                                                role="presentation"
+                                                                                style="margin: auto;border-collapse:separate;width:auto;line-height:100%;padding-bottom: 20px;">
+                                                                                <tbody>
+                                                                                    <tr>
+                                                                                        <td align="center" bgcolor="#CB1E34"
+                                                                                            role="presentation"
+                                                                                            style="border-radius:4px;border:0 solid none;cursor:auto;height:auto;background:#cb1e34;padding:0">
+                                                                                            <a href="https://api-uat.mailmodo.com/editor/redirect?url=https%3A%2F%2Flifeinsurance.adityabirlacapital.com%2Farticles%2Flife-insurance%2Flife-insurance-features-that-affects-premium"
+                                                                                                style="display:inline-block;background:#cb1e34;color:#fff;font-family:Helvetica;font-size:16px;font-weight:400;line-height:1;letter-spacing:1px;margin:0;text-decoration:none;text-transform:none;padding:14px 24px 14px 24px;border-radius:4px"
+                                                                                                target="_blank">
+                                                                                                <p>Read More</p>
+                                                                                            </a></td>
+                                                                                    </tr>
+                                                                                </tbody>
+                                                                            </table>
+                                                                            <div on="tap:AMP.setState({formzd0qb59: {fuuid: formzd0qb59.fuuid || floor(random() * 100000) }})"
+                                                                            role="tab" tabindex="1" class="amp-form-block formzd0qb59-wrapper"
+                                                                            style="margin:auto;text-align:left">
+                                                                            <div class="data">
+                                                                                <amp-state id="formzd0qb59">
+                                                                                    <script
+                                                                                        type="application/json">{"currentStep":"stepny0fs54","responses":{},"formHistory":[]}</script>
+                                                                                </amp-state>
+                                                                            </div>
+                                                                            <form class="formzd0qb59" style="display:flex;flex-direction:column" method="post"
+                                                                                custom-validation-reporting="show-all-on-submit"
+                                                                                on="submit-success:AMP.setState({formzd0qb59:{currentStep: &apos;success&apos;}})"
+                                                                                action-xhr="https://mm-tracker-uat.azurewebsites.net//submissions/d/38cd7486-fa43-4be5-816a-a11bed3430e0/86374808-12e3-4fe4-969c-d0f7101b7032?sender=#~mailmodo-email-sender~#&amp;formId=formzd0qb59">
+                                                                                <div class="overall screen current_screen" style="box-sizing:border-box"
+                                                                                    [hidden]="formzd0qb59.currentStep != &apos;stepny0fs54&apos;">
+                                                                                    <div class="element-wrapper">
+                                                                                        <div class="question">
+                                                                                            <p><span style="background-color:transparent;color:#000;font-size:11pt">Was
+                                                                                                    this answer helpful?</span></p>
+                                                                                        </div>
+                                                                                        <div class="answer">
+                                                                                            <div class="rating-wrapper" style="flex-direction:column">
+                                                                                                <div style="min-width:30%;align-self:center"><label
+                                                                                                        class="option upvote"
+                                                                                                        style="border:none;background-color:transparent;overflow:visible;margin-right:20px"><input
+                                                                                                            name="elementbs8y6669" type="radio" role="input"
+                                                                                                            tabindex="2" id="elementbs8y6669"
+                                                                                                            style="position:absolute;opacity:0" on="tap:AMP.setState({elementbs8y6669: {upvote00 : 1 , downvote00 : 0  }, formzd0qb59:{
+                                                                                  responses: {stepny0fs54:{elementbs8y6669: &apos;upvote&apos;}}}})"
+                                                                                                            value="upvote"> <span>
+                                                                                                            <amp-img
+                                                                                                                style="width:60px;height:60px;display:inline-block;cursor:pointer"
+                                                                                                                layout="responsive" class="heart"
+                                                                                                                src="https://res.cloudinary.com/mailmodo/image/upload/v1638541709/editor/constants/FormElements/Thumbs-up-default.png"
+                                                                                                                data-amp-bind-hidden="elementbs8y6669.upvote00 == 1 "
+                                                                                                                width="50" height="50"></amp-img>
+                                                                                                        </span><span>
+                                                                                                            <amp-img
+                                                                                                                style="width:60px;height:60px;display:inline-block;cursor:pointer"
+                                                                                                                layout="responsive" class="heart_clicked"
+                                                                                                                src="https://res.cloudinary.com/mailmodo/image/upload/v1638541709/editor/constants/FormElements/Thumbs-up-selected.png"
+                                                                                                                data-amp-bind-hidden="elementbs8y6669.upvote00 != 1 "
+                                                                                                                width="50px" hidden height="50px"></amp-img>
+                                                                                                        </span></label> <label class="option downvote"
+                                                                                                        style="border:none;background-color:transparent;overflow:visible;margin-right:10px"><input
+                                                                                                            name="elementbs8y6669" type="radio" role="input"
+                                                                                                            tabindex="1" id="elementbs8y6669"
+                                                                                                            style="position:absolute;opacity:0" on="tap:AMP.setState({elementbs8y6669: {upvote00 : 0 , downvote00 : 1  }, formzd0qb59:{
+                                                                              responses: {stepny0fs54:{elementbs8y6669: &apos;downvote&apos;}}}})"
+                                                                                                            value="downvote"> <span>
+                                                                                                            <amp-img
+                                                                                                                style="width:60px;height:60px;display:inline-block;cursor:pointer"
+                                                                                                                layout="responsive" class="heart"
+                                                                                                                src="https://res.cloudinary.com/mailmodo/image/upload/v1638541709/editor/constants/FormElements/Thumbs-down-default.png"
+                                                                                                                data-amp-bind-hidden="elementbs8y6669.downvote00 == 1 "
+                                                                                                                width="50" height="50"></amp-img>
+                                                                                                        </span><span>
+                                                                                                            <amp-img
+                                                                                                                style="width:60px;height:60px;display:inline-block;cursor:pointer"
+                                                                                                                layout="responsive" class="heart_clicked"
+                                                                                                                src="https://res.cloudinary.com/mailmodo/image/upload/v1638541709/editor/constants/FormElements/Thumbs-down-selected.png"
+                                                                                                                data-amp-bind-hidden="elementbs8y6669.downvote00 != 1 "
+                                                                                                                width="50px" hidden height="50px"></amp-img>
+                                                                                                        </span></label></div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div><input hidden id="fuuid" name="fuuid" [value]="formzd0qb59.fuuid"> <input
+                                                                                        hidden id="next-step-id" name="next-step-id" [value]="&apos;success&apos;">
+                                                                                    <input hidden id="total-steps" name="total-steps" value="2">
+                                                                                    <div class="navigation-button-wrapper"><button class="button previous-button"
+                                                                                            type="button" hidden [hidden]="formzd0qb59.formHistory.length&lt;=0" on="tap:AMP.setState({formzd0qb59:{currentStep:formzd0qb59.formHistory[formzd0qb59.formHistory.length-1], 
+                                                                          formHistory: formzd0qb59.formHistory.splice(formzd0qb59.formHistory.length-1,1)
+                                                                      }})">Previous</button> <button class="button" type="submit">
+                                                                                            <p>Submit</p>
+                                                                                        </button></div>
+                                                                                </div>
+                                                                                <div style="text-align:center;font-size:16px"
+                                                                                    [hidden]="((&apos;success&apos;) != &apos;success&apos; || (formzd0qb59.currentStep == &apos;stepny0fs54&apos; &amp;&amp; &apos;success&apos; != &apos;success&apos;))">
+                                                                                    <div submitting class="overall question"
+                                                                                        style="width:auto;font-size:16px;border:0">
+                                                                                        <p style="text-align:center">Form submitting... Thank you for waiting.</p>
+                                                                                    </div>
+                                                                                    <div submit-success>
+                                                                                        <div class="overall question" style="width:auto;font-size:16px">
+                                                                                            <p style="text-align:center">Thank you for submitting the form</p>
+                                                                                            <div style="display:flex;justify-content:center"><button class="button"
+                                                                                                    type="button" style="cursor:pointer">Know more</button></div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <div submit-error><template type="amp-mustache">
+                                                                                            <div class="overall question"
+                                                                                                style="width:auto;text-align:center;font-size:16px;border:0">Your
+                                                                                                form submission has failed. Please try again.</div>
+                                                                                        </template></div>
+                                                                                </div>
+                                                                            </form>
+                                                                        </div>
+                                                                            </div>
+                                                                            </section>
+                                                                            </amp-accordion>
+                                                                            </div>
+                                                                      
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td align="center"
+                                                                    style="font-size:0;padding:8px 0 0px 0;word-break:break-word">
+                                                               
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                                <!--[if mso | IE]></td></tr></table><![endif]-->
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <!--[if mso | IE]></td></tr></table></td></tr><![endif]-->
+                    
+                            <!--[if mso | IE]><tr><td class="" width="600px" ><table align="center" border="0" cellpadding="0" cellspacing="0" class="" style="width:568px;" width="568" ><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
+                            <div style="background:#f1f3f6;background-color:#f1f3f6;margin:0 auto;max-width:568px">
+                                <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation"
+                                    style="background:#f1f3f6;background-color:#f1f3f6;width:100%">
+                                    <tbody>
+                                        <tr>
+                                            <td
+                                                style="border:0 solid transparent;direction:ltr;font-size:0;padding:20px 0;padding-bottom:4px;padding-left:8px;padding-right:8px;padding-top:4px;text-align:center">
+                                                <!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td align="left" class="" style="vertical-align:top;width:552px;" ><![endif]-->
+                                                <div class="mj-column-per-100 mj-outlook-group-fix"
+                                                    style="font-size:0;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%">
+                                                    <table border="0" cellpadding="0" cellspacing="0"
+                                                        role="presentation"
+                                                        style="background-color:transparent;border:0 solid transparent;vertical-align:top"
+                                                        width="100%">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td
+                                                                    style="background:0 0;font-size:0;word-break:break-word">
+                                                                    <!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td height="4" style="height:4px;"><![endif]-->
+                                                                    <div style="height:4px">&#xA0;</div>
+                                                                    <!--[if mso | IE]></td></tr></table><![endif]-->
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                                <!--[if mso | IE]></td></tr></table><![endif]-->
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <!--[if mso | IE]></td></tr></table></td></tr><![endif]-->
+                            <div on="tap:AMP.setState({formmh4c663: {fuuid: formmh4c663.fuuid || floor(random() * 100000) }})"
+                                role="tab" tabindex="1" class="amp-form-block formmh4c663-wrapper"
+                                style="margin:auto;text-align:left;">
+                                <div class="data">
+                                    <amp-state id="formmh4c663">
+                                        <script
+                                            type="application/json">{"currentStep":"step5nlpb56","responses":{},"formHistory":[]}</script>
+                                    </amp-state>
+                                </div>
+                                <form class="formmh4c663" style="display:flex;flex-direction:column" method="post"
+                                    custom-validation-reporting="show-all-on-submit"
+                                    on="submit-success:AMP.setState({formmh4c663:{currentStep: &apos;success&apos;}})"
+                                    action-xhr="https://mm-tracker-uat.azurewebsites.net//submissions/d/38cd7486-fa43-4be5-816a-a11bed3430e0/86374808-12e3-4fe4-969c-d0f7101b7032?sender=#~mailmodo-email-sender~#&amp;formId=formmh4c663">
+                                    <div class="overall screen current_screen" style="box-sizing:border-box"
+                                        [hidden]="formmh4c663.currentStep != &apos;step5nlpb56&apos;">
+                                        <div class="element-wrapper">
+                                            <div class="question">
+                                                <p><span style="background-color:transparent;color:#000;font-size:11pt">Do
+                                                        you need help with buying life insurance ?</span></p>
+                                            </div>
+                                            <div class="answer">
+                                                <div class="chip-option-container">
+                                                    <div><label class="chip-select-container"><input type="radio"
+                                                                name="element3v08v689" id="element3v08v689" on="change:AMP.setState({formmh4c663:{
+                           responses: {step5nlpb56:{element3v08v689: event.value}}},
+                           others: {element3v08v689: false}})" value="Yes">
+                                                            <div class="chip-checkmark chip-checkmark-radio">Yes</div>
+                                                        </label></div>
+                                                    <div><label class="chip-select-container"><input type="radio"
+                                                                name="element3v08v689" id="element3v08v689" on="change:AMP.setState({formmh4c663:{
+                           responses: {step5nlpb56:{element3v08v689: event.value}}},
+                           others: {element3v08v689: false}})" value="No">
+                                                            <div class="chip-checkmark chip-checkmark-radio">No</div>
+                                                        </label></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="element-wrapper">
+                                            <div class="question">
+                                                <p><span style="background-color:transparent;color:#000;font-size:11pt">Drop
+                                                        your phone number, we&#x2019;ll get in touch with.</span></p>
+                                            </div>
+                                            <div class="answer">
+                                                <div class="input-outer" style="display:flex"><select
+                                                        class="input-style dropdown"
+                                                        style="border-top-right-radius:0;border-bottom-right-radius:0;border-right:0;width:40%;align-self:unset"
+                                                        on="input-throttled:AMP.setState({formmh4c663:{
+                    responses: {step5nlpb56:{elementuou73691isd: event.value}}}})">
+                                                        <option value disabled="disabled" selected="selected">Country
+                                                        </option>
+                                                        <option value="+93">(+93) Afghanistan</option>,<option
+                                                            value="+355">(+355) Albania</option>,<option value="+213">
+                                                            (+213) Algeria</option>,<option value="+1684">(+1684)
+                                                            American Samoa</option>,<option value="+376">(+376) Andorra
+                                                        </option>,<option value="+244">(+244) Angola</option>,<option
+                                                            value="+1264">(+1264) Anguilla</option>,<option
+                                                            value="+672">(+672) Antarctica</option>,<option
+                                                            value="+1268">(+1268) Antigua and Barbuda</option>,<option
+                                                            value="+54">(+54) Argentina</option>,<option value="+374">
+                                                            (+374) Armenia</option>,<option value="+297">(+297) Aruba
+                                                        </option>,<option value="+61">(+61) Australia</option>,<option
+                                                            value="+43">(+43) Austria</option>,<option value="+994">
+                                                            (+994) Azerbaijan</option>,<option value="+1242">(+1242)
+                                                            Bahamas</option>,<option value="+973">(+973) Bahrain
+                                                        </option>,<option value="+880">(+880) Bangladesh</option>,
+                                                        <option value="+1246">(+1246) Barbados</option>,<option
+                                                            value="+375">(+375) Belarus</option>,<option value="+32">
+                                                            (+32) Belgium</option>,<option value="+501">(+501) Belize
+                                                        </option>,<option value="+229">(+229) Benin</option>,<option
+                                                            value="+1441">(+1441) Bermuda</option>,<option value="+975">
+                                                            (+975) Bhutan</option>,<option value="+591">(+591) Bolivia
+                                                        </option>,<option value="+387">(+387) Bosnia and Herzegovina
+                                                        </option>,<option value="+267">(+267) Botswana</option>,<option
+                                                            value="+55">(+55) Brazil</option>,<option value="+246">
+                                                            (+246) British Indian Ocean Territory</option>,<option
+                                                            value="+1284">(+1284) British Virgin Islands</option>,
+                                                        <option value="+673">(+673) Brunei</option>,<option
+                                                            value="+359">(+359) Bulgaria</option>,<option value="+226">
+                                                            (+226) Burkina Faso</option>,<option value="+257">(+257)
+                                                            Burundi</option>,<option value="+855">(+855) Cambodia
+                                                        </option>,<option value="+237">(+237) Cameroon</option>,<option
+                                                            value="+1">(+1) Canada</option>,<option value="+238">(+238)
+                                                            Cape Verde</option>,<option value="+1345">(+1345) Cayman
+                                                            Islands</option>,<option value="+236">(+236) Central African
+                                                            Republic</option>,<option value="+235">(+235) Chad</option>,
+                                                        <option value="+56">(+56) Chile</option>,<option value="+86">
+                                                            (+86) China</option>,<option value="+61">(+61) Christmas
+                                                            Island</option>,<option value="+61">(+61) Cocos Islands
+                                                        </option>,<option value="+57">(+57) Colombia</option>,<option
+                                                            value="+269">(+269) Comoros</option>,<option value="+682">
+                                                            (+682) Cook Islands</option>,<option value="+506">(+506)
+                                                            Costa Rica</option>,<option value="+385">(+385) Croatia
+                                                        </option>,<option value="+53">(+53) Cuba</option>,<option
+                                                            value="+599">(+599) Curacao</option>,<option value="+357">
+                                                            (+357) Cyprus</option>,<option value="+420">(+420) Czech
+                                                            Republic</option>,<option value="+243">(+243) Democratic
+                                                            Republic of the Congo</option>,<option value="+45">(+45)
+                                                            Denmark</option>,<option value="+253">(+253) Djibouti
+                                                        </option>,<option value="+1767">(+1767) Dominica</option>,
+                                                        <option value="+1809">(+1809) Dominican Republic</option>,
+                                                        <option value="+670">(+670) East Timor</option>,<option
+                                                            value="+593">(+593) Ecuador</option>,<option value="+20">
+                                                            (+20) Egypt</option>,<option value="+503">(+503) El Salvador
+                                                        </option>,<option value="+240">(+240) Equatorial Guinea</option>
+                                                        ,<option value="+291">(+291) Eritrea</option>,<option
+                                                            value="+372">(+372) Estonia</option>,<option value="+251">
+                                                            (+251) Ethiopia</option>,<option value="+500">(+500)
+                                                            Falkland Islands</option>,<option value="+298">(+298) Faroe
+                                                            Islands</option>,<option value="+679">(+679) Fiji</option>,
+                                                        <option value="+358">(+358) Finland</option>,<option
+                                                            value="+33">(+33) France</option>,<option value="+689">
+                                                            (+689) French Polynesia</option>,<option value="+241">(+241)
+                                                            Gabon</option>,<option value="+220">(+220) Gambia</option>,
+                                                        <option value="+995">(+995) Georgia</option>,<option
+                                                            value="+49">(+49) Germany</option>,<option value="+233">
+                                                            (+233) Ghana</option>,<option value="+350">(+350) Gibraltar
+                                                        </option>,<option value="+30">(+30) Greece</option>,<option
+                                                            value="+299">(+299) Greenland</option>,<option
+                                                            value="+1473">(+1473) Grenada</option>,<option
+                                                            value="+1671">(+1671) Guam</option>,<option value="+502">
+                                                            (+502) Guatemala</option>,<option value="+441481">(+441481)
+                                                            Guernsey</option>,<option value="+224">(+224) Guinea
+                                                        </option>,<option value="+245">(+245) GuineaBissau</option>,
+                                                        <option value="+592">(+592) Guyana</option>,<option
+                                                            value="+509">(+509) Haiti</option>,<option value="+504">
+                                                            (+504) Honduras</option>,<option value="+852">(+852) Hong
+                                                            Kong</option>,<option value="+36">(+36) Hungary</option>,
+                                                        <option value="+354">(+354) Iceland</option>,<option
+                                                            value="+91">(+91) India</option>,<option value="+62">(+62)
+                                                            Indonesia</option>,<option value="+98">(+98) Iran</option>,
+                                                        <option value="+964">(+964) Iraq</option>,<option value="+353">
+                                                            (+353) Ireland</option>,<option value="+441624">(+441624)
+                                                            Isle of Man</option>,<option value="+972">(+972) Israel
+                                                        </option>,<option value="+39">(+39) Italy</option>,<option
+                                                            value="+225">(+225) Ivory Coast</option>,<option
+                                                            value="+1876">(+1876) Jamaica</option>,<option value="+81">
+                                                            (+81) Japan</option>,<option value="+441534">(+441534)
+                                                            Jersey</option>,<option value="+962">(+962) Jordan</option>,
+                                                        <option value="+7">(+7) Kazakhstan</option>,<option
+                                                            value="+254">(+254) Kenya</option>,<option value="+686">
+                                                            (+686) Kiribati</option>,<option value="+383">(+383) Kosovo
+                                                        </option>,<option value="+965">(+965) Kuwait</option>,<option
+                                                            value="+996">(+996) Kyrgyzstan</option>,<option
+                                                            value="+856">(+856) Laos</option>,<option value="+371">
+                                                            (+371) Latvia</option>,<option value="+961">(+961) Lebanon
+                                                        </option>,<option value="+266">(+266) Lesotho</option>,<option
+                                                            value="+231">(+231) Liberia</option>,<option value="+218">
+                                                            (+218) Libya</option>,<option value="+423">(+423)
+                                                            Liechtenstein</option>,<option value="+370">(+370) Lithuania
+                                                        </option>,<option value="+352">(+352) Luxembourg</option>,
+                                                        <option value="+853">(+853) Macau</option>,<option value="+389">
+                                                            (+389) Macedonia</option>,<option value="+261">(+261)
+                                                            Madagascar</option>,<option value="+265">(+265) Malawi
+                                                        </option>,<option value="+60">(+60) Malaysia</option>,<option
+                                                            value="+960">(+960) Maldives</option>,<option value="+223">
+                                                            (+223) Mali</option>,<option value="+356">(+356) Malta
+                                                        </option>,<option value="+692">(+692) Marshall Islands</option>,
+                                                        <option value="+222">(+222) Mauritania</option>,<option
+                                                            value="+230">(+230) Mauritius</option>,<option value="+262">
+                                                            (+262) Mayotte</option>,<option value="+52">(+52) Mexico
+                                                        </option>,<option value="+691">(+691) Micronesia</option>,
+                                                        <option value="+373">(+373) Moldova</option>,<option
+                                                            value="+377">(+377) Monaco</option>,<option value="+976">
+                                                            (+976) Mongolia</option>,<option value="+382">(+382)
+                                                            Montenegro</option>,<option value="+1664">(+1664) Montserrat
+                                                        </option>,<option value="+212">(+212) Morocco</option>,<option
+                                                            value="+258">(+258) Mozambique</option>,<option value="+95">
+                                                            (+95) Myanmar</option>,<option value="+264">(+264) Namibia
+                                                        </option>,<option value="+674">(+674) Nauru</option>,<option
+                                                            value="+977">(+977) Nepal</option>,<option value="+31">(+31)
+                                                            Netherlands</option>,<option value="+599">(+599) Netherlands
+                                                            Antilles</option>,<option value="+687">(+687) New Caledonia
+                                                        </option>,<option value="+64">(+64) New Zealand</option>,<option
+                                                            value="+505">(+505) Nicaragua</option>,<option value="+227">
+                                                            (+227) Niger</option>,<option value="+234">(+234) Nigeria
+                                                        </option>,<option value="+683">(+683) Niue</option>,<option
+                                                            value="+850">(+850) North Korea</option>,<option
+                                                            value="+1670">(+1670) Northern Mariana Islands</option>,
+                                                        <option value="+47">(+47) Norway</option>,<option value="+968">
+                                                            (+968) Oman</option>,<option value="+92">(+92) Pakistan
+                                                        </option>,<option value="+680">(+680) Palau</option>,<option
+                                                            value="+970">(+970) Palestine</option>,<option value="+507">
+                                                            (+507) Panama</option>,<option value="+675">(+675) Papua New
+                                                            Guinea</option>,<option value="+595">(+595) Paraguay
+                                                        </option>,<option value="+51">(+51) Peru</option>,<option
+                                                            value="+63">(+63) Philippines</option>,<option value="+64">
+                                                            (+64) Pitcairn</option>,<option value="+48">(+48) Poland
+                                                        </option>,<option value="+351">(+351) Portugal</option>,<option
+                                                            value="+1787">(+1787) Puerto Rico</option>,<option
+                                                            value="+974">(+974) Qatar</option>,<option value="+242">
+                                                            (+242) Republic of the Congo</option>,<option value="+262">
+                                                            (+262) Reunion</option>,<option value="+40">(+40) Romania
+                                                        </option>,<option value="+7">(+7) Russia</option>,<option
+                                                            value="+250">(+250) Rwanda</option>,<option value="+590">
+                                                            (+590) Saint Barthelemy</option>,<option value="+290">(+290)
+                                                            Saint Helena</option>,<option value="+1869">(+1869) Saint
+                                                            Kitts and Nevis</option>,<option value="+1758">(+1758) Saint
+                                                            Lucia</option>,<option value="+590">(+590) Saint Martin
+                                                        </option>,<option value="+508">(+508) Saint Pierre and Miquelon
+                                                        </option>,<option value="+1784">(+1784) Saint Vincent and the
+                                                            Grenadines</option>,<option value="+685">(+685) Samoa
+                                                        </option>,<option value="+378">(+378) San Marino</option>,
+                                                        <option value="+239">(+239) Sao Tome and Principe</option>,
+                                                        <option value="+966">(+966) Saudi Arabia</option>,<option
+                                                            value="+221">(+221) Senegal</option>,<option value="+381">
+                                                            (+381) Serbia</option>,<option value="+248">(+248)
+                                                            Seychelles</option>,<option value="+232">(+232) Sierra Leone
+                                                        </option>,<option value="+65">(+65) Singapore</option>,<option
+                                                            value="+1721">(+1721) Sint Maarten</option>,<option
+                                                            value="+421">(+421) Slovakia</option>,<option value="+386">
+                                                            (+386) Slovenia</option>,<option value="+677">(+677) Solomon
+                                                            Islands</option>,<option value="+252">(+252) Somalia
+                                                        </option>,<option value="+27">(+27) South Africa</option>,
+                                                        <option value="+82">(+82) South Korea</option>,<option
+                                                            value="+211">(+211) South Sudan</option>,<option
+                                                            value="+34">(+34) Spain</option>,<option value="+94">(+94)
+                                                            Sri Lanka</option>,<option value="+249">(+249) Sudan
+                                                        </option>,<option value="+597">(+597) Suriname</option>,<option
+                                                            value="+47">(+47) Svalbard and Jan Mayen</option>,<option
+                                                            value="+268">(+268) Swaziland</option>,<option value="+46">
+                                                            (+46) Sweden</option>,<option value="+41">(+41) Switzerland
+                                                        </option>,<option value="+963">(+963) Syria</option>,<option
+                                                            value="+886">(+886) Taiwan</option>,<option value="+992">
+                                                            (+992) Tajikistan</option>,<option value="+255">(+255)
+                                                            Tanzania</option>,<option value="+66">(+66) Thailand
+                                                        </option>,<option value="+228">(+228) Togo</option>,<option
+                                                            value="+690">(+690) Tokelau</option>,<option value="+676">
+                                                            (+676) Tonga</option>,<option value="+1868">(+1868) Trinidad
+                                                            and Tobago</option>,<option value="+216">(+216) Tunisia
+                                                        </option>,<option value="+90">(+90) Turkey</option>,<option
+                                                            value="+993">(+993) Turkmenistan</option>,<option
+                                                            value="+1649">(+1649) Turks and Caicos Islands</option>,
+                                                        <option value="+688">(+688) Tuvalu</option>,<option
+                                                            value="+1340">(+1340) U.S. Virgin Islands</option>,<option
+                                                            value="+256">(+256) Uganda</option>,<option value="+380">
+                                                            (+380) Ukraine</option>,<option value="+971">(+971) United
+                                                            Arab Emirates</option>,<option value="+44">(+44) United
+                                                            Kingdom</option>,<option value="+1">(+1) United States
+                                                        </option>,<option value="+598">(+598) Uruguay</option>,<option
+                                                            value="+998">(+998) Uzbekistan</option>,<option
+                                                            value="+678">(+678) Vanuatu</option>,<option value="+379">
+                                                            (+379) Vatican</option>,<option value="+58">(+58) Venezuela
+                                                        </option>,<option value="+84">(+84) Vietnam</option>,<option
+                                                            value="+681">(+681) Wallis and Futuna</option>,<option
+                                                            value="+212">(+212) Western Sahara</option>,<option
+                                                            value="+967">(+967) Yemen</option>,<option value="+260">
+                                                            (+260) Zambia</option>,<option value="+263">(+263) Zimbabwe
+                                                        </option>
+                                                    </select> <input class="input-style" type="number" placeholder
+                                                        style="box-sizing:border-box;border-top-left-radius:0;border-bottom-left-radius:0;width:60%"
+                                                        on="change:AMP.setState({formmh4c663:{
+                      responses: {step5nlpb56:{elementuou73691: event.value}}}})"></div><input class="input-style"
+                                                    name="elementuou73691" id="elementuou73691" placeholder
+                                                    style="box-sizing:border-box;display:none"
+                                                    [value]="(formmh4c663.responses.step5nlpb56.elementuou73691isd || &quot;&quot; ) + (formmh4c663.responses.step5nlpb56.elementuou73691 || &quot;&quot;)"
+                                                    pattern="(^(\+(91|33|34|39|44|49|61|62))[1-9]\d{8,9}|\+1[2-9]\d{8,9}|^(\+)(?!(91|33|34|39|44|49|61|62|10|966|971|968))\d{9,15}|^(\+9665)(5|0|3|6|4|9|1|8|7)([0-9]{7})|^(\+968)[279]\d{7}|^(\+971)?(?:50|51|52|55|56|58|2|3|4|6|7|9)\d{7})">
+                                                <div visible-when-invalid="patternMismatch"
+                                                    style="font-size:13px;margin-top:4px"
+                                                    validation-for="elementuou73691">Please enter a valid phone number
+                                                </div>
+                                            </div>
+                                        </div><input hidden id="fuuid" name="fuuid" [value]="formmh4c663.fuuid"> <input
+                                            hidden id="next-step-id" name="next-step-id" [value]="&apos;success&apos;">
+                                        <input hidden id="total-steps" name="total-steps" value="2">
+                                        <div class="navigation-button-wrapper"><button class="button previous-button"
+                                                type="button" hidden [hidden]="formmh4c663.formHistory.length&lt;=0" on="tap:AMP.setState({formmh4c663:{currentStep:formmh4c663.formHistory[formmh4c663.formHistory.length-1], 
+                              formHistory: formmh4c663.formHistory.splice(formmh4c663.formHistory.length-1,1)
+                          }})">Previous</button> <button class="button" type="submit">
+                                                <p>Submit</p>
+                                            </button></div>
+                                    </div>
+                                    <div style="text-align:center;font-size:16px"
+                                        [hidden]="((&apos;success&apos;) != &apos;success&apos; || (formmh4c663.currentStep == &apos;step5nlpb56&apos; &amp;&amp; &apos;success&apos; != &apos;success&apos;))">
+                                        <div submitting class="overall question"
+                                            style="width:auto;font-size:16px;border:0">
+                                            <p style="text-align:center">Form submitting... Thank you for waiting.</p>
+                                        </div>
+                                        <div submit-success>
+                                            <div class="overall question" style="width:auto;font-size:16px">
+                                                <p style="text-align:center">Thank you for submitting the form</p>
+                                                <div style="display:flex;justify-content:center"><button class="button"
+                                                        type="button" style="cursor:pointer">Know more</button></div>
+                                            </div>
+                                        </div>
+                                        <div submit-error><template type="amp-mustache">
+                                                <div class="overall question"
+                                                    style="width:auto;text-align:center;font-size:16px;border:0">Your
+                                                    form submission has failed. Please try again.</div>
+                                            </template></div>
+                                    </div>
+                                </form>
+                            </div>
+                            <!--[if mso | IE]><tr><td class="" width="600px" ><table align="center" border="0" cellpadding="0" cellspacing="0" class="" style="width:568px;" width="568" ><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
+                            <div style="background:#f1f3f6;background-color:#f1f3f6;margin:0 auto;max-width:568px">
+                                <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation"
+                                    style="background:#f1f3f6;background-color:#f1f3f6;width:100%">
+                                    <tbody>
+                                        <tr>
+                                            <td
+                                                style="border:0 solid transparent;direction:ltr;font-size:0;padding:20px 0;padding-bottom:4px;padding-left:8px;padding-right:8px;padding-top:4px;text-align:center">
+                                                <!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td align="left" class="" style="vertical-align:top;width:552px;" ><![endif]-->
+                                                <div class="mj-column-per-100 mj-outlook-group-fix"
+                                                    style="font-size:0;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%">
+                                                    <table border="0" cellpadding="0" cellspacing="0"
+                                                        role="presentation"
+                                                        style="background-color:transparent;border:0 solid transparent;vertical-align:top"
+                                                        width="100%">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td
+                                                                    style="background:0 0;font-size:0;word-break:break-word">
+                                                                    <!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td height="4" style="height:4px;"><![endif]-->
+                                                                    <div style="height:4px">&#xA0;</div>
+                                                                    <!--[if mso | IE]></td></tr></table><![endif]-->
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                                <!--[if mso | IE]></td></tr></table><![endif]-->
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <!--[if mso | IE]></td></tr></table></td></tr><tr><td class="" width="600px" ><table align="center" border="0" cellpadding="0" cellspacing="0" class="" style="width:568px;" width="568" ><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
+                            <div style="background:#f1f3f6;background-color:#f1f3f6;margin:0 auto;max-width:568px">
+                                <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation"
+                                    style="background:#f1f3f6;background-color:#f1f3f6;width:100%">
+                                    <tbody>
+                                        <tr>
+                                            <td
+                                                style="border:0 solid transparent;direction:ltr;font-size:0;padding:20px 0;padding-bottom:8px;padding-left:8px;padding-right:8px;padding-top:8px;text-align:center">
+                                                <!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td class="" style="vertical-align:top;width:552px;" ><![endif]-->
+                                                <div class="mj-column-per-100 mj-outlook-group-fix"
+                                                    style="font-size:0;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%">
+                                                    <table border="0" cellpadding="0" cellspacing="0"
+                                                        role="presentation"
+                                                        style="background-color:transparent;border:0 solid transparent;vertical-align:top"
+                                                        width="100%">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td align="left"
+                                                                    style="font-size:0;padding:10px 25px;padding-top:0;padding-right:0;padding-bottom:24px;padding-left:0;word-break:break-word">
+                                                                    <div
+                                                                        style="font-family:Helvetica;font-size:14px;font-weight:400;letter-spacing:0;line-height:1.5;text-align:left;color:#9b9b9b">
+                                                                        <p><span
+                                                                                style="font-size:12px"><sup>1</sup></span><span
+                                                                                style="background-color:#f1f3f6;color:#9b9b9b;font-size:12px">Source:
+                                                                                Economic Times
+                                                                                https://economictimes.indiatimes.com.jobs-61-indians-aged-45-plus-want-to-retire-in-next-5-years-survey-articleshow/50793274.cms</span><br><br><span
+                                                                                style="font-size:12px"><sup>2</sup></span><span
+                                                                                style="background-color:#f1f3f6;color:#9b9b9b;font-size:12px">Provided
+                                                                                all due premiums are
+                                                                                paid</span><br><br><span
+                                                                                style="background-color:#f1f3f6;color:#9b9b9b;font-size:12px">The
+                                                                                Trade Logo &quot;Aditya Birla
+                                                                                Capital&quot; Displayed Above Is owned
+                                                                                By ADITYA BIRLA MANAGEMENT CORPORATION
+                                                                                PRIVATE LIMITED (Trademark Owner) and
+                                                                                used by ADITYA BIRLA SUN LIFE INSURANCE
+                                                                                COMPANY LIMITED (ABSLI) under the
+                                                                                License.</span><br><br><span
+                                                                                style="background-color:#f1f3f6;color:#9b9b9b;font-size:12px">This
+                                                                                policy is underwritten by Aditya Birla
+                                                                                Sun Life Insurance Company Limited
+                                                                                (ABSLI). This is a non-participating
+                                                                                traditional insurance plan. All terms
+                                                                                &amp; conditions are guaranteed
+                                                                                throughout the policy term. GST and any
+                                                                                other applicable taxes will be added
+                                                                                (extra) to Your premium and levied as
+                                                                                per extant tax laws. An extra premium
+                                                                                may be charged as per our then existing
+                                                                                underwriting guidelines for substandard
+                                                                                lives, smokers or people having
+                                                                                hazardous occupations etc. All policy
+                                                                                benefits are subject to policy being
+                                                                                In-force. For more details on risk
+                                                                                factors, terms and conditions, please
+                                                                                read sales brochure before concluding
+                                                                                the sale.</span><br><br><span
+                                                                                style="background-color:#f1f3f6;color:#9b9b9b;font-size:12px">Aditya
+                                                                                Birla Sun Life Insurance Company
+                                                                                Limited. Registered Office: One World
+                                                                                Centre, Tower 1, 16th Floor, Jupiter
+                                                                                Mill Compound, 841, Senapati Bapat Marg,
+                                                                                Elphinstone Road, Mumbai - 400013. IRDAI
+                                                                                Reg No.109. Toll Free No.
+                                                                                1-800-270-7000. Website:
+                                                                                www.adityabirlasunlifeinsurance.com.
+                                                                                CIN: U99999MH2000PLC128110 UIN:
+                                                                                109N134V02
+                                                                                ADV/1/21-22/2032</span><br><br><span
+                                                                                style="background-color:#f1f3f6;color:#9b9b9b;font-size:12px"><u>Click
+                                                                                    here</u> to
+                                                                                unsubscribe</span><br><br><span
+                                                                                style="background-color:#f1f3f6;color:#9b9b9b;font-size:12px">BEWARE
+                                                                                OF SPURIOUS / FRAUD PHONE CALLS! IRDAI
+                                                                                is not involved in activities like
+                                                                                selling insurance policies, announcing
+                                                                                bonus or investment of premiums. Public
+                                                                                receiving such phone calls are requested
+                                                                                to lodge a police complaint.</span></p>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                                <!--[if mso | IE]></td></tr></table><![endif]-->
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <!--[if mso | IE]></td></tr></table></td></tr></table><![endif]-->
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <!--[if mso | IE]></td></tr></table><![endif]-->
+    </div>
+    <!-- <table width="100%" align="center">
+        <tbody>
+            <tr>
+                <td width="100%" align="center">
+                    <a style="margin-left: auto; margin-right: auto; color: grey; font-size: 10px; text-decoration: underline;"
+                        href="https://api-uat.mailmodo.com/editor/redirect?url=https%3A%2F%2Fmm-tracker-uat.azurewebsites.net%2F%2Funsubscribes%2Famp%2Ftest%2F1">Click
+                        here to unsubscribe</a>
+                </td>
+            </tr>
+        </tbody>
+    </table> -->
+</body>
+
+</html>
